@@ -21,20 +21,20 @@ Lorsque vous êtes prêt à déployer des canaux additionnels, utilisez la même
 # Installation et Configuration
 
 ## Configuration de votre compte twilio pour envoyer des sms
-- Inscrivez-vous, si ce n'est pas déjà fait au https://www.twilio.com/try-twilio.
-- Suite à l'inscription, vous devrez répondre à certaine question, voici mes suggetion de réponse.
+Inscrivez-vous, si ce n'est pas déjà fait au https://www.twilio.com/try-twilio.
+Suite à l'inscription, vous devrez répondre à certaine question, voici mes suggetion de réponse.
 ![Installation et Configuration tier - 1](../images/Installation et Configuration tier - 1.png)
 
-- Vous serez redirigé ensuite à votre consol, vous pourrez constater alors que vous disposez d'un certain montant pour essayer le service (rouge).
+Vous serez redirigé ensuite à votre consol, vous pourrez constater alors que vous disposez d'un certain montant pour essayer le service (rouge).
 ![Installation et Configuration tier - 2](../images/Installation et Configuration tier - 2.png)
 
-- Faite l'achat d'un numéro de téléphone
+Faite l'achat d'un numéro de téléphone
 ![Installation et Configuration tier - 3](../images/Installation et Configuration tier - 3.png)
 
-- Créez-vous un service de messagerie.
+Créez-vous un service de messagerie.
 ![Installation et Configuration tier - 4](../images/Installation et Configuration tier - 4.png)
 
-- Une fois fais, dirigez-vous ici pour connaître les informations dont vous aurez besoin pour la configuration du plugins
+Une fois fais, dirigez-vous ici pour connaître les informations dont vous aurez besoin pour la configuration du plugins
 ![Installation et Configuration tier - 5](../images/Installation et Configuration tier - 5.png)
 
 ## Configuration du plugins 
