@@ -39,9 +39,7 @@ Une fois fais, dirigez-vous ici pour connaître les informations dont vous aurez
 ![Installation et Configuration tier - 5](../images/Installation et Configuration tier - 5.png)
 
 ## Configuration du plugins 
-Pour fonctionner le plugin a besoin de certaines informations, donc une fois le plugin installé, vous devez :
-- Aller dans la page "Configuration" du plugin et renseigner votre identifiant (SID) votre token ainsi que le numéro de l'expéditeur
-
+Pour fonctionner le plugin a besoin de certaines informations, donc une fois le plugin installé, vous devez aller dans la page "Configuration" du plugin et renseigner votre identifiant (SID) votre token ainsi que le numéro de l'expéditeur
 ![Installation et Configuration - 1](../images/Installation et Configuration - 1.png)
 
 Vous pouvez ensuite ajouter un équipement dans le menu habituel sous "Communication".
