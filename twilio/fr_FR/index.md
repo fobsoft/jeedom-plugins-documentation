@@ -24,24 +24,24 @@ Lorsque vous êtes prêt à déployer des canaux additionnels, utilisez la même
 * Inscrivez-vous, si ce n'est pas déjà fait au (https://www.twilio.com/try-twilio).
 
 * Suite à l'inscription, vous devrez répondre à certaine question, voici mes suggetion de réponse. 
-![Installation et Configuration tier - 1](../images/Installation et Configuration tier - 1.png)
+![Installation et Configuration tier - 1](../images/Installation%20et%20Configuration%20tier%20-%201.png)
 
 * Vous serez redirigé ensuite à votre consol, vous pourrez constater alors que vous disposez d'un certain montant pour essayer le service. 
-![Installation et Configuration tier - 2](../images/Installation et Configuration tier - 2.png)
+![Installation et Configuration tier - 2](../images/Installation%20et%20Configuration%20tier%20-%202.png)
 
 * Faite l'achat d'un numéro de téléphone. 
-![Installation et Configuration tier - 3](../images/Installation et Configuration tier - 3.png)
+![Installation et Configuration tier - 3](../images/Installation%20et%20Configuration%20tier%20-%203.png)
 
 * Créez-vous un service de messagerie. 
-![Installation et Configuration tier - 4](../images/Installation et Configuration tier - 4.png)
+![Installation et Configuration tier - 4](../images/Installation%20et%20Configuration%20tier%20-%204.png)
 
 * Une fois fais, dirigez-vous ici pour connaître les informations dont vous aurez besoin pour la configuration du plugins. 
-![Installation et Configuration tier - 5](../images/Installation et Configuration tier - 5.png)
+![Installation et Configuration tier - 5](../images/Installation%20et%20Configuration%20tier%20-%205.png)
 
 ## Configuration du plugins 
 Pour fonctionner le plugin a besoin de certaines informations, donc une fois le plugin installé, vous devez aller dans la page "Configuration" du plugin et renseigner votre identifiant (SID) votre token ainsi que le numéro de l'expéditeur. 
 
-![Installation et Configuration - 1](../images/Installation et Configuration - 1.png)
+![Installation et Configuration - 1](../images/Installation%20et%20Configuration%20-%201.png)
 
 Vous pouvez ensuite ajouter un équipement dans le menu habituel sous "Communication".
 Vous pouvez ensuite sous l'onglet "Commandes" ajouter une commande, donner un nom à celle-ci et un numéro de destination.
