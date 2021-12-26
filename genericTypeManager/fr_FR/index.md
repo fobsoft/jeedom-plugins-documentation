@@ -93,6 +93,7 @@ Pour être en mesure d'ouvrir les lumières de ma pièce, j'ajoute donc un somma
 
 Sur le dashbord l'équipement a donc maintenant cette apparence et vous pouvez voir l'icône configurée dans le sommaire du résumé au niveau de la bande inférieur de la tuile de l'équipement puisqu'il s'agit d'une action.
 Si aucune icône n'est configuré celui par défaut sera utilisé, voici deux ememple, un avec l'icône par défaut et le second avec l'icône configuré. Il sont engrisé lorsqu'il ne sont pas actifs :
+
 ![DashbordAction1](../images/DashbordAction1.png)
 ![DashbordAction2](../images/DashbordAction2.png)
 
