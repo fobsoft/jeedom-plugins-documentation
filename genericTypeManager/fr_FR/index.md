@@ -42,36 +42,38 @@ Les équipements sont accessibles à partir du menu Plugins → Programmation �
 
 Sur cette page vous retrouvez la liste de vos équipements. Cliquez sur un équipement pour accéder à sa configuration ou sur "Ajouter" pour en créer un nouveau:
 
-# Equipement
-  * Nom de l'équipement : nom de votre équipement.
-  * Objet parent : indique l’objet parent auquel appartient l’équipement.
-  * Activer : permet de rendre l’équipement actif.
-  * Visible : permet de rendre l’équipement visible sur le dashboard.
+  # Equipement
+    * Nom de l'équipement : nom de votre équipement.
+    * Objet parent : indique l’objet parent auquel appartient l’équipement.
+    * Activer : permet de rendre l’équipement actif.
+    * Visible : permet de rendre l’équipement visible sur le dashboard.
 
-# Mode
-  * À venir
+  # Mode
+    * À venir
 
-# Résumé
-Les résumé, permettent des informations ou actions global déterminé par le type générique configuré. Elle regroupera toutes les commandes possédant ce type générique sous l'onglet parent de l'équipement aissi que les objects enfant de celui-ci.
+  # Résumé
+  Les résumé, permettent des informations ou actions global déterminé par le type générique configuré. Elle regroupera toutes les commandes possédant ce type générique sous l'onglet parent de l'équipement aissi que les objects enfant de celui-ci.
 
-Lors de l'ajout d'un résumé, il vous sera demandé deux choses, le nom que vous voulez donner au résumé qui doit être unique pour l'équipement et le type générique désiré. Si vous voulez créer un résumé dont les commande ne figure pas dans l'objet parent de l'équipement ou l'un de ces enfants, vous pouvez simplement inscrire "NONE" ainsi le plugin de cherchera pas à associer de manier automatique des commandes à se résumer, se sera à vous de le faire manuellement.
+  Lors de l'ajout d'un résumé, il vous sera demandé deux choses, le nom que vous voulez donner au résumé qui doit être unique pour l'équipement et le type générique désiré. Si vous voulez créer un résumé dont les commande ne figure pas dans l'objet parent de l'équipement ou l'un de ces enfants, vous pouvez simplement inscrire "NONE" ainsi le plugin de cherchera pas à associer de manier automatique des commandes à se résumer, se sera à vous de le faire manuellement.
 
-  * Général
-    * Nom : nom du résumé
-    * Icon : icon qui sera utilisé pour l'affichage du résumé sur le dashbord
-    * Type générique : le type gjnérique des commande qui doivent être inclut au résumé
-    * Authorisé : permet de rendre le résumé actif, dans le cas contraire, les valeurs de celui-ci seront remonté mais les actions associé à celui-ci ne seront pas exécuté.
-    * Affiché : permet de rendre visible le résumé sur le dashbord
-    * Affiché même si nulle : permet de rendre visible le résumé sur le dashbord même si aucune valeur n'est remonté
-    * Calcul : le type de calcul qui doit être effectué lors d'un changement de valeur d'une commande
-    * Unité : Unité de la mesure
-    * Méthode de comptage : Méthode de comptage, si ninaire est sélétionné, le résumé ajit comme un interrupteur (on , off)
+    * Général
+      * Nom : nom du résumé
+      * Icon : icon qui sera utilisé pour l'affichage du résumé sur le dashbord
+      * Type générique : le type gjnérique des commande qui doivent être inclut au résumé
+      * Authorisé : permet de rendre le résumé actif, dans le cas contraire, les valeurs de celui-ci seront remonté mais les actions associé à celui-ci ne seront pas exécuté.
+      * Affiché : permet de rendre visible le résumé sur le dashbord
+      * Affiché même si nulle : permet de rendre visible le résumé sur le dashbord même si aucune valeur n'est remonté
+      * Calcul : le type de calcul qui doit être effectué lors d'un changement de valeur d'une commande
+      * Unité : Unité de la mesure
+      * Méthode de comptage : Méthode de comptage, si ninaire est sélétionné, le résumé ajit comme un interrupteur (on , off)
 
-  * Action sur la valeur du sommaire si
-    * Commande : liste des commandes qui affecte le résumé
-    * Activer : permet de rendre la commande active, dans le cas contraire elle n'afectera pas le résumé.
+    * Action sur la valeur du sommaire si
+      * Commande : liste des commandes qui affecte le résumé
+      * Activer : permet de rendre la commande active, dans le cas contraire elle n'afectera pas le résumé.
 
-# Exemple de différent type générique
+Exemple de différent type générique
+===================================
+
 Voici la configuration des équipements qui s'applique à toutes mes pièces internes qui me servent à les contrôler, dans ce cas, la pièce "RC - Pièce commune" qui est une pièce a aire ouverte incluant trois pièces distincte "RC - Sallon, RC - Salle à manger et RC - Cuisine". Ces trois pièces disposent de capteur de mouvements, luminosité et ouverture de porte et d'actionneur de lumières.
 
   * NONE
@@ -79,8 +81,12 @@ Voici la configuration des équipements qui s'applique à toutes mes pièces int
 
   ![RésuméNone](../images/RésuméNone.png)
 
-# FAQ
+FAQ
+===
+
 Pour toute question ou problème, écrivez-moi au fobsoft@gmail.com 
 
-# Changelog
+Changelog
+=========
+
 [Lien vers le changelog](./changelog.md)
