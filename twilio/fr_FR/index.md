@@ -49,10 +49,12 @@ Les équipements sont accessibles à partir du menu Plugins → Communication �
 Sur cette page vous retrouvez la liste de vos équipements. Cliquez sur un équipement pour accéder à sa configuration ou sur Ajouter pour en créer un nouveau:
 
 ## Equipement
-### Nom de l’agenda : nom de votre agenda.
-### Objet parent : indique l’objet parent auquel appartient l’équipement.
-### Activer : permet de rendre l’équipement actif.
-### Visible : permet de rendre l’équipement visible sur le dashboard.
+
+*  Nom : nom de votre équipement.
+*  Objet parent : indique l’objet parent auquel appartient l’équipement.
+*  Activer : permet de rendre l’équipement actif.
+*  Visible : permet de rendre l’équipement visible sur le dashboard.
+
 ## Commandes
 Sous cet onglet, vous pouvez ajouter une commande, donner un nom à celle-ci et un numéro de destination, celle-ci vous permettra à son appel d'envoyer un message à ce destinataire.
 Ensuite, il vous suffit d'effectuer un test pour vous assurer le bon fonctionnement.
