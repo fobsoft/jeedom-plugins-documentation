@@ -42,13 +42,13 @@ Les équipements sont accessibles à partir du menu Plugins → Programmation �
 
 Sur cette page vous retrouvez la liste de vos équipements. Cliquez sur un équipement pour accéder à sa configuration ou sur "Ajouter" pour en créer un nouveau:
 
-** Equipement
+*** Equipement
   * Nom de l'équipement : nom de votre équipement.
   * Objet parent : indique l’objet parent auquel appartient l’équipement.
   * Activer : permet de rendre l’équipement actif.
   * Visible : permet de rendre l’équipement visible sur le dashboard.
 
-** Mode
+- Mode
   * À venir
 
 ** Résumé
