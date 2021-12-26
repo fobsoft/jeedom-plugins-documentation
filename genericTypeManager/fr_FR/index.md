@@ -70,9 +70,29 @@ Lors de l'ajout d'un résumé, il vous sera demandé deux choses, le nom que vou
 Voici la configuration des équipements qui s'applique à toutes mes pièces internes qui me servent à les contrôler, dans ce cas, la pièce "RC - Pièce commune" qui est une pièce a aire ouverte incluant trois pièces distincte "RC - Sallon, RC - Salle à manger et RC - Cuisine". Ces trois pièces disposent de capteur de mouvements, luminosité et ouverture de porte et d'actionneur de lumières.
 
 ## NONE
-Pour être en mesure de mettre mes pièces en mode "Veille" ou "Absence", je calcule le maximum de deux valeurs que possède chacun des profils de la maison soit (Present ou Proximité). Donc si une seule de ces valeurs binaire est à un, le sommaire sera à 1. Mais comme ces commandes ne sont pas dans l'objet parent de l'équipement ou l'un de ces enfants, j'ai ajouté chacune des commandes manuellement. Éventuellement, j'ajouterais la possibilité de spécifier l'objet parent du résumé et dans ce cas, j'aurais appliqué l'objet "Profil", ainsi, je n'aurais plus l'obligation d'ajouter les commande manuellement, pour l'instant l'objet parent du sommaire est le même que celui de l'équipement courant.
-
+Pour être en mesure de mettre mes pièces en mode "Veille" ou "Absence", je calcule le maximum de deux valeurs que possède chacun des profils de la maison soit (Present ou Proximité). Donc si une seule de ces valeurs binaire est à un, le sommaire résultat de résumé sera à 1. Mais comme ces commandes ne sont pas dans l'objet parent de l'équipement ou l'un de ces enfants, j'ai ajouté chacune des commandes manuellement. Éventuellement, j'ajouterais la possibilité de spécifier l'objet parent du résumé et dans ce cas, j'aurais appliqué l'objet "Profil", ainsi, je n'aurais plus l'obligation d'ajouter les commandes manuellement, pour l'instant l'objet parent du sommaire est le même que celui de l'équipement courant.
 ![RésuméNone](../images/RésuméNone.png)
+
+Sur le dashbord l'équipement a donc cette apparence et vous pouvez voir l'icône configuré dans le sommaire du résumé au niveau de la bande supérieure de la tuile de l'équipement puisqu'il s'agit d'une information. 
+![DashbordNone](../images/DashbordNone.png)
+
+## Type générique sans actionneur
+Un type générique sans actionneur est un type générique associé à une commande qui n'ont aucune commande d'action relié à celle-ci.
+
+Pour être en mesure de mettre mes pièces en mode "Présent", j'ajoute un sommaire qui regroupe mes capteurs de présence. Donc je choisis comme type générique "Présence", je spécifie les bonnes informations générales et je sauvegarde mes modifications. Normalement, une fois, ceci fait vous devriez voir apparaître dans "Action sur la valeur du sommaire si" les commandes contenue sous l'objet parent ou l'un de ces enfants qui ont ce type générique. 
+![RésuméInfo](../images/RésuméInfo.png)
+
+Sur le dashbord l'équipement à donc maintenant cette apparence et vous pouvez voir l'icône configuré dans le sommaire du résumé au niveau de la bande supérieure de la tuile de l'équipement puisqu'il s'agit d'une information. 
+![DashbordInfo](../images/DashbordInfo.png)
+
+## Type générique avec actionneur
+Un type générique avec actionneur est un type générique associé à une commande qui ont des commandes d'action relié à celle-ci.
+
+Pour être en mesure d'ouvrir les lumières de ma pièce, j'ajoute donc un sommaire qui regroupe les commande me donnant l'état de mes lumière. Donc je choisis comme type générique "Lumière état", je spécifie les bonnes informations générales et je sauvegarde mes modifications. Normalement, une fois, ceci fait vous devriez voir apparaître dans "Action sur la valeur du sommaire si" les commandes contenue sous l'objet parent ou l'un de ces enfants qui ont ce type générique. 
+![RésuméAction](../images/RésuméAction.png)
+
+Sur le dashbord l'équipement à donc maintenant cette apparence
+![DashbordInfo](../images/DashbordInfo.png)
 
 # FAQ
 Pour toute question ou problème, écrivez-moi au fobsoft@gmail.com 
