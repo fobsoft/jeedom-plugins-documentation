@@ -9,8 +9,7 @@ pluginId: genericTypeManager
 <a href="../../../{{site.baseurl}}/{{page.pluginId}}/{{page.lang}}">Plugin {{page.pluginId}}</a>
 </div>
 
-Présentation
-=
+# Présentation
 > Le plugin est encore jeune et peut encore comporter quelques bugs, mais il évolue régulièrement : n’hésitez pas à me contacter à mon courriel personnel, sois le fobsoft@gmail.com avec toutes vos remarques et suggestions.
 
 Plugins pour gérer vos commandes via leur type générique de manière dynamique. Il se présente de la même manière que les sommaires des objets à la différence que les commandes sont ajouté automatique à l'équipement si celle-ci fait partie de son objet parent ou de l'un de ces enfants. Une fois fait, il vous donnera ces possibilités :
@@ -29,29 +28,26 @@ Voici une partie de l'arborescence de mes objets auxquels je ferez référence l
 
 ![Présentation1](../images/Présentation1.png)
 
-Installation et Configuration du plugins
-=
+# Installation et Configuration du plugins
 Pour l'instant, le plugin ne requière pas d'information générique pour son fonctionnement. Par contre comme vous pouvez le constater deux crons peuvent être activé, elles servent à faire l'ajoute de nouvelle commande à l'équipement. Donc si vous ne prévoyez pas l'ajout de plusieurs équipements, vous pouvez désactiver celle qui roule aux cinq minutes. Une fois le plugin activé, on peut donc passer directement à la création d'un équipement.
 
 ![InstallationConfiguration1](../images/InstallationConfiguration1.png)
 
-Configuration des équipements
-=
-
+# Configuration des équipements
 Les équipements sont accessibles à partir du menu Plugins → Programmation → Generic Type Manager.
 
 Sur cette page vous retrouvez la liste de vos équipements. Cliquez sur un équipement pour accéder à sa configuration ou sur "Ajouter" pour en créer un nouveau:
 
-**Équipement**
+## **Équipement**
 * Nom de l'équipement : nom de votre équipement.
 * Objet parent : indique l’objet parent auquel appartient l’équipement.
 * Activer : permet de rendre l’équipement actif.
 * Visible : permet de rendre l’équipement visible sur le dashboard.
 
-**Mode**
+## **Mode**
 * À venir
 
-**Résumé**
+## **Résumé**
 
 Les résumé, permettent des informations ou actions global déterminé par le type générique configuré. Elle regroupera toutes les commandes possédant ce type générique sous l'onglet parent de l'équipement aissi que les objets enfant de celui-ci.
 
@@ -70,20 +66,16 @@ Lors de l'ajout d'un résumé, il vous sera demandé deux choses, le nom que vou
 	* Commande : liste des commandes qui affecte le résumé
 	* Activer : permet de rendre la commande active, dans le cas contraire elle n'afectera pas le résumé.
 
-Exemple de différent type générique
-=
+# Exemple de différent type générique
 Voici la configuration des équipements qui s'applique à toutes mes pièces internes qui me servent à les contrôler, dans ce cas, la pièce "RC - Pièce commune" qui est une pièce a aire ouverte incluant trois pièces distincte "RC - Sallon, RC - Salle à manger et RC - Cuisine". Ces trois pièces disposent de capteur de mouvements, luminosité et ouverture de porte et d'actionneur de lumières.
 
-* NONE
- 
-  Pour être en mesure de mettre mes pièces en mode "Veille" ou "Absence", je calcule le maximum de deux valeurs que possède chacun des profils de la maison soit (Present ou Proximité). Donc si une seule de ces valeurs binaire est à un, le sommaire sera à 1. Mais comme ces commandes ne sont pas dans l'objet parent de l'équipement ou l'un de ces enfants, j'ai ajouté chacune des commandes manuellement. Éventuellement, j'ajouterais la possibilité de spécifier l'objet parent du résumé et dans ce cas, j'aurais appliqué l'objet "Profil", ainsi, je n'aurais plus l'obligation d'ajouter les commande manuellement, pour l'instant l'objet parent du sommaire est le même que celui de l'équipement courant.
+# NONE
+Pour être en mesure de mettre mes pièces en mode "Veille" ou "Absence", je calcule le maximum de deux valeurs que possède chacun des profils de la maison soit (Present ou Proximité). Donc si une seule de ces valeurs binaire est à un, le sommaire sera à 1. Mais comme ces commandes ne sont pas dans l'objet parent de l'équipement ou l'un de ces enfants, j'ai ajouté chacune des commandes manuellement. Éventuellement, j'ajouterais la possibilité de spécifier l'objet parent du résumé et dans ce cas, j'aurais appliqué l'objet "Profil", ainsi, je n'aurais plus l'obligation d'ajouter les commande manuellement, pour l'instant l'objet parent du sommaire est le même que celui de l'équipement courant.
 
- ![RésuméNone](../images/RésuméNone.png)
+![RésuméNone](../images/RésuméNone.png)
 
-FAQ
-=
+# FAQ
 Pour toute question ou problème, écrivez-moi au fobsoft@gmail.com 
 
-Changelog
-=
+# Changelog
 [Lien vers le changelog](./changelog.md)
