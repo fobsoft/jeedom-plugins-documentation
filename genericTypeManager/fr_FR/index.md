@@ -52,6 +52,7 @@ Sur cette page vous retrouvez la liste de vos équipements. Cliquez sur un équi
 * À venir
 
 **Résumé**
+
 Les résumé, permettent des informations ou actions global déterminé par le type générique configuré. Elle regroupera toutes les commandes possédant ce type générique sous l'onglet parent de l'équipement aissi que les objets enfant de celui-ci.
 
 Lors de l'ajout d'un résumé, il vous sera demandé deux choses, le nom que vous voulez donner au résumé qui doit être unique pour l'équipement et le type générique désiré. Si vous voulez créer un résumé dont les commande ne figure pas dans l'objet parent de l'équipement ou l'un de ces enfants, vous pouvez simplement inscrire "NONE" ainsi le plugin de cherchera pas à associer de manier automatique des commandes à se résumer, se sera à vous de le faire manuellement.
@@ -74,6 +75,7 @@ Exemple de différent type générique
 Voici la configuration des équipements qui s'applique à toutes mes pièces internes qui me servent à les contrôler, dans ce cas, la pièce "RC - Pièce commune" qui est une pièce a aire ouverte incluant trois pièces distincte "RC - Sallon, RC - Salle à manger et RC - Cuisine". Ces trois pièces disposent de capteur de mouvements, luminosité et ouverture de porte et d'actionneur de lumières.
 
  - NONE
+ 
 Pour être en mesure de mettre mes pièces en mode "Veille" ou "Absence", je calcule le maximum de deux valeurs que possède chacun des profils de la maison soit (Present ou Proximité). Donc si une seule de ces valeurs binaire est à un, le sommaire sera à 1. Mais comme ces commandes ne sont pas dans l'objet parent de l'équipement ou l'un de ces enfants, j'ai ajouté chacune des commandes manuellement. Éventuellement, j'ajouterais la possibilité de spécifier l'objet parent du résumé et dans ce cas, j'aurais appliqué l'objet "Profil", ainsi, je n'aurais plus l'obligation d'ajouter les commande manuellement, pour l'instant l'objet parent du sommaire est le même que celui de l'équipement courant.
 
  ![RésuméNone](../images/RésuméNone.png)
