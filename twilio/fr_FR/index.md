@@ -43,9 +43,26 @@ Pour fonctionner le plugin a besoin de certaines informations, donc une fois le 
 
 ![Installation et Configuration - 1](../images/Installation%20et%20Configuration%20-%201.png)
 
-Vous pouvez ensuite ajouter un équipement dans le menu habituel sous "Communication".
-Vous pouvez ensuite sous l'onglet "Commandes" ajouter une commande, donner un nom à celle-ci et un numéro de destination.
-Ensuite il vous suffit d'effectuer un test pour vous assurer le bon fonctionnement.
+# Configuration des équipements
+Les équipements sont accessibles à partir du menu Plugins → Communication → Twilio.
+
+Sur cette page vous retrouvez la liste de vos équipements. Cliquez sur un équipement pour accéder à sa configuration ou sur Ajouter pour en créer un nouveau:
+
+## Equipement
+### Nom de l’agenda : nom de votre agenda.
+### Objet parent : indique l’objet parent auquel appartient l’équipement.
+### Activer : permet de rendre l’équipement actif.
+### Visible : permet de rendre l’équipement visible sur le dashboard.
+## Commandes
+Sous cet onglet, vous pouvez ajouter une commande, donner un nom à celle-ci et un numéro de destination, celle-ci vous permettra à son appel d'envoyer un message à ce destinataire.
+Ensuite, il vous suffit d'effectuer un test pour vous assurer le bon fonctionnement.
+
+![Configuration_équipements1](../images/Configuration_équipements1.png)
+
+# Dashbord
+Et voici un aperçu de l'équipement sur le dashbord
+
+![Dashbord1](../images/Dashbord1.png)
 
 # FAQ
 Pour toute question ou problème, écrivez-moi au fobsoft@gmail.com 
