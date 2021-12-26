@@ -22,7 +22,8 @@ Plugins pour gérer vos commandes via leur type générique de manière dynamiqu
 
 Ainsi en utilisant ce plugins pour gérer une pièce par exemple, il sera possible lors d'une détection de présence de passer au mode présent de l'équipement et d'exécuter l'ouverture des lumières à la condition que la luminosité soit plus petite qu'une valeur prédéterminée.
 
-Voici une partie de l'arborescence de mes objets auxquels je vais faire référence lors de mes exemples.
+Voici une partie de l'arborescence de mes objets auxquels je ferez référence lors de mes exemples.
+
 ![Présentation1](../images/Présentation1.png)
 
 > Le plugin est encore jeune et peut encore comporter quelques bugs, mais il évolue régulièrement : n’hésitez pas à me contacter à mon courriel personnel, sois le fobsoft@gmail.com avec toutes vos remarques et suggestions.
