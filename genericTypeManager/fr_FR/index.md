@@ -42,21 +42,24 @@ Les équipements sont accessibles à partir du menu Plugins → Programmation �
 
 Sur cette page vous retrouvez la liste de vos équipements. Cliquez sur un équipement pour accéder à sa configuration ou sur "Ajouter" pour en créer un nouveau:
 
-  # Equipement
+  * Equipement
+  
     * Nom de l'équipement : nom de votre équipement.
     * Objet parent : indique l’objet parent auquel appartient l’équipement.
     * Activer : permet de rendre l’équipement actif.
     * Visible : permet de rendre l’équipement visible sur le dashboard.
 
-  # Mode
+  * Mode
+  
     * À venir
 
-  # Résumé
+  * Résumé
   Les résumé, permettent des informations ou actions global déterminé par le type générique configuré. Elle regroupera toutes les commandes possédant ce type générique sous l'onglet parent de l'équipement aissi que les objects enfant de celui-ci.
 
   Lors de l'ajout d'un résumé, il vous sera demandé deux choses, le nom que vous voulez donner au résumé qui doit être unique pour l'équipement et le type générique désiré. Si vous voulez créer un résumé dont les commande ne figure pas dans l'objet parent de l'équipement ou l'un de ces enfants, vous pouvez simplement inscrire "NONE" ainsi le plugin de cherchera pas à associer de manier automatique des commandes à se résumer, se sera à vous de le faire manuellement.
 
     * Général
+    
       * Nom : nom du résumé
       * Icon : icon qui sera utilisé pour l'affichage du résumé sur le dashbord
       * Type générique : le type gjnérique des commande qui doivent être inclut au résumé
@@ -68,6 +71,7 @@ Sur cette page vous retrouvez la liste de vos équipements. Cliquez sur un équi
       * Méthode de comptage : Méthode de comptage, si ninaire est sélétionné, le résumé ajit comme un interrupteur (on , off)
 
     * Action sur la valeur du sommaire si
+    
       * Commande : liste des commandes qui affecte le résumé
       * Activer : permet de rendre la commande active, dans le cas contraire elle n'afectera pas le résumé.
 
