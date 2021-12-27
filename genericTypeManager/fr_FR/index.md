@@ -44,9 +44,6 @@ Sur cette page vous retrouvez la liste de vos équipements. Cliquez sur un équi
 * Activer : permet de rendre l’équipement actif.
 * Visible : permet de rendre l’équipement visible sur le dashboard.
 
-## Mode
-* À venir
-
 ## Résumé
 
 Les résumé, permettent des informations ou actions global déterminé par le type générique configuré. Elle regroupera toutes les commandes possédant ce type générique sous l'onglet parent de l'équipement aissi que les objets enfant de celui-ci.
@@ -65,6 +62,12 @@ Lors de l'ajout d'un résumé, il vous sera demandé deux choses, le nom que vou
 * Action sur la valeur du sommaire si
 	* Commande : liste des commandes qui affecte le résumé
 	* Activer : permet de rendre la commande active, dans le cas contraire elle n'afectera pas le résumé.
+
+## Mode
+Les modes sont des consignes prédéterminées à exécuter à l'exécution de celui-ci. Par exemple, dans l’image ci-dessous, le mode "Présent" qui lors de son exécution exécute la consigne d'activer le type générique relier à l'ouverture des lumières et de changer le mode de notre thermostat, il déterminerais en fait le comportement que l'équipement doit avoir lorsque je suis présent dans la pièce. Ici, rien n’est figé. Ont peut définir autant de modes que je le souhaitez pour les utiliser via des scénarios par exemple.
+Vous pouvez, pour une meilleur visualisation, configurer un icone à celui-ci.
+
+![Mode1](../images/Mode1.png)
 
 # Exemple de différent type générique
 Voici la configuration des équipements qui s'applique à toutes mes pièces internes qui me servent à les contrôler, dans ce cas, la pièce "RC - Pièce commune" qui est une pièce a aire ouverte incluant trois pièces distincte "RC - Sallon, RC - Salle à manger et RC - Cuisine". Ces trois pièces disposent de capteur de mouvements, luminosité et ouverture de porte et d'actionneur de lumières.

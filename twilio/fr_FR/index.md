@@ -18,6 +18,8 @@ Lorsque vous êtes prêt à déployer des canaux additionnels, utilisez la même
 
 > Le plugin est encore jeune et peut encore comporter quelques bugs mais il évolue régulièrement : n’hésitez pas à me contacter à mon courriel personnel, sois le fobsoft@gmail.com avec toutes vos remarques et suggestions. Pour l'instant il n'est possible que d'envoyer des sms, mais selon les demandes futur j'ajouterais des fonctionnalitées au plugin.
 
+> Attention, les frais chargé par Twilio peuvent varier d'une région à un autre.
+
 # Installation et Configuration
 
 ## Configuration de votre compte twilio pour envoyer des sms

@@ -14,3 +14,6 @@ Changelog
 - Création du plugin
 - Ajout de la mise en forme automatique de la tuile
 - Ajout de la documentation / changelog au format Jeedom
+
+2021-12-27
+- Supression de préfix lors de la sauvegarde d'une commande d'un équipement
