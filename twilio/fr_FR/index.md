@@ -40,6 +40,9 @@ Lorsque vous êtes prêt à déployer des canaux additionnels, utilisez la même
 * Une fois fais, dirigez-vous ici pour connaître les informations dont vous aurez besoin pour la configuration du plugins. 
 ![Installation et Configuration tier - 5](../images/Installation%20et%20Configuration%20tier%20-%205.png)
 
+* Si vous avec des problèmes de permission pour faire l'envoi de message dirigez-vous ici pour ajouter des permission à votre service
+![Installation et Configuration tier - 6](../images/Installation%20et%20Configuration%20tier%20-%206.png)
+
 ## Configuration du plugins 
 Pour fonctionner le plugin a besoin de certaines informations, donc une fois le plugin installé, vous devez aller dans la page "Configuration" du plugin et renseigner votre identifiant (SID) votre token ainsi que le numéro de l'expéditeur. 
 
@@ -58,7 +61,7 @@ Sur cette page vous retrouvez la liste de vos équipements. Cliquez sur un équi
 *  Visible : permet de rendre l’équipement visible sur le dashboard.
 
 ## Commandes
-Sous cet onglet, vous pouvez ajouter une commande, donner un nom à celle-ci et un numéro de destination, celle-ci vous permettra à son appel d'envoyer un message à ce destinataire.
+Sous cet onglet, vous pouvez ajouter une commande, donner un nom à celle-ci et un numéro de destination comme par exemple (+33123456789), celle-ci vous permettra à son appel d'envoyer un message à ce destinataire.
 Ensuite, il vous suffit d'effectuer un test pour vous assurer le bon fonctionnement.
 
 ![Configuration_équipements1](../images/Configuration_équipements1.png)
