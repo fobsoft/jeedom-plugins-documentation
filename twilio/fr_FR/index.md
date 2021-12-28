@@ -40,7 +40,7 @@ Lorsque vous êtes prêt à déployer des canaux additionnels, utilisez la même
 * Une fois fais, dirigez-vous ici pour connaître les informations dont vous aurez besoin pour la configuration du plugins. 
 ![Installation et Configuration tier - 5](../images/Installation%20et%20Configuration%20tier%20-%205.png)
 
-* Si vous avec des problèmes de permission pour faire l'envoi de message dirigez-vous ici pour ajouter des permission à votre service
+* Si vous avec des problèmes de permission pour faire l'envoi de message dirigez-vous ici pour ajouter des permissions à votre service
 ![Installation et Configuration tier - 6](../images/Installation%20et%20Configuration%20tier%20-%206.png)
 
 ## Configuration du plugins 
