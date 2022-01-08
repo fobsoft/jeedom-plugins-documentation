@@ -75,6 +75,17 @@ Vous pouvez, pour une meilleure visualisation, configurer une icône à celui-ci
 
 ![Mode1](../images/Mode1.png)
 
+## Variable
+Les variables, permettent de sauvegarder des valeurs qui pourront être utilisé ou modifié par la suite dans un scénario ou un mode. Par exemple, dans l'exemple illustré, j'utilise "Light Default Power" pour configurer la puissance de smes lumiere lors de leur ouverture et celle-ci est modifier selon la période de la journée.
+
+![Variable1](../images/Variable1.png)
+
+Une fois configurées, elles peuvent être visualisées sur le dashbord en cliquant sur le "I" en haut à droite de l'icône.
+
+![Variable2](../images/Variable2.png)
+
+
+
 # Exemple
 
 ## Exemple de différent type générique

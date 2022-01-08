@@ -19,9 +19,42 @@ Ce plugin permet, via l’API que twilio met à disposition, d'envoyez des SMS �
 
 [<img width="77" src="https://market.jeedom.com/filestore/market/plugin/images/genericTypeManager_icon.png">]({{site.baseurl}}/genericTypeManager/{{page.lang}})
 
-Ce plugin permet, via l’API que twilio met à disposition, d'envoyez des SMS à vos expéditeurs, où qu'ils se trouvent, grâce à des expéditeurs mondiaux et à une infrastructure de télécommunications redondante..
+Plugin pour gérer vos commandes via leur type générique de manière dynamique.
 
 **Liens :**
 - [Documentation]({{site.baseurl}}/genericTypeManager/{{page.lang}})
 - [Changelog]({{site.baseurl}}/genericTypeManager/{{page.lang}}/changelog)
 - <a href="https://market.jeedom.com/?v=d&plugin_id=4235" target="_blank">Market</a>
+
+# Scenario Advence
+
+[<img width="77" src="https://market.jeedom.com/filestore/market/plugin/images/scenarioAdvence_icon.png">]({{site.baseurl}}/scenarioAdvence/{{page.lang}})
+
+Plugin qui donnent des options supplémentaires nous permettant d'interagir selon les types générique des commandes.
+
+**Liens :**
+- [Documentation]({{site.baseurl}}/scenarioAdvence/{{page.lang}})
+- [Changelog]({{site.baseurl}}/scenarioAdvence/{{page.lang}}/changelog)
+- <a href="https://market.jeedom.com/?v=d&plugin_id=4241" target="_blank">Market</a>
+
+# Energy Meter
+
+[<img width="77" src="https://market.jeedom.com/filestore/market/plugin/images/energyMeter_icon.png">]({{site.baseurl}}/energyMeter/{{page.lang}})
+
+Plugin permettant d'intégrer les compteur d'énergie de circuitsetup
+
+**Liens :**
+- [Documentation]({{site.baseurl}}/energyMeter/{{page.lang}})
+- [Changelog]({{site.baseurl}}/energyMeter/{{page.lang}}/changelog)
+- <a href="https://market.jeedom.com/?v=d&plugin_id=4242" target="_blank">Market</a>
+
+# Hydro Québec
+
+[<img width="77" src="https://market.jeedom.com/filestore/market/plugin/images/hydroQuebec_icon.png">]({{site.baseurl}}/hydroQuebec/{{page.lang}})
+
+Plugin permettant de récupérer les information de consommation électrique
+
+**Liens :**
+- [Documentation]({{site.baseurl}}/hydroQuebec/{{page.lang}})
+- [Changelog]({{site.baseurl}}/hydroQuebec/{{page.lang}}/changelog)
+- <a href="https://market.jeedom.com/?v=d&plugin_id=4243" target="_blank">Market</a>
