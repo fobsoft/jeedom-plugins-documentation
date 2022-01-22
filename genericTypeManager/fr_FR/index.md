@@ -34,6 +34,7 @@ Dans la section, "Configuration" se trouve quelques options pour configurer l'af
 Dans la section "Fonctionnalités", vous pouvez constater deux crons, elles servent à faire l'ajout de nouvelles commande à l'équipement de manière dynamique. Donc si vous ne prévoyez pas l'ajout de plusieurs équipements, vous pouvez désactiver celle qui roule aux cinq minutes. 
 
 Une fois le plugin activé, on peut donc passer directement à la création d'un équipement.
+
 ![InstallationConfiguration1](../images/InstallationConfiguration1.png)
 
 # Configuration des équipements
@@ -79,6 +80,7 @@ Lors de l'ajout d'un résumé, il vous sera demandé deux choses, le nom que vou
 
 > Pour des exemples d'application de différents types générique, voir "Exemple de différents types générique".
 > Comme mon installation domotique évolue et que ce plugin va disposer prochainement d'une option pour le dupliquer ainsi qu'une option pour appliquer sa configuration sur un autre équipement, j'ajoute à l'équipement tous les résumés dont je pense avoir besoin dans l'une ou l'autre de mes pièces ce qui me donne ceci au final.
+
 ![Resume1](../images/Resume1.png)
 ![Resume2](../images/Resume2.png)
 
@@ -99,9 +101,11 @@ Pour chaque action :
 
 ## Variable
 Les variables, permettent de sauvegarder des valeurs qui pourront être utilisées dans un mode par exemple ou modifiées par un scénario. Par exemple, dans l'exemple illustré, j'utilise "Max lux for light" pour configurer la luminausité maximal pour l'ouverture des lumières.
+
 ![Variable1](../images/Variable1.png)
 
 Une fois configurées, elles peuvent être visualisées sur le dashbord en cliquant sur le "I" en haut à droite de la tuile.
+
 ![Variable2](../images/Variable2.png)
 
 ## Tâche
@@ -115,7 +119,7 @@ Les tâches, permettent d'ajouter à votre équipement des consignes prédéfini
   * Activer : permet de rendre l'action active, dans le cas contraire, elle ne sera pas exécuté.
   * Exécution: permet de spécifier que l'action s'exécute en parallèle
   
-![Task1](../images/Tas1.png)
+![Task1](../images/Task1.png)
 
 # Exemple
 
@@ -124,28 +128,34 @@ Voici la configuration des équipements qui s'applique à toutes mes pièces int
 
 ## NONE
 Pour être en mesure de mettre mes pièces en mode "Veille" ou "Absence", je calcule le maximum de deux valeurs que possède chacun des profils de la maison soit (Present ou Proximité). Donc si une seule de ces valeurs binaire est à un, le résultat du résumé sera à 1. Mais comme ces commandes ne sont pas dans l'objet parent de l'équipement ou l'un de ces enfants, j'ai ajouté chacune des commandes manuellement. 
+
 ![RésuméNone](../images/RésuméNone.png)
 
 Sur le dashbord l'équipement a donc cette apparence et vous pouvez voir l'icône configurée dans le résumé au niveau de la bande supérieure de la tuile de l'équipement puisqu'il s'agit d'une information sans possibilitée d'action. 
+
 ![DashbordNone](../images/DashbordNone.png)
 
 ## Type générique sans actionneur
 Un type générique sans actionneur est un type générique associé à des commandes qui n'ont aucune commande d'action relié à celle-ci.
 
 Pour être en mesure de mettre mes pièces en mode "Présent", j'ajoute un résumé qui regroupe mes capteurs de présence. Donc je choisis comme type générique "Présence", je spécifie les bonnes informations générales et je sauvegarde mes modifications. Normalement, une fois, ceci fait vous devriez voir apparaître dans "Action sur la valeur du résumé si" les commandes contenue sous l'objet parent ou l'un de ces enfants qui ont ce type générique. 
+
 ![RésuméInfo](../images/RésuméInfo.png)
 
 Sur le dashbord l'équipement à donc maintenant cette apparence et vous pouvez voir l'icône configurée dans le résumé au niveau de la bande supérieure de la tuile de l'équipement puisqu'il s'agit d'une information. 
+
 ![DashbordInfo](../images/DashbordInfo.png)
 
 ## Type générique avec actionneur
 Un type générique avec actionneur est un type générique associé à des commandes qui ont des commandes d'action relié à celle-ci.
 
 Pour être en mesure d'ouvrir les lumières de ma pièce, j'ajoute donc un résumé qui regroupe les commande me donnant l'état de mes lumière. Donc je choisis comme type générique "Lumière état", je spécifie les bonnes informations générales et je sauvegarde mes modifications. Normalement, une fois, ceci fait vous devriez voir apparaître dans "Action sur la valeur du résumé si" les commandes contenue sous l'objet parent ou l'un de ces enfants qui ont ce type générique. 
+
 ![RésuméAction](../images/RésuméAction.png)
 
 Sur le dashbord l'équipement a donc maintenant cette apparence et vous pouvez voir l'icône configurée dans le résumé au niveau de la bande inférieur de la tuile de l'équipement puisqu'il s'agit d'une action.
 De plus vous disposer dans l'équipement d'une commande pour configurer la valeur par défaut lors de l'activation de l'équipement
+
 ![DashbordAction1](../images/DashbordAction1.png)
 
 # FAQ
