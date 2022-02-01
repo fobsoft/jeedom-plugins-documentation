@@ -11,4 +11,7 @@ pluginId: hydroQuebec
 
 Changelog
 ===
-- Création du plugin
+# Beta
+## 2022/02/01
+- Recherche et affichage des informations
+- Création des crons en fonction des événements
