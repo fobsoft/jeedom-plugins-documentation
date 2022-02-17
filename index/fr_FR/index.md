@@ -58,3 +58,58 @@ Plugin permettant de récupérer les information de consommation électrique
 - [Documentation]({{site.baseurl}}/hydroQuebec/{{page.lang}})
 - [Changelog]({{site.baseurl}}/hydroQuebec/{{page.lang}}/changelog)
 - <a href="https://market.jeedom.com/?v=d&plugin_id=4243" target="_blank">Market</a>
+
+# EnvisaLink
+
+[<img width="77" src="https://market.jeedom.com/filestore/market/plugin/images/envisalink_icon.png">]({{site.baseurl}}/envisaLink/{{page.lang}})
+
+A venir
+
+**Liens :**
+- [Documentation]({{site.baseurl}}/envisaLink/{{page.lang}})
+- [Changelog]({{site.baseurl}}/envisaLink/{{page.lang}}/changelog)
+- <a href="https://market.jeedom.com/?v=d&plugin_id=4271" target="_blank">Market</a>
+
+# Geotrack
+
+[<img width="77" src="https://market.jeedom.com/filestore/market/plugin/images/geotrack_icon.png">]({{site.baseurl}}/geotrack/{{page.lang}})
+
+A venir
+
+**Liens :**
+- [Documentation]({{site.baseurl}}/geotrack/{{page.lang}})
+- [Changelog]({{site.baseurl}}/geotrack/{{page.lang}}/changelog)
+- <a href="https://market.jeedom.com/?v=d&plugin_id=4272" target="_blank">Market</a>
+
+# Charge Point
+
+[<img width="77" src="https://market.jeedom.com/filestore/market/plugin/images/chargePoint_icon.png">]({{site.baseurl}}/chargePoint/{{page.lang}})
+
+A venir
+
+**Liens :**
+- [Documentation]({{site.baseurl}}/chargePoint/{{page.lang}})
+- [Changelog]({{site.baseurl}}/chargePoint/{{page.lang}}/changelog)
+- <a href="https://market.jeedom.com/?v=d&plugin_id=4274" target="_blank">Market</a>
+
+# Circuit Setup
+
+[<img width="77" src="https://market.jeedom.com/filestore/market/plugin/images/circuitSetup_icon.png">]({{site.baseurl}}/circuitSetup/{{page.lang}})
+
+A venir
+
+**Liens :**
+- [Documentation]({{site.baseurl}}/circuitSetup/{{page.lang}})
+- [Changelog]({{site.baseurl}}/circuitSetup/{{page.lang}}/changelog)
+- <a href="https://market.jeedom.com/?v=d&plugin_id=4270" target="_blank">Market</a>
+
+# CVC
+
+[<img width="77" src="https://market.jeedom.com/filestore/market/plugin/images/cvc_icon.png">]({{site.baseurl}}/cvc/{{page.lang}})
+
+A venir
+
+**Liens :**
+- [Documentation]({{site.baseurl}}/cvc/{{page.lang}})
+- [Changelog]({{site.baseurl}}/cvc/{{page.lang}}/changelog)
+- <a href="https://market.jeedom.com/?v=d&plugin_id=4273" target="_blank">Market</a>

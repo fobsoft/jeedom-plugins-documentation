@@ -15,6 +15,9 @@ pluginId: genericTypeManager
 - Première phase, permettre la configuration de base des types génériques
 
 # Beta
+## 2022/02/17
+- Modification de l'affichage des logs
+- Modification des règles de comparaison
 ## 2022/01/10
 - Ajouter des modes à l'équipement avec des actions à exécuter
 - Ajouter des actions aux changements d'une commande d'information.
