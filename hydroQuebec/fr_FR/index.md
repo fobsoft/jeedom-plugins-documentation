@@ -48,7 +48,7 @@ Les modes sont des consignes prédéterminées qui seront exécutées lors d'un 
 Affiche la liste des commandes créés.
 
 # FAQ
-Pour toute question ou problème, écrivez-moi au fobsoft@gmail.com 
+Pour toute question, suggestion ou problème, écrivez-moi au fobsoft@gmail.com 
 
 # Changelog
 [Lien vers le changelog](./changelog.md)

@@ -159,7 +159,7 @@ De plus vous disposer dans l'équipement d'une commande pour configurer la valeu
 ![DashbordAction1](../images/DashbordAction1.png)
 
 # FAQ
-Pour toute question ou problème, écrivez-moi au fobsoft@gmail.com 
+Pour toute question, suggestion ou problème, écrivez-moi au fobsoft@gmail.com 
 
 # Changelog
 [Lien vers le changelog](./changelog.md)

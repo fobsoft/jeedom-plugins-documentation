@@ -57,71 +57,78 @@ Sur cette page vous retrouvez la liste de vos équipements. Cliquez sur un équi
 Le plugin va créer un total de consommation pour chaque équipement, donc par exemple, je calcule la consommation du circuit qui alimente le panneau génératrice, dans celui-ci, je calcule par déduction la consommation des lumières qu'ils alimentent puisque c'est la domotique qui les contrôles. J'arrive donc à connaître par déduction la consommation des autres circuits du panneau génératrice.
 
 ## Équipement
-  ## Onglet équipement
-  * Paramètres généraux
-    * Nom de l'équipement : nom de votre équipement.
-    * Objet parent : indique l’objet parent auquel appartient l’équipement.
-    * Équipement parent : indique que le total de consommation de l'équipement en cour fait parti de la consommation de l'équipement spécifié 
-    * Catégorie : indique la ou les catégories auxquelles l’équipement fait référence.
-    * Activer : permet de rendre l’équipement actif.
-    * Visible : permet de rendre l’équipement visible sur le dashboard. (pas présent pour le moment, j'attend vos suggestion de rendu pour le widgets)
-    * Type : permet de spécifier le type de consommation, pour l'instant il n'y a qu'un type, mais je suis ouvert si quelqu'un à d'autres besoin.
+  * Onglet équipement
+    * Paramètres généraux
+      * Nom de l'équipement : nom de votre équipement.
+      * Objet parent : indique l’objet parent auquel appartient l’équipement.
+      * Équipement parent : indique que le total de consommation de l'équipement en cour fait parti de la consommation de l'équipement spécifié 
+      * Catégorie : indique la ou les catégories auxquelles l’équipement fait référence.
+      * Activer : permet de rendre l’équipement actif.
+      * Visible : permet de rendre l’équipement visible sur le dashboard. (pas présent pour le moment, j'attend vos suggestion de rendu pour le widgets)
+      * Type : permet de spécifier le type de consommation, pour l'instant il n'y a qu'un type, mais je suis ouvert si quelqu'un à d'autres besoin.
 
-  ![Equipement2](../images/Equipement2.png)
+    ![Equipement2](../images/Equipement2.png)
 
-  ## Onglet commandes
-  * Nom : renseignez le nom de votre compteur.
-  * Catégorie : la catégorie à laquelle cette consommation sera associée
-    * Équipement : différentes catégories d'équipement
-    * Générique :
-      * Référence : affichée à titre d'information, elle apparaît comme une courbe et n'influence pas les calcules.
-      * Total à imputer : cette valeur sera imputée des consommations calculées des équipements liés à celle-ci via "Équipement parent" 
-  * Différence minimum : lors de la création de l'historique, c'est le minimum requis pour une nouvelle entré dans celle-ci. Cela nous sert de purge pour ne pas avoir trop de données inutilement sans pour autant perdre les données originales.
-  * Maximum entre deux lectures : dans le cas où le maximum serait atteint le plugin en conclura que la consommation est à 0 après ce temps.
-  * Type de compteur : détermine la méthode de calcul.
-    * Compteur physique simple
-      * Consommation : commande qui nous renseigne la consommation en Kwh ou en wh
-      * Formule de calcul : si on veut appliquer une variation à la valeur
-    * Compteur physique double (dans le cas où nous aurions deux lectures de consommation, ces deux lectures seront additionnées.)
-      * Consommation : commande qui nous renseigne la première consommation en Kwh ou en wh
-      * Consommation 2 : commande qui nous renseigne la deuxième consommation en Kwh ou en wh
-      * Formule de calcul : si on veut appliquer une variation à la valeur
-    * Compteur virtuel (Dans le cas où nous contrôlons l'alimentation de l'équipement sans en connaître sa consommation. On doit connaître l'une des trois valeurs pour calculer la consommation, soit la tension, l'intensité ou les volts. La troisième sera calculée automatiquement.)
-      * Tension (Volt): Commande qui nous renseigne cette valeur
-      * Intensité (Amp): Commande qui nous renseigne cette valeur
-      * Puissance (Watt): Commande qui nous renseigne cette valeur
-      * Qty : nombre d'équipement alimenté (utile par exemple, si un interrupteur alimente plusieurs lumières)
-      * État de la commande : Commande qui nous renseigne sur l'état de l'alimentation
-    * Consommation virtuel (Dans le cas où nous contrôlons l'alimentation d'un équipement et que l'on connaît sa consommation et que celle-ci est toujours la même)
-      * Consommation : commande qui nous renseigne la consommation en Kwh ou en wh
-      * État de la commande : Commande qui nous renseigne sur l'état de l'alimentation
-  * Un bouton pour supprimer le compteur
-  * Un bouton pour recréer l'historique
-  * Et en bas à droite la dernière période prit en compte par le calcul de l'historique, si vous venez de créer l'équipement ou de faire la demande de recréer l'historique, il est normal que celle-ci ne soit pas à jour. À chaque 5 minute le plugin devrai gérer une nouvelle période d'historique.
+  * Onglet commandes
+    * Nom : renseignez le nom de votre compteur.
+    * Catégorie : la catégorie à laquelle cette consommation sera associée
+      * Équipement : différentes catégories d'équipement
+      * Générique :
+        * Référence : affichée à titre d'information, elle apparaît comme une courbe et n'influence pas les calcules.
+        * Total à imputer : cette valeur sera imputée des consommations calculées des équipements liés à celle-ci via "Équipement parent" 
+    * Différence minimum : lors de la création de l'historique, c'est le minimum requis pour une nouvelle entré dans celle-ci. Cela nous sert de purge pour ne pas avoir trop de données inutilement sans pour autant perdre les données originales.
+    * Maximum entre deux lectures : dans le cas où le maximum serait atteint le plugin en conclura que la consommation est à 0 après ce temps.
+    * Type de compteur : détermine la méthode de calcul.
+      * Compteur physique simple
+        * Consommation : commande qui nous renseigne la consommation en Kwh ou en wh
+        * Formule de calcul : si on veut appliquer une variation à la valeur
+      * Compteur physique double (dans le cas où nous aurions deux lectures de consommation, ces deux lectures seront additionnées.)
+        * Consommation : commande qui nous renseigne la première consommation en Kwh ou en wh
+        * Consommation 2 : commande qui nous renseigne la deuxième consommation en Kwh ou en wh
+        * Formule de calcul : si on veut appliquer une variation à la valeur
+      * Compteur virtuel (Dans le cas où nous contrôlons l'alimentation de l'équipement sans en connaître sa consommation. On doit connaître l'une des trois valeurs pour calculer la consommation, soit la tension, l'intensité ou les volts. La troisième sera calculée automatiquement.)
+        * Tension (Volt): Commande qui nous renseigne cette valeur
+        * Intensité (Amp): Commande qui nous renseigne cette valeur
+        * Puissance (Watt): Commande qui nous renseigne cette valeur
+        * Qty : nombre d'équipement alimenté (utile par exemple, si un interrupteur alimente plusieurs lumières)
+        * État de la commande : Commande qui nous renseigne sur l'état de l'alimentation
+      * Consommation virtuel (Dans le cas où nous contrôlons l'alimentation d'un équipement et que l'on connaît sa consommation et que celle-ci est toujours la même)
+        * Consommation : commande qui nous renseigne la consommation en Kwh ou en wh
+        * État de la commande : Commande qui nous renseigne sur l'état de l'alimentation
+    * Un bouton pour supprimer le compteur
+    * Un bouton pour recréer l'historique
+    * Et en bas à droite la dernière période prit en compte par le calcul de l'historique, si vous venez de créer l'équipement ou de faire la demande de recréer l'historique, il est normal que celle-ci ne soit pas à jour. À chaque 5 minute le plugin devrai gérer une nouvelle période d'historique.
       
 ## Exemple
-Voici l'architecture parent enfant créé à partir du champ "Équipement parent" sous l'onglet "Paramètres généraux" 
-![Exec1](../images/Exec1.png)
+  * Voici l'architecture parent enfant créé à partir du champ "Équipement parent" sous l'onglet "Paramètres généraux" 
 
-Voici ma configuration pour mon équipement qui me rapporte ma consommation électrique calculée par mon fournisseur qui me sert de référence et donc qui n'est pas pris en compte dans les calculs.
-![Exec2](../images/Exec2.png)
-![Exec3](../images/Exec3.png)
+  ![Exec1](../images/Exec1.png)
 
-Voici ma configuration pour l'arborescence d'un des panneaux
+  * Voici ma configuration pour mon équipement qui me rapporte ma consommation électrique calculée par mon fournisseur qui me sert de référence et donc qui n'est pas pris en compte dans les calculs, j'ai mit en évidence la ligne noir qui sert de référence.
 
-![Exec4](../images/Exec4.png)
-![Exec5](../images/Exec5.png)
-![Exec6](../images/Exec6.png)
+  ![Exec2](../images/Exec2.png)
+  ![Exec3](../images/Exec3.png)
 
-Vous remarquerez que dans le graphique, il n'est pas fait mention du "Panneau Génératrice" mais bien du "Sous-total Panneau Génératrice" puisque l'on a soustrait la consommation de "Bureau 15 07B"
-![Exec7](../images/Exec7.png)
+  * Voici ma configuration pour l'arborescence d'un des panneaux
 
-Vous remaarquerez que si vous afficher un équippement qui contient des enfants, une ligne noir dans le graphique représente la lecture total de l'équipement en plus du sous-totaux restant de celui-ci
-![Exec8](../images/Exec8.png)
+  Panneau 1
+  ![Exec4](../images/Exec4.png)
+  Panneau Génératrice
+  ![Exec5](../images/Exec5.png)
+  ![Exec6](../images/Exec6.png)
+  
+  Vous remarquerez que dans le graphique, il n'est pas fait mention du "Panneau Génératrice" mais bien du "Sous-total Panneau Génératrice" puisque l'on a soustrait la consommation de "Bureau 15 07B"
+  ![Exec7](../images/Exec7.png)
 
+  Vous remarquerez que si vous afficher un équippement qui contient des enfants, comme dans notre cas présent le "Panneau 1", une ligne noir dans le graphique représente la lecture total de l'équipement comme référence en plus du sous-totaux restant de celui-ci
+  ![Exec8](../images/Exec8.png)
 
+  
+# FAQ
+Pour toute question, suggestion ou problème, écrivez-moi au fobsoft@gmail.com 
 
-
+# Changelog
+[Lien vers le changelog](./changelog.md)
 
   
   
