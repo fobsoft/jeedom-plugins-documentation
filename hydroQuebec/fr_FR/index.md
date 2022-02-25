@@ -6,11 +6,13 @@ pluginId: hydroQuebec
 ---
 
 <div id="title">
-<a href="../../../{{site.baseurl}}/{{page.pluginId}}/{{page.lang}}">Plugin {{page.pluginId}}</a>
+<a href="../../../{{site.baseurl}}/{{page.pluginId}}/{{page.lang}}">{{page.title}}</a>
 </div>
 
+> Le plugin est encore jeune et peut encore comporter quelques bugs, mais il évolue régulièrement : n’hésitez pas à me contacter à mon courriel personnel, sois le fobsoft@gmail.com avec toutes vos remarques et suggestions.
+
 # Présentation
-> Plugin permettant de récupérer les informations de consommation électrique d'Hydro-Québec (wwww.hydroquebec.com), et de créer des crons en fonction des événements
+Plugin permettant de récupérer les informations de consommation électrique et des événements d'Hydro-Québec (wwww.hydroquebec.com), et de créer des crons en fonction des événements
 
 # Installation et Configuration du plugins
 Dans la section, "Configuration" se trouve quelques options pour configurer l'affichage des logs du plugin.

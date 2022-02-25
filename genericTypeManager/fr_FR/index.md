@@ -6,12 +6,12 @@ pluginId: genericTypeManager
 ---
 
 <div id="title">
-<a href="../../../{{site.baseurl}}/{{page.pluginId}}/{{page.lang}}">Plugin {{page.pluginId}}</a>
+<a href="../../../{{site.baseurl}}/{{page.pluginId}}/{{page.lang}}">{{page.title}}</a>
 </div>
 
-# Présentation
 > Le plugin est encore jeune et peut encore comporter quelques bugs, mais il évolue régulièrement : n’hésitez pas à me contacter à mon courriel personnel, sois le fobsoft@gmail.com avec toutes vos remarques et suggestions.
 
+# Présentation
 Plugins pour gérer vos commandes via leur type générique de manière dynamique. Il se présente de la même manière que les résumés des objets à la différence que les commandes ayant le type générique prédéfini sont ajouté automatiquement au résumé créé dans l'équipement si celle-ci fait partie de l'objet parent de l'équipement ou de l'un de ces enfants. Une fois fait, il vous donnera ces informations et possibilités :
 * Une commande d'information pour chaque résumé qui regroupe toutes les commandes ayant le type générique prédéfini dans le résumé.
 * Des commandes d'actions pour chaque résumé qui regroupe toutes les commandes ayant le type générique prédéfini dans le résumé, par exemple, si l'équipement se trouve au plus bas niveau des objets, une seule commande nous permettrait d'allumer toutes les lumières de la maison.
