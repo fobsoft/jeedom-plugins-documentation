@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Documentation #template_name#
+title: Documentation CVC
 lang: fr_FR
-pluginId: #template_id#
+pluginId: cvc
 ---
 
 <div id="title">
