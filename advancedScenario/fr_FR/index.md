@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Documentation Scenario Advence
+title: Documentation Advanced Scenario
 lang: fr_FR
 pluginId: scenarioAdvence
 ---
