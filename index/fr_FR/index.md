@@ -26,7 +26,7 @@ Plugin pour gérer vos commandes via leur type générique de manière dynamique
 - [Changelog]({{site.baseurl}}/genericTypeManager/{{page.lang}}/changelog)
 - <a href="https://market.jeedom.com/?v=d&plugin_id=4235" target="_blank">Market</a>
 
-# Scenario Advence
+# Advanced Scenario
 
 [<img width="77" src="https://market.jeedom.com/filestore/market/plugin/images/scenarioAdvence_icon.png">]({{site.baseurl}}/scenarioAdvence/{{page.lang}})
 
