@@ -79,7 +79,8 @@ Lors de l'ajout d'un résumé, il vous sera demandé deux choses, le nom que vou
 
 
 > Pour des exemples d'application de différents types générique, voir "Exemple de différents types générique".
-> Comme mon installation domotique évolue et que ce plugin va disposer prochainement d'une option pour le dupliquer ainsi qu'une option pour appliquer sa configuration sur un autre équipement, j'ajoute à l'équipement tous les résumés dont je pense avoir besoin dans l'une ou l'autre de mes pièces ce qui me donne ceci au final.
+> Comme mon installation domotique évolue et que ce plugin dispose d'une option pour le dupliquer ainsi qu'une option pour appliquer sa configuration sur un autre équipement, j'ajoute à l'équipement tous les résumés dont je pense avoir besoin dans l'une ou l'autre de mes pièces ce qui me donne ceci au final.
+> Petite astuce, si un sommaire dispose de plusieurs déclencheurs et que vous voulez que les actions à effectuer lors de déclenchements ou de dé-enclenchements soient exécutées à chaque fois que l'un d'eux est enclenché, configurer le calcul pour que le système effectue une somme et qu'il y ait aucune méthode de comptage. Ainsi, chaque fois que le total changera, les actions vont se réeffectuer. Dans le cas contraire, configurer le calcul pour que le système effectue un maximum avec une méthode de comptage binaire.
 
 ![Resume1](../images/Resume1.png)
 ![Resume2](../images/Resume2.png)
