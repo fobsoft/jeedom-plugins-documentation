@@ -15,6 +15,10 @@ pluginId: genericTypeManager
 - Première phase, permettre la configuration de base des types génériques
 
 # Beta
+## 2022/03/01
+- Un listener déclenché est disabler 5 sec, pour éviter le re-declanchement pour une meme valeur
+- Sécurité ajouté lorsque l'on tente une ouverture d'un type générique et que le slider est à 0, cette action est annulé
+- Sécurité ajouter lorsque la première commande d'un mode est un sleep et que celui-ci est a 0, l'exécution du mode est annulé
 ## 2022/02/17
 - Modification de l'affichage des logs
 - Modification des règles de comparaison
