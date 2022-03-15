@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Changelog Scenario Advence
+title: Changelog Advanced Scenario
 lang: fr_FR
-pluginId: scenarioAdvence
+pluginId: advancedScenario
 ---
 
 <div id="title">
