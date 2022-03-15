@@ -51,8 +51,11 @@ Dans cette oonglet vous disposer des meme information que dans un scenario norma
 ![Config2](../images/Config2.png)
 
 ## Flow
+* Partie Droite
+  Vous disposez à droite de l'écran des actions habituel d'un scénario, il suffit d'un "drag and drop" vers la droite pour en ajouter. Je ne documenterais pas le fonctionnement de chacune de ces actions, puisqu'il y a déjà une documentation dédiée à ceci.
+  Les déclencheurs du scénario se trouvent dans la première boite nommée "Déclencheur".
 
-Vous disposez à droite de l'écran des actions habituel d'un scénaario, il suffit d'un "drag and drop" vers la droite pour en ajouter. Je ne documenterais pas le fonctionnement des actions d'un scénario, puisqu'il y a déjà une documentation dédiée à ceci. 
+* Partie Grauche
 
 ![Flow1](../images/Flow1.png)
 
