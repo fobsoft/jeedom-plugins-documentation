@@ -38,13 +38,25 @@ Une fois le plugin activé, on peut donc passer directement à la création et m
 Vous pouvez accéder à la fenêtre de maintenance à partir du menu Plugins → Programmation → Advance Scenario.
 
 Sur cette page, vous retrouvez la liste de vos scénarios comme à l'habituelle. Ceux avec un icône vert son des scénarios qui ne sont pas convertis, et ceux de couleur gris sont des scénarios converti.
+Une fois converti l'édition d'un scénario via la maintenance de Jeedom n'aura pas d'effet sur celui-ci.
+Cliquez sur un scénario pour accéder à sa configuration ou sur "Ajouter" pour en créer un nouveau:
+
 ![Config1](../images/Config1.png)
 
+# Scénario
 
+## Général
+Dans cette oonglet vous disposer des meme information que dans un scenario normal mise à par le fait qu'il n'y a pas de section pour les declancheur puisue ceux-ci sont gere directement dans le flow.
 
-Je ne documenterais pas le fonctionnement d'un scénario, puisqu'il y a déjà une documentation dédiée à ceci. Mais voici donc en image ce à quoi cela ressemble.
+![Config2](../images/Config2.png)
+
+## Flow
+
+Vous disposez à droite de l'écran des actions habituel d'un scénaario, il suffit d'un "drag and drop" vers la droite pour en ajouter. Je ne documenterais pas le fonctionnement des actions d'un scénario, puisqu'il y a déjà une documentation dédiée à ceci. 
 
 ![Flow1](../images/Flow1.png)
 
 # A faire
 * Empécher la suppression du node "Départ" puisque celui-ci est le point d'entré général
+* Ajouter un bouton test, pour tester le flow du scénario et ainsi voir son issue
+
