@@ -9,7 +9,9 @@ pluginId: advancedScenario
 <a href="../../../{{site.baseurl}}/{{page.pluginId}}/{{page.lang}}">{{page.title}}</a>
 </div>
 
-> Le plugin est encore jeune et peut encore comporter quelques bugs, mais il évolue régulièrement : n’hésitez pas à me contacter à mon courriel personnel, sois le fobsoft@gmail.com avec toutes vos remarques et suggestions.
+```
+ Le plugin est encore jeune et peut encore comporter quelques bugs, mais il évolue régulièrement : n’hésitez pas à me contacter à mon courriel personnel, sois le fobsoft@gmail.com avec toutes vos remarques et suggestions.
+```
 
 # Présentation
 Plugins pour gérer, créer ou modifier vos scénarios. Utilise les fonctionnalitées du système issus de Jeedom en ajoutant quelque fonctionnalité.
@@ -54,23 +56,23 @@ Cliquez sur un scénario pour accéder à sa configuration ou sur "Ajouter" pour
 
 ![Config1](../images/Config1.png)
 
-### Général
-Dans cette oonglet vous disposer des meme information que dans un scenario normal mise à par le fait qu'il n'y a pas de section pour les declancheur puisue ceux-ci sont gere directement dans le flow.
+  - ## Général
+  Dans cette oonglet vous disposer des meme information que dans un scenario normal mise à par le fait qu'il n'y a pas de section pour les declancheur puisue ceux-ci sont gere directement dans le flow.
 
-![Config2](../images/Config2.png)
+  ![Config2](../images/Config2.png)
 
-### Flow
+  - ## Flow
 
-#### Souris et touches
-- `Touches Effacer` pour supprimer l'élément.
-- `Clic droit` pour afficher l'éditeur du noeud (Appui long mobile) (à venir)
-- `Clic gauche appuyez` pour déplacer le nœud sélectionné.
-- `Ctrl + Molette de la souris` Zoom avant/arrière (pincement mobile).
+    - ### Souris et touches
+      - `Touches Effacer` pour supprimer l'élément.
+      - `Clic droit` pour afficher l'éditeur du noeud (Appui long mobile) (à venir)
+      - `Clic gauche appuyez` pour déplacer le nœud sélectionné.
+      - `Ctrl + Molette de la souris` Zoom avant/arrière (pincement mobile).
 
-#### Partie Droite
+    - ### Partie Droite
 
-  Vous disposez à droite de l'écran des actions habituel d'un scénario, il suffit d'un "drag and drop" vers la droite pour en ajouter. Je ne documenterais pas le fonctionnement de chacune de ces actions, puisqu'il y a déjà une documentation dédiée à ceux-ci.
-  Les déclencheurs du scénario se trouvent dans la première boite nommée "Déclencheur".
+      Vous disposez à droite de l'écran des actions habituel d'un scénario, il suffit d'un "drag and drop" vers la droite pour en ajouter. Je ne documenterais pas le fonctionnement de chacune de ces actions, puisqu'il y a déjà une documentation dédiée à ceux-ci.
+      Les déclencheurs du scénario se trouvent dans la première boite nommée "Déclencheur".
 
 #### Partie Gauche
 
