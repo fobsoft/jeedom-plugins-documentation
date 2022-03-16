@@ -62,38 +62,35 @@ Cliquez sur un scénario pour accéder à sa configuration ou sur "Ajouter" pour
   ![Config2](../images/Config2.png)
 
   - ## Flow
+    - ### Fonctionnalité
+      - `Supprimer un noeud`: Touches "Effacer" du clavier une fois le noeud ou la connection sélectionné.
+      - `Supprimer une connection`: Touches "Effacer" du clavier une fois la connection sélectionnée.
+      - `Option d'édition d'un noeud`: Clic droit de la sourie sur le noeud pour afficher l'éditeur du noeud (Appui long pour mobile) (à venir)
+      - `Déplacer un noeud`: Clic gauche de la sourie appuyez sur le noeud
+      - `Zoom avant/arrière`: Ctrl + Molette de la souris (Pincement pour mobile)
+      - `Masquer le block`: Dans notre cas, il n'y a aucune manière de le masquer
+      - `Autoriser ou non la répétition`: Dans notre cas, cette option se trouve en haut à gauche du titre du noeud
+      - `Aciver/Désactiver un noeud`: dans notre cas, cette options se trouve en haut à gauche du titre du noeud sous forme d'un crochet
+      - `Bouton de rechercher`: dans notre cas, les options de recherche se trouve en haut à droite du titre
+      - `Copier`, aucune option de disponible pour le moment
+      - `Coller`, aucune option de disponible pour le moment      
 
-    - ### Souris et touches
-      - `Touches Effacer` pour supprimer l'élément une fois le noeud ou la connection sélectionné.
-      - `Clic droit` pour afficher l'éditeur du noeud (Appui long pour mobile) (à venir)
-      - `Clic gauche appuyez` pour déplacer le nœud sélectionné.
-      - `Ctrl + Molette de la souris` Zoom avant/arrière (Pincement pour mobile).
-
+      Voici un exemple comparatif
+        
+      ![NoeudSiAvant](../images/NoeudSiAvant.png)![NoeudSiApres](../images/NoeudSiApres.png)
+    
     - ### Partie Droite
-
       Vous disposez à droite de l'écran des actions habituel d'un scénario, il suffit d'un "drag and drop" vers la droite pour en ajouter. Je ne documenterais pas le fonctionnement de chacune de ces actions, puisqu'il y a déjà une documentation dédiée à ceux-ci.
       Les déclencheurs du scénario se trouvent dans la première boite nommée "Déclencheur".
 
     - ### Partie Gauche
-
       - Caractéristiques générales
         - Chaque nœud peut avoir de multiples connections
         - Un premier nœud est ajouté par défaut, celui marque le départ du flow. Ne pas supprimer, puisqu'il est utilisé lorsqu'il n'y a pas d'autre déclencheur ou lorsque vous tester le scénario.
+        
           ![NoeudDepart](../images/NoeudDepart.png)
       - Option général d'un block
-        - Normalement dans une action ou un block d'un scénario nous disposons de certaines options avec ces icônes.  ![NoeudOption1](../images/NoeudOption1.png)
-          - Déplacer l'action, dans notre cas, il ne suffit que de cliquer n'importe où sur le nœud
-          - Masquer le block, dans notre cas, il n'y a aucune manière de le masquer
-          - Aciver/Désactiver l'action et autoriser ou non la répétition, dans notre cas, ces options se trouve en haut à droite
         - Et dans un block d'un scénario, nous disposons de certaines options avec ces icônes. ![NoeudOption1](../images/NoeudOption1.png)
-          - Bouton de rechercher, dans notre cas, les options de recherche se trouve en haut à gauche
-          - Copier, aucune option de disponible pour le moment
-          - Coller, aucune option de disponible pour le moment
-          - Supprimer, dans notre cas, cliquer sur le nœud et sur la touche "Effacé" du clavier
-          
-        Voici un exemple comparatif
-        
-        ![NoeudSiAvant](../images/NoeudSiAvant.png)![NoeudSiApres](../images/NoeudSiApres.png)
 
 ## Exemple
 ![Flow1](../images/Flow1.png)
@@ -101,4 +98,8 @@ Cliquez sur un scénario pour accéder à sa configuration ou sur "Ajouter" pour
 ## A faire
 * Empécher la suppression du node "Départ" puisque celui-ci est le point d'entré général
 * Ajouter un bouton test, pour tester le flow du scénario et ainsi voir son issue
+* Aciver/Désactiver un noeud
+* Autoriser ou non la répétition d'une condition
+* Copier un noeud
+* Coller un noeud
 
