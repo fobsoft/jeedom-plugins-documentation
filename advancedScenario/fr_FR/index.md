@@ -56,8 +56,28 @@ Dans cette oonglet vous disposer des meme information que dans un scenario norma
   Les déclencheurs du scénario se trouvent dans la première boite nommée "Déclencheur".
 
 * Partie Grauche
+  * Un premier noeud est ajouté par défault, celui qui marque le départ du flow. Ne pas supprimer, puisqu'il est utilisé lorsqu'il n'y à pas d'autre déclancheur ou lorsque vous tester le scénario.
+    ![NoeudDepart](../images/NoeudDepart.png)
+  * Option général d'un block
+    * Normalement dans une action ou un block d'un scénario nous disposont de certaine options avec ces icones.
+      ![NoeudOption1](../images/NoeudOption1.png)
+      
+      * Déplacer l'action, dans notre cas, il ne suffit que de cliquer n'importe ou sur le noeud
+      * Masquer le block, dans notre cas, il n'y a aucune manière de le masquer
+      * Aciver / Désactiver l'action et autoriser ou non la répétition, dans notre cas, ces options ce trouve en haut à droite
+    * Et dans un block d'un scénario nous disposont de certaine options avec ces icones.
+      ![NoeudOption1](../images/NoeudOption1.png)
+      
+      * Bouton de rechercher, dans notre cas, les options de recherche ce trouve en haut à gauche
+      * Copier, aucune option de disponible pour le moment
+      * Coller, aucune option de disponible pour le moment
+      * Supprimer, dans notre cas, cliquer sur le noeud et sur la touche effacer
+      
+    Voici un exemple comparatif
+    ![NoeudSiAvant](../images/NoeudSiAvant.png)![NoeudSiApres](../images/NoeudSiApres.png)
 
-![Flow1](../images/Flow1.png)
+
+  ![Flow1](../images/Flow1.png)
 
 # A faire
 * Empécher la suppression du node "Départ" puisque celui-ci est le point d'entré général
