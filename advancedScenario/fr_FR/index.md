@@ -27,12 +27,23 @@ Plugins pour gérer, créer ou modifier vos scénarios. Utilise les fonctionnali
   * Supprimer une variable d'un tableau: Suppression d’une valeur d’un tableau (A venir)
   * Afficher les variables dans le log: Permet d'afficher dans le log toutes les valeurs associées à l'exécution du scénario (variable, tag, tableau) (A venir)
   * Exécuter un type générique: Permet d'exécuter les commandes des équipements d'un type générique (A venir)
+  
+# Table des matières
+- [Installation et configuration du plugins](#installation-et-configuration-du-plugins)
+- [Configuration d'un scénario](#configuration-d'un-scénario) 
+  - [Onglet Général](#général) 
+  - [Onglet Flow](#flow) 
+    - [Souris et touches](#souris-et-touches)
+    - [Partie Droite](#partie-droite)
+    - [Partie Gauche](#partie-gauche)
+- [Exemple](#exemple)
+- [A Faire](#a-faire)
 
-# Installation et Configuration du plugins
+## Installation et Configuration du plugins
 Dans la section, "Configuration" se trouve quelques options pour configurer l'affichage des logs du plugin.
 Une fois le plugin activé, on peut donc passer directement à la création et modification de ceux-ci.
 
-# Configuration
+## Configuration d'un scénario
 > Attention, il sera possible de convertir vos scénarios issus de Jeedom vers ce plugin, mais l'inverse ne sera pas possible.
 
 Vous pouvez accéder à la fenêtre de maintenance à partir du menu Plugins → Programmation → Advance Scenario.
@@ -43,20 +54,25 @@ Cliquez sur un scénario pour accéder à sa configuration ou sur "Ajouter" pour
 
 ![Config1](../images/Config1.png)
 
-# Scénario
-
-## Général
+### Général
 Dans cette oonglet vous disposer des meme information que dans un scenario normal mise à par le fait qu'il n'y a pas de section pour les declancheur puisue ceux-ci sont gere directement dans le flow.
 
 ![Config2](../images/Config2.png)
 
-## Flow
-* Partie Droite
+### Flow
+
+#### Souris et touches
+- `Touches Effacer` pour supprimer l'élément.
+- `Clic droit` pour afficher l'éditeur du noeud (Appui long mobile) (à venir)
+- `Clic gauche appuyez` pour déplacer le nœud sélectionné.
+- `Ctrl + Molette de la souris` Zoom avant/arrière (pincement mobile).
+
+#### Partie Droite
 
   Vous disposez à droite de l'écran des actions habituel d'un scénario, il suffit d'un "drag and drop" vers la droite pour en ajouter. Je ne documenterais pas le fonctionnement de chacune de ces actions, puisqu'il y a déjà une documentation dédiée à ceux-ci.
   Les déclencheurs du scénario se trouvent dans la première boite nommée "Déclencheur".
 
-* Partie Gauche
+#### Partie Gauche
 
   * Caractéristiques générales
     * Faites glisser les nœuds
@@ -82,10 +98,10 @@ Dans cette oonglet vous disposer des meme information que dans un scenario norma
     
     ![NoeudSiAvant](../images/NoeudSiAvant.png)![NoeudSiApres](../images/NoeudSiApres.png)
 
-
+## Exemple
 ![Flow1](../images/Flow1.png)
 
-# A faire
+## A faire
 * Empécher la suppression du node "Départ" puisque celui-ci est le point d'entré général
 * Ajouter un bouton test, pour tester le flow du scénario et ainsi voir son issue
 
