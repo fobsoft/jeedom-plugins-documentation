@@ -64,41 +64,36 @@ Cliquez sur un scénario pour accéder à sa configuration ou sur "Ajouter" pour
   - ## Flow
 
     - ### Souris et touches
-      - `Touches Effacer` pour supprimer l'élément.
-      - `Clic droit` pour afficher l'éditeur du noeud (Appui long mobile) (à venir)
+      - `Touches Effacer` pour supprimer l'élément une fois le noeud ou la connection sélectionné.
+      - `Clic droit` pour afficher l'éditeur du noeud (Appui long pour mobile) (à venir)
       - `Clic gauche appuyez` pour déplacer le nœud sélectionné.
-      - `Ctrl + Molette de la souris` Zoom avant/arrière (pincement mobile).
+      - `Ctrl + Molette de la souris` Zoom avant/arrière (Pincement pour mobile).
 
     - ### Partie Droite
 
       Vous disposez à droite de l'écran des actions habituel d'un scénario, il suffit d'un "drag and drop" vers la droite pour en ajouter. Je ne documenterais pas le fonctionnement de chacune de ces actions, puisqu'il y a déjà une documentation dédiée à ceux-ci.
       Les déclencheurs du scénario se trouvent dans la première boite nommée "Déclencheur".
 
-#### Partie Gauche
+    - ### Partie Gauche
 
-  * Caractéristiques générales
-    * Faites glisser les nœuds
-    * Chaque nœud peut avoir de multiples connections
-    * Supprimer les nœuds et les connexions en les sélectionnant et en appuyant sur la touche du clavier "Effacer"
-    * Zoom avant/arrière à l'aide du scroll de la souris
-  
-  * Un premier nœud est ajouté par défaut, celui qui marque le départ du flow. Ne pas supprimer, puisqu'il est utilisé lorsqu'il n'y a pas d'autre déclencheur ou lorsque vous tester le scénario.
-    ![NoeudDepart](../images/NoeudDepart.png)
-
-  * Option général d'un block
-    * Normalement dans une action ou un block d'un scénario nous disposons de certaines options avec ces icônes.  ![NoeudOption1](../images/NoeudOption1.png)
-      * Déplacer l'action, dans notre cas, il ne suffit que de cliquer n'importe où sur le nœud
-      * Masquer le block, dans notre cas, il n'y a aucune manière de le masquer
-      * Aciver/Désactiver l'action et autoriser ou non la répétition, dans notre cas, ces options se trouve en haut à droite
-    * Et dans un block d'un scénario, nous disposons de certaines options avec ces icônes. ![NoeudOption1](../images/NoeudOption1.png)
-      * Bouton de rechercher, dans notre cas, les options de recherche se trouve en haut à gauche
-      * Copier, aucune option de disponible pour le moment
-      * Coller, aucune option de disponible pour le moment
-      * Supprimer, dans notre cas, cliquer sur le nœud et sur la touche "Effacé" du clavier
-      
-    Voici un exemple comparatif
-    
-    ![NoeudSiAvant](../images/NoeudSiAvant.png)![NoeudSiApres](../images/NoeudSiApres.png)
+      - Caractéristiques générales
+        - Chaque nœud peut avoir de multiples connections
+        - Un premier nœud est ajouté par défaut, celui marque le départ du flow. Ne pas supprimer, puisqu'il est utilisé lorsqu'il n'y a pas d'autre déclencheur ou lorsque vous tester le scénario.
+          ![NoeudDepart](../images/NoeudDepart.png)
+      - Option général d'un block
+        - Normalement dans une action ou un block d'un scénario nous disposons de certaines options avec ces icônes.  ![NoeudOption1](../images/NoeudOption1.png)
+          - Déplacer l'action, dans notre cas, il ne suffit que de cliquer n'importe où sur le nœud
+          - Masquer le block, dans notre cas, il n'y a aucune manière de le masquer
+          - Aciver/Désactiver l'action et autoriser ou non la répétition, dans notre cas, ces options se trouve en haut à droite
+        - Et dans un block d'un scénario, nous disposons de certaines options avec ces icônes. ![NoeudOption1](../images/NoeudOption1.png)
+          - Bouton de rechercher, dans notre cas, les options de recherche se trouve en haut à gauche
+          - Copier, aucune option de disponible pour le moment
+          - Coller, aucune option de disponible pour le moment
+          - Supprimer, dans notre cas, cliquer sur le nœud et sur la touche "Effacé" du clavier
+          
+        Voici un exemple comparatif
+        
+        ![NoeudSiAvant](../images/NoeudSiAvant.png)![NoeudSiApres](../images/NoeudSiApres.png)
 
 ## Exemple
 ![Flow1](../images/Flow1.png)
