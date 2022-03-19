@@ -98,6 +98,8 @@ Dans cette oonglet vous disposer des meme information que dans un scenario norma
 
 ## Exemple d'une boucle for avec compteur
 
+Comme vous pouvez le constater, vous disposer d'un tag qui est incrémenté à chaque tour portant dont la syntaxe du nom est "#cntFor[NodeId]#".
+
 ![Flow1](../images/exFor.png)
 
 ```html
