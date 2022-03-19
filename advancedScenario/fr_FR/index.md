@@ -37,8 +37,9 @@ Plugins pour gérer, créer ou modifier vos scénarios. Utilise les fonctionnali
   - [Flow](#flow)
 - [Exemple](#exemple)
   - [Exemple d'une boucle for avec compteur](#exemple-dune-boucle-for-avec-compteur)
+  - [Exemple d'ajout de valeur à un tableau](#exemple-dajout-de-valeur-à-un-tableau)
 - [A Tester](#a-tester)
-  - [A faire](#a-faire)
+- [A faire](#a-faire)
 
 # Installation et Configuration du plugins
 Dans la section, "Configuration" se trouve quelques options pour configurer l'affichage des logs du plugin.
@@ -113,9 +114,35 @@ Cliquez sur un scénario pour accéder à sa configuration ou sur "Ajouter" pour
   [2022-03-19 05:19:18][DEBUG] :                       END 
   ```
 
+  ## Exemple d'ajout de valeur à un tableau
+   - arrayAdd (21): Ajout de la valeur 1
+   - arrayAdd (23): Ajout des valeurs 3,7,10,100,200 sous la forme d'un Json dont les virgules sont remplacées par des ;
+   - arrayAdd (24): Ajout de la valeur de la commande #[RC - Pièce commune][Room config][Max lux for light]#
+   - arrayAdd (29): Ajout de la valeur de la variable #pctLight#
+
+  ```html
+  [2022-03-19 09:03:17][DEBUG] :                       BEGIN log (22)
+  [2022-03-19 09:03:17][INFO ] :                         Test avec valeur numerique
+  [2022-03-19 09:03:17][DEBUG] :                       END 
+  [2022-03-19 09:03:17][DEBUG] :                       BEGIN arrayAdd (21)
+  [2022-03-19 09:03:17][DEBUG] :                         Mise à jour du tag tagArrayNum => [1]
+  [2022-03-19 09:03:17][DEBUG] :                       END 
+  [2022-03-19 09:03:17][DEBUG] :                       BEGIN arrayAdd (23)
+  [2022-03-19 09:03:17][DEBUG] :                         Mise à jour du tag tagArrayNum => [1,3,7,10,100,200]
+  [2022-03-19 09:03:17][DEBUG] :                       END 
+  [2022-03-19 09:03:17][DEBUG] :                       BEGIN arrayAdd (24)
+  [2022-03-19 09:03:17][DEBUG] :                         Mise à jour du tag tagArrayNum => [1,3,7,10,100,200,30]
+  [2022-03-19 09:03:17][DEBUG] :                       END 
+  [2022-03-19 09:03:17][DEBUG] :                       BEGIN arrayAdd (29)
+  [2022-03-19 09:03:17][DEBUG] :                         Mise à jour du tag tagArrayNum => [1,3,7,10,100,200,30,95]
+  [2022-03-19 09:03:17][DEBUG] :                       END 
+  [2022-03-19 09:03:17][DEBUG] :                       BEGIN logVariable (28)
+  [2022-03-19 09:03:17][INFO ] :                         Variable:
+                                                          [#tagArrayNum#] => [1,3,7,10,100,200,30,95]
+  [2022-03-19 09:03:17][DEBUG] :                       END 
+  ```
+
 # A Tester
-
-
 
 Action | Compatible | Note
 --- | --- | ---
@@ -124,11 +151,11 @@ Déclencheur
 `Programmation` | À venir | 
 Général
 `Si/Alors/Sinon` | <span style="color:green">Pass</span> | 
-`Boucle` | À venir | 
+`Boucle` | <span style="color:green">Pass</span> | 
 `Pour chaque` | À venir | 
 `Tant que` | À venir | 
 Variable
-`Tag` | À venir | 
+`Tag` | <span style="color:green">Pass</span> | 
 `Ajout d'une valeur à un tableau` | À venir | 
 `Supprimer une variable d'un tableau` | À venir | 
 `Variable` | À venir | 
@@ -173,11 +200,9 @@ Programmation
 `code` | À venir | 
 Scenario | À venir | 
 
-## A faire
+# A faire
 * Empécher la suppression du node "Départ" puisque celui-ci est le point d'entré général
 * Ajouter un bouton test, pour tester le flow du scénario et ainsi voir son issue
 * Aciver/Désactiver un noeud
 * Autoriser ou non la répétition d'une condition
 * Copier/Coller un noeud
-* Ajouter une fonctionnalité de log en temps reel, trouver un aure display puisque la structure des log ne pourra etre maintenue
-
