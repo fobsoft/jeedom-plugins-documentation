@@ -31,15 +31,13 @@ Plugins pour gérer, créer ou modifier vos scénarios. Utilise les fonctionnali
   * Exécuter un type générique: Permet d'exécuter les commandes des équipements d'un type générique (A venir)
   
 # Table des matières
-- [Installation et configuration du plugins](#installation-et-configuration-du-plugins)
-- [Configuration d'un scénario](#configuration-d'un-scénario) 
-  - [Onglet Général](#général) 
-  - [Onglet Flow](#flow) 
-    - [Souris et touches](#souris-et-touches)
-    - [Partie Droite](#partie-droite)
-    - [Partie Gauche](#partie-gauche)
-- [Exemple](#exemple)
-- [A Faire](#a-faire)
+- [Présentation](#présentation)
+- [Table des matières](#table-des-matières)
+  - [Installation et Configuration du plugins](#installation-et-configuration-du-plugins)
+  - [Configuration d'un scénario](#configuration-dun-scénario)
+  - [Exemple](#exemple)
+  - [A Tester](#a-tester)
+  - [A faire](#a-faire)
 
 ## Installation et Configuration du plugins
 Dans la section, "Configuration" se trouve quelques options pour configurer l'affichage des logs du plugin.
@@ -95,11 +93,75 @@ Cliquez sur un scénario pour accéder à sa configuration ou sur "Ajouter" pour
 ## Exemple
 ![Flow1](../images/Flow1.png)
 
+## A Tester
+Action | Tester | Note
+--- | --- | ---
+`id` | Object | Name of module
+`render` | Object | It's for `Vue`.
+`parent` | Object | It's for `Vue`. The parent Instance
+
+  Action
+  Action | Tester | Note
+  --- | --- | ---
+  Déclencheur
+  `Evénement` | À venir | 
+  `Programmation` | À venir | 
+  Général
+  `Si/Alors/Sinon` | À venir | 
+  `Boucle` | À venir | 
+  `Pour chaque` | À venir | 
+  `Tant que` | À venir | 
+  Variable
+  `Tag` | À venir | 
+  `Ajout d'une valeur à un tableau` | À venir | 
+  `Supprimer une variable d'un tableau` | À venir | 
+  `Variable` | À venir | 
+  `Supprimer une variable` | À venir | 
+  Flux
+  `Stop` | À venir | 
+  `Attendre` | À venir | 
+  `Pause` | À venir | 
+  `Dans` | À venir | 
+  `A` | À venir | 
+  `Scénario` | À venir | 
+  `Retourner un texte/une donnée` | À venir | 
+  `Supprimer tous les bloc programmé` | À venir | 
+  `Supprimer un bloc programmé` | À venir | 
+  Interface
+  `Aller au design` | À venir | 
+  `Icône` | À venir | 
+  `Coloration des icones` | À venir | 
+  Messagerie
+  `Ajouter un log` | Pass | 
+  `Afficher les variables dans le log` | Pass | 
+  `Afficher les noeuds dans le log` | Pass | 
+  `Créer un message` | À venir | 
+  `Faire une demande` | À venir | 
+  `Dire` | À venir | 
+  `Alerte` | À venir | 
+  `Pop-up` | À venir | 
+  `Commentaire` | À venir | 
+  `Rapport` | À venir | 
+  Système
+  `Arrêter` | À venir | 
+  `Redémarrer` | À venir | 
+  Équipement
+  `Activer un équipement` | À venir | 
+  `Désactiver un équipement` | À venir | 
+  `Masquer un équipement` | À venir | 
+  `Afficher un équipement` | À venir | 
+  `Générer un evènement` | À venir | 
+  `Exécuter une commande` | À venir | 
+  `Exécuter un type générique` | À venir | 
+  Programmation  
+  `code` | À venir | 
+  Scenario | À venir | 
+
 ## A faire
 * Empécher la suppression du node "Départ" puisque celui-ci est le point d'entré général
 * Ajouter un bouton test, pour tester le flow du scénario et ainsi voir son issue
 * Aciver/Désactiver un noeud
 * Autoriser ou non la répétition d'une condition
-* Copier un noeud
-* Coller un noeud
+* Copier/Coller un noeud
+* Ajouter une fonctionnalité de log en temps reel, trouver un aure display puisque la structure des log ne pourra etre maintenue
 
