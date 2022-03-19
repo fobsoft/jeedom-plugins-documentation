@@ -36,6 +36,7 @@ Plugins pour gérer, créer ou modifier vos scénarios. Utilise les fonctionnali
   - [Général](#général)
   - [Flow](#flow)
 - [Exemple](#exemple)
+  - [Exemple d'une boucle for avec compteur](#exemple-dune-boucle-for-avec-compteur)
 - [A Tester](#a-tester)
   - [A faire](#a-faire)
 
@@ -91,9 +92,30 @@ Cliquez sur un scénario pour accéder à sa configuration ou sur "Ajouter" pour
         - Et dans un block d'un scénario, nous disposons de certaines options avec ces icônes. ![NoeudOption1](../images/NoeudOption1.png)
 
 # Exemple
-![Flow1](../images/Flow1.png)
+
+  ## Exemple d'une boucle for avec compteur
+  ![Flow1](../images/exFor.png)
+
+  ```html
+  [2022-03-19 05:19:18][DEBUG] :                       BEGIN for (15)
+  [2022-03-19 05:19:18][DEBUG] :                         BEGIN DO
+  [2022-03-19 05:19:18][DEBUG] :                           BEGIN logVariable (19)
+  [2022-03-19 05:19:18][INFO ] :                             Variable:
+                                                              [#cntFor15#] => 1
+  [2022-03-19 05:19:18][DEBUG] :                           END 
+  [2022-03-19 05:19:18][DEBUG] :                         END DO
+  [2022-03-19 05:19:18][DEBUG] :                         BEGIN DO
+  [2022-03-19 05:19:18][DEBUG] :                           BEGIN logVariable (19)
+  [2022-03-19 05:19:18][INFO ] :                             Variable:
+                                                              [#cntFor15#] => 2
+  [2022-03-19 05:19:18][DEBUG] :                           END 
+  [2022-03-19 05:19:18][DEBUG] :                         END DO
+  [2022-03-19 05:19:18][DEBUG] :                       END 
+  ```
 
 # A Tester
+
+
 
 Action | Compatible | Note
 --- | --- | ---
@@ -101,7 +123,7 @@ Déclencheur
 `Evénement` | À venir | 
 `Programmation` | À venir | 
 Général
-`Si/Alors/Sinon` | À venir | 
+`Si/Alors/Sinon` | <span style="color:green">Pass</span> | 
 `Boucle` | À venir | 
 `Pour chaque` | À venir | 
 `Tant que` | À venir | 
@@ -126,9 +148,9 @@ Interface
 `Icône` | À venir | 
 `Coloration des icones` | À venir | 
 Messagerie
-`Ajouter un log` | Pass | 
-`Afficher les variables dans le log` | Pass | 
-`Afficher les noeuds dans le log` | Pass | 
+`Ajouter un log` | <span style="color:green">Pass</span> | 
+`Afficher les variables dans le log` | <span style="color:green">Pass</span> | 
+`Afficher les noeuds dans le log` | <span style="color:green">Pass</span> | 
 `Créer un message` | À venir | 
 `Faire une demande` | À venir | 
 `Dire` | À venir | 
