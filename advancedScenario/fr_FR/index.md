@@ -152,24 +152,27 @@ Comme vous pouvez le constater, vous disposer d'un tag qui est incrémenté à c
 # A Tester
 
 | Déclencheur |  |
-| :---: | :---: |
+| :--- | :--- |
 | `Evénement` | À venir | 
 | `Programmation` | À venir | 
-| Général |   |
-| :---: | :---: |
+
+| Général |  |
+| :---: | :-: |
 | `Si/Alors/Sinon` | <span style="color:green">Pass</span> | 
 | `Boucle` | <span style="color:green">Pass</span> | 
 | `Pour chaque` | À venir | 
 | `Tant que` | À venir | 
-| Variable |   |
-| :---: | :---: |
+
+| Variable |  |
+| :-: | :-: |
 | `Tag` | <span style="color:green">Pass</span> | 
 | `Ajout d'une valeur à un tableau` | <span style="color:green">Pass</span> | 
 | `Supprimer une variable d'un tableau` | À venir | 
 | `Variable` | À venir | 
 | `Supprimer une variable` | À venir | 
-| Flux |   |
-| :---: | :---: |
+
+| Flux |  |
+| --- | - |
 | `Stop` | À venir | 
 | `Attendre` | À venir | 
 | `Pause` | À venir | 
@@ -179,12 +182,14 @@ Comme vous pouvez le constater, vous disposer d'un tag qui est incrémenté à c
 | `Retourner un texte/une donnée` | À venir | 
 | `Supprimer tous les bloc programmé` | À venir | 
 | `Supprimer un bloc programmé` | À venir | 
-| Interface |   |
+
+| Interface |  |
 | :---: | :---: |
 | `Aller au design` | À venir | 
 | `Icône` | À venir | 
 | `Coloration des icones` | À venir | 
-| Messagerie |   |
+
+| Messagerie |  |
 | :---: | :---: |
 | `Ajouter un log` | <span style="color:green">Pass</span> | 
 | `Afficher les variables dans le log` | <span style="color:green">Pass</span> | 
@@ -196,11 +201,13 @@ Comme vous pouvez le constater, vous disposer d'un tag qui est incrémenté à c
 | `Pop-up` | À venir | 
 | `Commentaire` | À venir | 
 | `Rapport` | À venir | 
-| Système |   |
+
+| Système |  |
 | :---: | :---: |
 | `Arrêter` | À venir | 
 | `Redémarrer` | À venir | 
-| Équipement |   |
+
+| Équipement |  |
 | :---: | :---: |
 | `Activer un équipement` | À venir | 
 | `Désactiver un équipement` | À venir | 
@@ -209,9 +216,11 @@ Comme vous pouvez le constater, vous disposer d'un tag qui est incrémenté à c
 | `Générer un evènement` | À venir | 
 | `Exécuter une commande` | À venir | 
 | `Exécuter un type générique` | À venir | 
-| Programmation |   |
+
+| Programmation |  |
 | :---: | :---: |
 | `code` | À venir | 
+
 | Scenario | À venir |
 | :---: | :---: |
 
