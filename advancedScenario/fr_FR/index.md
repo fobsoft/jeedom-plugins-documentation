@@ -57,44 +57,47 @@ Cliquez sur un scénario pour accéder à sa configuration ou sur "Ajouter" pour
 ![Config1](../images/Config1.png)
 
   ## Général
+
   Dans cette oonglet vous disposer des meme information que dans un scenario normal mise à par le fait qu'il n'y a pas de section pour les declancheur puisue ceux-ci sont gere directement dans le flow.
 
   ![Config2](../images/Config2.png)
 
   ## Flow
-    - ## Fonctionnalité
-      - `Supprimer un noeud`: Touches "Effacer" du clavier une fois le noeud ou la connection sélectionné.
-      - `Supprimer une connection`: Touches "Effacer" du clavier une fois la connection sélectionnée.
-      - `Option d'édition d'un noeud`: Clic droit de la sourie sur le noeud pour afficher l'éditeur du noeud (Appui long pour mobile) (à venir)
-      - `Déplacer un noeud`: Clic gauche de la sourie appuyez sur le noeud
-      - `Zoom avant/arrière`: Ctrl + Molette de la souris (Pincement pour mobile)
-      - `Masquer le block`: Dans notre cas, il n'y a aucune manière de le masquer
-      - `Autoriser ou non la répétition`: Dans notre cas, cette option se trouve en haut à gauche du titre du noeud
-      - `Aciver/Désactiver un noeud`: dans notre cas, cette options se trouve en haut à gauche du titre du noeud sous forme d'un crochet
-      - `Bouton de rechercher`: dans notre cas, les options de recherche se trouve en haut à droite du titre
-      - `Copier`, aucune option de disponible pour le moment
-      - `Coller`, aucune option de disponible pour le moment      
 
-      Voici un exemple comparatif
-        
-      ![NoeudSiAvant](../images/NoeudSiAvant.png)![NoeudSiApres](../images/NoeudSiApres.png)
-    
-    - ## Partie Droite
-      Vous disposez à droite de l'écran des actions habituel d'un scénario, il suffit d'un "drag and drop" vers la droite pour en ajouter. Je ne documenterais pas le fonctionnement de chacune de ces actions, puisqu'il y a déjà une documentation dédiée à ceux-ci.
-      Les déclencheurs du scénario se trouvent dans la première boite nommée "Déclencheur".
+  - ## Fonctionnalité
+    - `Supprimer un noeud`: Touches "Effacer" du clavier une fois le noeud ou la connection sélectionné.
+    - `Supprimer une connection`: Touches "Effacer" du clavier une fois la connection sélectionnée.
+    - `Option d'édition d'un noeud`: Clic droit de la sourie sur le noeud pour afficher l'éditeur du noeud (Appui long pour mobile) (à venir)
+    - `Déplacer un noeud`: Clic gauche de la sourie appuyez sur le noeud
+    - `Zoom avant/arrière`: Ctrl + Molette de la souris (Pincement pour mobile)
+    - `Masquer le block`: Dans notre cas, il n'y a aucune manière de le masquer
+    - `Autoriser ou non la répétition`: Dans notre cas, cette option se trouve en haut à gauche du titre du noeud
+    - `Aciver/Désactiver un noeud`: dans notre cas, cette options se trouve en haut à gauche du titre du noeud sous forme d'un crochet
+    - `Bouton de rechercher`: dans notre cas, les options de recherche se trouve en haut à droite du titre
+    - `Copier`, aucune option de disponible pour le moment
+    - `Coller`, aucune option de disponible pour le moment      
 
-    - ## Partie Gauche
-      - Caractéristiques générales
-        - Chaque nœud peut avoir de multiples connections, si tel est le cas, ceux-ci sont exécutés en parallèle.
-        - Un premier nœud est ajouté par défaut, celui marque le départ du flow. Ne pas supprimer, puisqu'il est utilisé lorsqu'il n'y a pas d'autre déclencheur ou lorsque vous tester le scénario.
-        
-          ![NoeudDepart](../images/NoeudDepart.png)
-      - Option général d'un block
-        - Et dans un block d'un scénario, nous disposons de certaines options avec ces icônes. ![NoeudOption1](../images/NoeudOption1.png)
+    Voici un exemple comparatif
+      
+    ![NoeudSiAvant](../images/NoeudSiAvant.png)![NoeudSiApres](../images/NoeudSiApres.png)
+  
+  - ## Partie Droite
+    Vous disposez à droite de l'écran des actions habituel d'un scénario, il suffit d'un "drag and drop" vers la droite pour en ajouter. Je ne documenterais pas le fonctionnement de chacune de ces actions, puisqu'il y a déjà une documentation dédiée à ceux-ci.
+    Les déclencheurs du scénario se trouvent dans la première boite nommée "Déclencheur".
+
+  - ## Partie Gauche
+    - Caractéristiques générales
+      - Chaque nœud peut avoir de multiples connections, si tel est le cas, ceux-ci sont exécutés en parallèle.
+      - Un premier nœud est ajouté par défaut, celui marque le départ du flow. Ne pas supprimer, puisqu'il est utilisé lorsqu'il n'y a pas d'autre déclencheur ou lorsque vous tester le scénario.
+      
+        ![NoeudDepart](../images/NoeudDepart.png)
+    - Option général d'un block
+      - Et dans un block d'un scénario, nous disposons de certaines options avec ces icônes. ![NoeudOption1](../images/NoeudOption1.png)
 
 # Exemple
 
   ## Exemple d'une boucle for avec compteur
+  
   ![Flow1](../images/exFor.png)
 
   ```html
