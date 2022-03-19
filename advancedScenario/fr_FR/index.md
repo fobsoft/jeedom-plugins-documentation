@@ -161,68 +161,52 @@ Comme vous pouvez le constater, vous disposer d'un tag qui est incrémenté à c
 |   | `Boucle` | <span style="color:green">Pass</span> | 
 |   | `Pour chaque` | À venir | 
 |   | `Tant que` | À venir | 
-
-| Variable |  |
-| :-: | :-: |
-| `Tag` | <span style="color:green">Pass</span> | 
-| `Ajout d'une valeur à un tableau` | <span style="color:green">Pass</span> | 
-| `Supprimer une variable d'un tableau` | À venir | 
-| `Variable` | À venir | 
-| `Supprimer une variable` | À venir | 
-
-| Flux |  |
-| --- | - |
-| `Stop` | À venir | 
-| `Attendre` | À venir | 
-| `Pause` | À venir | 
-| `Dans` | À venir | 
-| `A` | À venir | 
-| `Scénario` | À venir | 
-| `Retourner un texte/une donnée` | À venir | 
-| `Supprimer tous les bloc programmé` | À venir | 
-| `Supprimer un bloc programmé` | À venir | 
-
-| Interface |  |
-| :---: | :---: |
-| `Aller au design` | À venir | 
-| `Icône` | À venir | 
-| `Coloration des icones` | À venir | 
-
-| Messagerie |  |
-| :---: | :---: |
-| `Ajouter un log` | <span style="color:green">Pass</span> | 
-| `Afficher les variables dans le log` | <span style="color:green">Pass</span> | 
-| `Afficher les noeuds dans le log` | <span style="color:green">Pass</span> | 
-| `Créer un message` | À venir | 
-| `Faire une demande` | À venir | 
-| `Dire` | À venir | 
-| `Alerte` | À venir | 
-| `Pop-up` | À venir | 
-| `Commentaire` | À venir | 
-| `Rapport` | À venir | 
-
-| Système |  |
-| :---: | :---: |
-| `Arrêter` | À venir | 
-| `Redémarrer` | À venir | 
-
-| Équipement |  |
-| :---: | :---: |
-| `Activer un équipement` | À venir | 
-| `Désactiver un équipement` | À venir | 
-| `Masquer un équipement` | À venir | 
-| `Afficher un équipement` | À venir | 
-| `Générer un evènement` | À venir | 
-| `Exécuter une commande` | À venir | 
-| `Exécuter un type générique` | À venir | 
-
-| Programmation |  |
-| :---: | :---: |
-| `code` | À venir |
-
-| Autre |  |
-| :---: | :---: |
-| Scenario | À venir |
+| Variable |  |  |
+|   | `Tag` | <span style="color:green">Pass</span> | 
+|   | `Ajout d'une valeur à un tableau` | <span style="color:green">Pass</span> | 
+|   | `Supprimer une variable d'un tableau` | À venir | 
+|   | `Variable` | À venir | 
+|   | `Supprimer une variable` | À venir | 
+| Flux |  |  |
+|   | `Stop` | À venir | 
+|   | `Attendre` | À venir | 
+|   | `Pause` | À venir | 
+|   | `Dans` | À venir | 
+|   | `A` | À venir | 
+|   | `Scénario` | À venir | 
+|   | `Retourner un texte/une donnée` | À venir | 
+|   | `Supprimer tous les bloc programmé` | À venir | 
+|   | `Supprimer un bloc programmé` | À venir | 
+| Interface |  |  |
+|   | `Aller au design` | À venir | 
+|   | `Icône` | À venir | 
+|   | `Coloration des icones` | À venir | 
+| Messagerie |  |  |
+|   | `Ajouter un log` | <span style="color:green">Pass</span> | 
+|   | `Afficher les variables dans le log` | <span style="color:green">Pass</span> | 
+|   | `Afficher les noeuds dans le log` | <span style="color:green">Pass</span> | 
+|   | `Créer un message` | À venir | 
+|   | `Faire une demande` | À venir | 
+|   | `Dire` | À venir | 
+|   | `Alerte` | À venir | 
+|   | `Pop-up` | À venir | 
+|   | `Commentaire` | À venir | 
+|   | `Rapport` | À venir | 
+| Système |  |  |
+|   | `Arrêter` | À venir | 
+|   | `Redémarrer` | À venir | 
+| Équipement |  |  |
+|   | `Activer un équipement` | À venir | 
+|   | `Désactiver un équipement` | À venir | 
+|   | `Masquer un équipement` | À venir | 
+|   | `Afficher un équipement` | À venir | 
+|   | `Générer un evènement` | À venir | 
+|   | `Exécuter une commande` | À venir | 
+|   | `Exécuter un type générique` | À venir | 
+| Programmation |  |  |
+|   | `code` | À venir |
+| Autre |  |  |
+|   | Scenario | À venir |
 
 # A faire
 * Empécher la suppression du node "Départ" puisque celui-ci est le point d'entré général
