@@ -64,7 +64,7 @@ Dans cette oonglet vous disposer des meme information que dans un scenario norma
 
 ## Flow
 
-- ## Fonctionnalité
+- Fonctionnalité
   - `Supprimer un noeud`: Touches "Effacer" du clavier une fois le noeud ou la connection sélectionné.
   - `Supprimer une connection`: Touches "Effacer" du clavier une fois la connection sélectionnée.
   - `Option d'édition d'un noeud`: Clic droit de la sourie sur le noeud pour afficher l'éditeur du noeud (Appui long pour mobile) (à venir)
@@ -81,11 +81,11 @@ Dans cette oonglet vous disposer des meme information que dans un scenario norma
     
   ![NoeudSiAvant](../images/NoeudSiAvant.png)![NoeudSiApres](../images/NoeudSiApres.png)
 
-- ## Partie Droite
+- Partie Droite
   Vous disposez à droite de l'écran des actions habituel d'un scénario, il suffit d'un "drag and drop" vers la droite pour en ajouter. Je ne documenterais pas le fonctionnement de chacune de ces actions, puisqu'il y a déjà une documentation dédiée à ceux-ci.
   Les déclencheurs du scénario se trouvent dans la première boite nommée "Déclencheur".
 
-- ## Partie Gauche
+- Partie Gauche
   - Caractéristiques générales
     - Chaque nœud peut avoir de multiples connections, si tel est le cas, ceux-ci sont exécutés en parallèle.
     - Un premier nœud est ajouté par défaut, celui marque le départ du flow. Ne pas supprimer, puisqu'il est utilisé lorsqu'il n'y a pas d'autre déclencheur ou lorsque vous tester le scénario.
@@ -122,6 +122,8 @@ Dans cette oonglet vous disposer des meme information que dans un scenario norma
   - arrayAdd (23): Ajout des valeurs 3,7,10,100,200 sous la forme d'un Json dont les virgules sont remplacées par des ;
   - arrayAdd (24): Ajout de la valeur de la commande #[RC - Pièce commune][Room config][Max lux for light]#
   - arrayAdd (29): Ajout de la valeur de la variable #pctLight#
+
+![Flow1](../images/arrayAdd.png)
 
 ```html
 [2022-03-19 09:03:17][DEBUG] :                       BEGIN log (22)
