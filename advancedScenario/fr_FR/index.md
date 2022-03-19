@@ -151,17 +151,16 @@ Comme vous pouvez le constater, vous disposer d'un tag qui est incrémenté à c
 
 # A Tester
 
-| Déclencheur |  |
-| :--- | :--- |
-| `Evénement` | À venir | 
-| `Programmation` | À venir | 
-
-| Général |  |
-| :---: | :-: |
-| `Si/Alors/Sinon` | <span style="color:green">Pass</span> | 
-| `Boucle` | <span style="color:green">Pass</span> | 
-| `Pour chaque` | À venir | 
-| `Tant que` | À venir | 
+| Catégorie | Nom |  |
+| :--- | :--- | :--- |
+| Déclencheur |  |  |
+|   | `Evénement` | À venir | 
+|   | `Programmation` | À venir | 
+| Général |  |  |
+|   | `Si/Alors/Sinon` | <span style="color:green">Pass</span> | 
+|   | `Boucle` | <span style="color:green">Pass</span> | 
+|   | `Pour chaque` | À venir | 
+|   | `Tant que` | À venir | 
 
 | Variable |  |
 | :-: | :-: |
@@ -219,10 +218,11 @@ Comme vous pouvez le constater, vous disposer d'un tag qui est incrémenté à c
 
 | Programmation |  |
 | :---: | :---: |
-| `code` | À venir | 
+| `code` | À venir |
 
-| Scenario | À venir |
+| Autre |  |
 | :---: | :---: |
+| Scenario | À venir |
 
 # A faire
 * Empécher la suppression du node "Départ" puisque celui-ci est le point d'entré général
