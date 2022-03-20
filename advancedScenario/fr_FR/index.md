@@ -38,6 +38,7 @@ Plugins pour gérer, créer ou modifier vos scénarios. Utilise les fonctionnali
 - [Exemple](#exemple)
   - [Exemple d'une boucle for avec compteur](#exemple-dune-boucle-for-avec-compteur)
   - [Exemple d'ajout de valeur à un tableau](#exemple-dajout-de-valeur-à-un-tableau)
+  - [Exemple de supression d'une valeur d'un tableau](#exemple-de-supression-dune-valeur-dun-tableau)
 - [A Tester](#a-tester)
 - [A faire](#a-faire)
 
@@ -128,26 +129,48 @@ Comme vous pouvez le constater, vous disposer d'un tag qui est incrémenté à c
 ![Flow1](../images/arrayAdd.png)
 
 ```html
-[2022-03-19 09:03:17][DEBUG] :                       BEGIN log (22)
-[2022-03-19 09:03:17][INFO ] :                         Test avec valeur numerique
-[2022-03-19 09:03:17][DEBUG] :                       END 
-[2022-03-19 09:03:17][DEBUG] :                       BEGIN arrayAdd (21)
-[2022-03-19 09:03:17][DEBUG] :                         Mise à jour du tag tagArrayNum => [1]
-[2022-03-19 09:03:17][DEBUG] :                       END 
-[2022-03-19 09:03:17][DEBUG] :                       BEGIN arrayAdd (23)
-[2022-03-19 09:03:17][DEBUG] :                         Mise à jour du tag tagArrayNum => [1,3,7,10,100,200]
-[2022-03-19 09:03:17][DEBUG] :                       END 
-[2022-03-19 09:03:17][DEBUG] :                       BEGIN arrayAdd (24)
-[2022-03-19 09:03:17][DEBUG] :                         Mise à jour du tag tagArrayNum => [1,3,7,10,100,200,30]
-[2022-03-19 09:03:17][DEBUG] :                       END 
-[2022-03-19 09:03:17][DEBUG] :                       BEGIN arrayAdd (29)
-[2022-03-19 09:03:17][DEBUG] :                         Mise à jour du tag tagArrayNum => [1,3,7,10,100,200,30,95]
-[2022-03-19 09:03:17][DEBUG] :                       END 
-[2022-03-19 09:03:17][DEBUG] :                       BEGIN logVariable (28)
-[2022-03-19 09:03:17][INFO ] :                         Variable:
-                                                        [#tagArrayNum#] => [1,3,7,10,100,200,30,95]
-[2022-03-19 09:03:17][DEBUG] :                       END 
+BEGIN log (22)
+  Test avec valeur numerique
+END 
+BEGIN arrayAdd (21)
+  Mise à jour du tag tagArrayNum => [1]
+END 
+BEGIN arrayAdd (23)
+  Mise à jour du tag tagArrayNum => [1,3,7,10,100,200]
+END 
+BEGIN arrayAdd (24)
+  Mise à jour du tag tagArrayNum => [1,3,7,10,100,200,30]
+END 
+BEGIN arrayAdd (29)
+  Mise à jour du tag tagArrayNum => [1,3,7,10,100,200,30,95]
+END 
+BEGIN logVariable (28)
+  Variable:
+   [#tagArrayNum#] => [1,3,7,10,100,200,30,95]
+END 
 ```
+
+## Exemple de supression d'une valeur d'un tableau
+ - arrayRemove (26): Supression de la valeur 3
+ - arrayRemove (27): Supression des valeurs 100,200 sous la forme d'un Json dont les virgules sont remplacées par des ;
+
+![Flow1](../images/arrayRemove.png)
+
+````html
+BEGIN arrayRemove (26)
+  Tag tagArrayNum IS DEFINED
+  BEGIN convertExpressionToArray:: 3
+  END convertExpressionToArray:: 3 => ["3"]
+  Mise à jour du tag tagArrayNum => {"0":1,"2":7,"3":10,"4":100,"5":200,"6":30,"7":95,"8":1}
+END 
+BEGIN arrayRemove (27)
+  Tag tagArrayNum IS DEFINED
+  BEGIN convertExpressionToArray:: [100;200]
+    Return valeur, expression is human json array
+  END convertExpressionToArray:: [100;200] => [100,200]
+  Mise à jour du tag tagArrayNum => {"0":1,"2":7,"3":10,"6":30,"7":95,"8":1}
+END 
+````
 
 # A Tester
 
