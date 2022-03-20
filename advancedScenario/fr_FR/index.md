@@ -38,9 +38,10 @@ Plugins pour gérer, créer ou modifier vos scénarios. Utilise les fonctionnali
   - [Général](#général)
   - [Flow](#flow)
 - [Exemple](#exemple)
-  - [Exemple d'une boucle for avec compteur](#exemple-dune-boucle-for-avec-compteur)
-  - [Exemple d'ajout de valeur à un tableau](#exemple-dajout-de-valeur-à-un-tableau)
-  - [Exemple de supression d'une valeur d'un tableau](#exemple-de-supression-dune-valeur-dun-tableau)
+  - [Boucle for avec compteur](#boucle-for-avec-compteur)
+  - [Ajout de valeur à un tableau](#ajout-de-valeur-à-un-tableau)
+  - [Supression d'une valeur d'un tableau](#supression-dune-valeur-dun-tableau)
+  - [Message](#message)
 - [A Tester](#a-tester)
 - [A faire](#a-faire)
 
@@ -99,7 +100,7 @@ Dans cette oonglet vous disposer des meme information que dans un scenario norma
 
 # Exemple
 
-## Exemple d'une boucle for avec compteur
+## Boucle for avec compteur
 
 Comme vous pouvez le constater, vous disposer d'un tag qui est incrémenté à chaque tour portant dont la syntaxe du nom est "#cntFor[NodeId]#".
 
@@ -122,7 +123,7 @@ BEGIN for (15)
 END 
 ```
 
-## Exemple d'ajout de valeur à un tableau
+## Ajout de valeur à un tableau
   - arrayAdd (21): Ajout de la valeur 1
   - arrayAdd (23): Ajout des valeurs 3,7,10,100,200 sous la forme d'un Json dont les virgules sont remplacées par des ;
   - arrayAdd (24): Ajout de la valeur de la commande #[RC - Pièce commune][Room config][Max lux for light]#
@@ -152,7 +153,7 @@ BEGIN logTag (28)
 END 
 ```
 
-## Exemple de supression d'une valeur d'un tableau
+## Supression d'une valeur d'un tableau
  - arrayRemove (26): Supression de la valeur 3
  - arrayRemove (27): Supression des valeurs 100,200 sous la forme d'un Json dont les virgules sont remplacées par des ;
 
@@ -164,6 +165,15 @@ BEGIN arrayRemove (26)
 END 
 BEGIN arrayRemove (27)
   Mise à jour du tag tagArrayNum => {"0":1,"2":7,"3":10,"6":30,"7":95,"8":1}
+END 
+````
+
+## Message 
+
+![Flow1](../images/message.png)
+````html
+BEGIN message (2)
+  Ajout du message suivant dans le centre de message : La consigne est de  21.5
 END 
 ````
 
