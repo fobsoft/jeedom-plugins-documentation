@@ -227,9 +227,9 @@ END
     <tr><td>  Exécuter une commande</td><td>À venir</td></tr>
     <tr><td>  Exécuter un type générique</td><td>À venir</td></tr>
     <tr><td><b>Programmation</b></td><td></td></tr>
-    <tr><td>  Code` | À venir |
+    <tr><td>  Code</td><td>À venir</td></tr>
     <tr><td><b>Autre</b></td><td></td></tr>
-    <tr><td>  Scenario | À venir |
+    <tr><td>\&nbspo;\&nbspo;Scenario</td><td>À venir</td></tr>
   </tbody>
 </table>
 
