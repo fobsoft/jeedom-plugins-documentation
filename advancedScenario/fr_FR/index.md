@@ -178,8 +178,8 @@ END
     <tr><td>Evénement</td><td>À venir</td></tr>
     <tr><td>Programmation</td><td>À venir</td></tr>
     <tr><td><b>Général</b></td><td></td></tr>
-    <tr><td>Si/Alors/Sinon</td><td><span style="color:green">Pass</span></td></tr>
-    <tr><td>Boucle</td><td><span style="color:green">Pass</span></td></tr>
+    <tr><td>Si/Alors/Sinon</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>Boucle</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td>Pour chaque</td><td>À venir</td></tr>
     <tr><td>Tant que</td><td>À venir</td></tr>
   </tbody>
