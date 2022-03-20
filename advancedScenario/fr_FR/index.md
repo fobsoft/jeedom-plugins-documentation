@@ -37,21 +37,6 @@ Plugins pour gérer, créer ou modifier vos scénarios. Utilise les fonctionnali
   * Variable:           Ajout du bouton pour inclure dans l'instruction la valeur d'une variable
   * Retourner un texte: Ajout du bouton pour inclure dans l'instruction la valeur d'une variable
   
-# Table des matières
-- [Présentation](#présentation)
-- [Table des matières](#table-des-matières)
-- [Installation et Configuration du plugins](#installation-et-configuration-du-plugins)
-- [Configuration d'un scénario](#configuration-dun-scénario)
-  - [Général](#général)
-  - [Flow](#flow)
-- [Exemple](#exemple)
-  - [Boucle for avec compteur](#boucle-for-avec-compteur)
-  - [Ajout de valeur à un tableau](#ajout-de-valeur-à-un-tableau)
-  - [Supression d'une valeur d'un tableau](#supression-dune-valeur-dun-tableau)
-  - [Message](#message)
-- [A Tester](#a-tester)
-- [A faire](#a-faire)
-
 # Installation et Configuration du plugins
 Dans la section, "Configuration" se trouve quelques options pour configurer l'affichage des logs du plugin.
 Une fois le plugin activé, on peut donc passer directement à la création et modification de ceux-ci.
