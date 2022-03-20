@@ -109,7 +109,7 @@ Dans cette oonglet vous disposer des meme information que dans un scenario norma
 
 ## Boucle for avec compteur
 
-Comme vous pouvez le constater, vous disposer d'un tag qui est incrémenté à chaque tour portant dont la syntaxe du nom est "#cntFor[NodeId]#".
+Comme vous pouvez le constater, vous disposer d'un tag qui est incrémenté à chaque tour dont la syntaxe du nom est "#cntFor[NodeId]#".
 
 ![Flow1](../images/exFor.png)
 
