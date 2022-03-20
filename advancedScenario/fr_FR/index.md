@@ -190,12 +190,14 @@ END
 | :------- | :------- | :--- |
 |   | `Evénement` | À venir | 
 |   | `Programmation` | À venir | 
+
 | Général |  |  |
 | :------- | :------- | :--- |
 |   | `Si/Alors/Sinon` | <span style="color:green">Pass</span> | 
 |   | `Boucle` | <span style="color:green">Pass</span> | 
 |   | `Pour chaque` | À venir | 
 |   | `Tant que` | À venir | 
+
 | Variable |  |  |
 | :-  | :------- | :--- |
 |     | `Tag`                                 | <span style="color:green">Pass</span> | 
@@ -203,6 +205,7 @@ END
 |     | `Supprimer une variable d'un tableau` | <span style="color:green">Pass</span> | 
 |     | `Variable`                            | <span style="color:green">Pass</span> | 
 |     | `Rediriger vers`                      | <span style="color:green">Pass</span> | 
+
 | Flux |  |  |
 | :------- | :------- | :--- |
 |   | `Stop` | <span style="color:green">Pass</span> | 
@@ -215,11 +218,13 @@ END
 |   | `Supprimer tous les bloc programmé` | À venir | 
 |   | `Supprimer un bloc programmé` | À venir | 
 |   | `Rediriger vers` | <span style="color:green">Pass</span> | 
+
 | Interface |  |  |
 | :------- | :------- | :--- |
 |   | `Aller au design` | À venir | 
 |   | `Icône` | À venir | 
 |   | `Coloration des icones` | À venir | 
+
 | Messagerie |  |  |
 | :------- | :------- | :--- |
 |   | `Ajouter un log` | <span style="color:green">Pass</span> | 
@@ -234,10 +239,12 @@ END
 |   | `Commentaire` | À venir | 
 |   | `Rapport` | À venir | 
 | Système |  |  |
+
 | :------- | :------- | :--- |
 |   | `Arrêter` | <span style="color:green">Pass</span> | 
 |   | `Redémarrer` | <span style="color:green">Pass</span> | 
 | Équipement |  |  |
+
 | :------- | :------- | :--- |
 |   | `Activer un équipement` | À venir | 
 |   | `Désactiver un équipement` | À venir | 
@@ -247,9 +254,11 @@ END
 |   | `Exécuter une commande` | À venir | 
 |   | `Exécuter un type générique` | À venir | 
 | Programmation |  |  |
+
 | :------- | :------- | :--- |
 |   | `code` | À venir |
 | Autre |  |  |
+
 | :------- | :------- | :--- |
 |   | Scenario | À venir |
 
