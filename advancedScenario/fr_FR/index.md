@@ -235,8 +235,8 @@ END
 |   | `Rapport` | À venir | 
 | Système |  |  |
 | :------- | :------- | :--- |
-|   | `Arrêter` | À venir | 
-|   | `Redémarrer` | À venir | 
+|   | `Arrêter` | <span style="color:green">Pass</span> | 
+|   | `Redémarrer` | <span style="color:green">Pass</span> | 
 | Équipement |  |  |
 | :------- | :------- | :--- |
 |   | `Activer un équipement` | À venir | 
