@@ -186,20 +186,23 @@ END
 
 # A Tester
 
-| Déclencheur |  |  |
-| :------- | :------- | :--- |
-|   | `Evénement` | À venir | 
-|   | `Programmation` | À venir | 
+*******************
+<table>
+  <tbody>
+    <tr><td><h2>Déclencheur</h2></td></tr>
+    <tr><td>Evénement</td><td>À venir</td></tr>
+    <tr><td>Programmation</td><td>À venir</td></tr>
+  </tbody>
+</table>
 
-| Général |  |  |
-| :------- | :------- | :--- |
+|  |  |  |
+| :-  | :------- | :--- |
+| *Général* |  |  |
 |   | `Si/Alors/Sinon` | <span style="color:green">Pass</span> | 
 |   | `Boucle` | <span style="color:green">Pass</span> | 
 |   | `Pour chaque` | À venir | 
 |   | `Tant que` | À venir | 
-
-| Variable |  |  |
-| :-  | :------- | :--- |
+| *Variable* |  |  |
 |     | `Tag`                                 | <span style="color:green">Pass</span> | 
 |     | `Ajout d'une valeur à un tableau`     | <span style="color:green">Pass</span> | 
 |     | `Supprimer une variable d'un tableau` | <span style="color:green">Pass</span> | 
