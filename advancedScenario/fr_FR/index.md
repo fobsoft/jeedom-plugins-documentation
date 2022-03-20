@@ -175,19 +175,19 @@ END
 <table>
   <tbody>
     <tr><td><b>Déclencheur</b></td><td></td></tr>
-    <tr><td>Evénement</td><td>À venir</td></tr>
-    <tr><td>Programmation</td><td>À venir</td></tr>
+    <tr><td>$nbsp;$nbsp;Evénement</td><td>À venir</td></tr>
+    <tr><td>$nbsp;$nbsp;Programmation</td><td>À venir</td></tr>
     <tr><td><b>Général</b></td><td></td></tr>
-    <tr><td>Si/Alors/Sinon</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>Boucle</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>Pour chaque</td><td>À venir</td></tr>
-    <tr><td>Tant que</td><td>À venir</td></tr>
+    <tr><td>$nbsp;$nbsp;Si/Alors/Sinon</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>$nbsp;$nbsp;Boucle</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>$nbsp;$nbsp;Pour chaque</td><td>À venir</td></tr>
+    <tr><td>$nbsp;$nbsp;Tant que</td><td>À venir</td></tr>
     <tr><td><b>Variable</b></td><td></td></tr>
-    <tr><td>Tag</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>Ajout d'une valeur à un tableau</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>Supprimer une variable d'un tableau</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>Variable</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>Rediriger vers</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>$nbsp;$nbsp;Tag</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>$nbsp;$nbsp;Ajout d'une valeur à un tableau</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>$nbsp;$nbsp;Supprimer une variable d'un tableau</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>$nbsp;$nbsp;Variable</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>$nbsp;$nbsp;Rediriger vers</td><td><b><span style="color:green">Pass</span></b></td></tr>
 
     <tr><td><b>Flux</b></td><td></td></tr>
 
