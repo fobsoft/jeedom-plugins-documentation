@@ -15,10 +15,10 @@ pluginId: advancedScenario
 Plugins pour gérer, créer ou modifier vos scénarios. Utilise les fonctionnalitées du système issus de Jeedom en ajoutant quelque fonctionnalité.
 * Une maintenance par nœud
 * Ajout de tag
-  * #parentLog#: Objet parent du déclencheur du scénario, si le nom des objets son remplacer dans la spécification des équipements ex: [#parentLog#][Lumiere][On], le scénario peut etre utilise pour n'importe quel objet. (A venir)
+  * #parentLog#: Objet parent du déclencheur du scénario, si le nom des objets son remplacer dans la spécification des équipements ex: [#parentLog#][Lumiere][On], le scénario peut etre utilise pour n'importe quel objet.
 * Ajout de block
-  * Pour chaque: Permet de réaliser une action pour chaque élément d'un tableau. (A venir)
-  * Tant que: Permet de réaliser une action tant que la condition est valide. (A venir)
+  * Pour chaque: Permet de réaliser une action pour chaque élément d'un tableau.
+  * Tant que: Permet de réaliser une action tant que la condition est valide.
 * Ajout d'opérateur
   * arrayIn(valeur, tableau): Permet de déterminer si une valeur est contenue dans l'array
   * arrayNotin(valeur, tableau): Permet de déterminer si une valeur n'est pas contenue dans l'array
@@ -27,8 +27,15 @@ Plugins pour gérer, créer ou modifier vos scénarios. Utilise les fonctionnali
   * Supprimer une valeur d'un tableau: Suppression d’une valeur d’un tableau
   * Afficher les tags dans le log: Permet d'afficher dans le log toutes les valeurs associées à l'exécution du scénario (tag, tableau)
   * Afficher les variables dans le log: Permet d'afficher dans le log toutes les variavles
-  * Exécuter un type générique: Permet d'exécuter les commandes des équipements d'un type générique (A venir)
+  * Exécuter un type générique: Permet d'exécuter les commandes des équipements d'un type générique
   * Rediriger vers: Permet de rediriger le flow vers un noeud
+  * Supprimer un noeud programmé
+* Modification de commande:
+  * Sleep:              Ajout des boutons pour inclure dans l'instruction la valeur d'une commande ou d'une variable
+  * Log:                Ajout du bouton pour inclure dans l'instruction la valeur d'une variable
+  * Tag:                Ajout du bouton pour inclure dans l'instruction la valeur d'une variable
+  * Variable:           Ajout du bouton pour inclure dans l'instruction la valeur d'une variable
+  * Retourner un texte: Ajout du bouton pour inclure dans l'instruction la valeur d'une variable
   
 # Table des matières
 - [Présentation](#présentation)
@@ -198,16 +205,16 @@ END
 |     | `Rediriger vers`                      | <span style="color:green">Pass</span> | 
 | Flux |  |  |
 | :------- | :------- | :--- |
-|   | `Stop` | À venir | 
+|   | `Stop` | <span style="color:green">Pass</span> | 
 |   | `Attendre` | À venir | 
-|   | `Pause` | À venir | 
+|   | `Pause` | <span style="color:green">Pass</span> | 
 |   | `Dans` | À venir | 
 |   | `A` | À venir | 
 |   | `Scénario` | À venir | 
-|   | `Retourner un texte/une donnée` | À venir | 
+|   | `Retourner un texte/une donnée` | <span style="color:green">Pass</span> | 
 |   | `Supprimer tous les bloc programmé` | À venir | 
 |   | `Supprimer un bloc programmé` | À venir | 
-|   | `Supprimer un bloc programmé` | À venir | 
+|   | `Rediriger vers` | <span style="color:green">Pass</span> | 
 | Interface |  |  |
 | :------- | :------- | :--- |
 |   | `Aller au design` | À venir | 
@@ -219,7 +226,7 @@ END
 |   | `Afficher les tags dans le log` | <span style="color:green">Pass</span> | 
 |   | `Afficher les variables dans le log` | <span style="color:green">Pass</span> | 
 |   | `Afficher les noeuds dans le log` | <span style="color:green">Pass</span> | 
-|   | `Créer un message` | À venir | 
+|   | `Créer un message` | <span style="color:green">Pass</span> | 
 |   | `Faire une demande` | À venir | 
 |   | `Dire` | À venir | 
 |   | `Alerte` | À venir | 
@@ -252,3 +259,5 @@ END
 * Aciver/Désactiver un noeud
 * Autoriser ou non la répétition des actions si l\'évaluation de la condition est la même que la précédente
 * Copier/Coller un noeud
+* Commande
+  * Boucle: Ajouter la possibilité de sélectionné un type générique
