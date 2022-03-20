@@ -20,13 +20,15 @@ Plugins pour gérer, créer ou modifier vos scénarios. Utilise les fonctionnali
   * Pour chaque: Permet de réaliser une action pour chaque élément d'un tableau. (A venir)
   * Tant que: Permet de réaliser une action tant que la condition est valide. (A venir)
 * Ajout d'opérateur
-  * arrayIn(valeur, tableau): Permet de déterminer si une valeur est contenue dans l'array (A venir)
-  * arrayNotin(valeur, tableau): Permet de déterminer si une valeur n'est pas contenue dans l'array (A venir)
+  * arrayIn(valeur, tableau): Permet de déterminer si une valeur est contenue dans l'array
+  * arrayNotin(valeur, tableau): Permet de déterminer si une valeur n'est pas contenue dans l'array
 * Ajout de commande
-  * Ajout d'une valeur à un tableau: Création/ajout d’une valeur à un tableau (n'existe que pendant l'exécution du scénario.) (A venir)
-  * Supprimer une variable d'un tableau: Suppression d’une valeur d’un tableau (A venir)
-  * Afficher les variables dans le log: Permet d'afficher dans le log toutes les valeurs associées à l'exécution du scénario (variable, tag, tableau) (A venir)
+  * Ajout d'une valeur à un tableau: Création/ajout d’une valeur à un tableau (n'existe que pendant l'exécution du scénario.)
+  * Supprimer une valeur d'un tableau: Suppression d’une valeur d’un tableau
+  * Afficher les tags dans le log: Permet d'afficher dans le log toutes les valeurs associées à l'exécution du scénario (tag, tableau)
+  * Afficher les variables dans le log: Permet d'afficher dans le log toutes les variavles
   * Exécuter un type générique: Permet d'exécuter les commandes des équipements d'un type générique (A venir)
+  * Rediriger vers: Permet de rediriger le flow vers un noeud
   
 # Table des matières
 - [Présentation](#présentation)
@@ -104,20 +106,20 @@ Comme vous pouvez le constater, vous disposer d'un tag qui est incrémenté à c
 ![Flow1](../images/exFor.png)
 
 ```html
-[2022-03-19 05:19:18][DEBUG] :                       BEGIN for (15)
-[2022-03-19 05:19:18][DEBUG] :                         BEGIN DO
-[2022-03-19 05:19:18][DEBUG] :                           BEGIN logVariable (19)
-[2022-03-19 05:19:18][INFO ] :                             Variable:
-                                                            [#cntFor15#] => 1
-[2022-03-19 05:19:18][DEBUG] :                           END 
-[2022-03-19 05:19:18][DEBUG] :                         END DO
-[2022-03-19 05:19:18][DEBUG] :                         BEGIN DO
-[2022-03-19 05:19:18][DEBUG] :                           BEGIN logVariable (19)
-[2022-03-19 05:19:18][INFO ] :                             Variable:
-                                                            [#cntFor15#] => 2
-[2022-03-19 05:19:18][DEBUG] :                           END 
-[2022-03-19 05:19:18][DEBUG] :                         END DO
-[2022-03-19 05:19:18][DEBUG] :                       END 
+BEGIN for (15)
+  BEGIN DO
+    BEGIN logTag (19)
+      Tag:
+       [#cntFor15#] => 1
+    END 
+  END DO
+  BEGIN DO
+    BEGIN logTag (19)
+      Tag:
+       [#cntFor15#] => 2
+    END 
+  END DO
+END 
 ```
 
 ## Exemple d'ajout de valeur à un tableau
@@ -144,8 +146,8 @@ END
 BEGIN arrayAdd (29)
   Mise à jour du tag tagArrayNum => [1,3,7,10,100,200,30,95]
 END 
-BEGIN logVariable (28)
-  Variable:
+BEGIN logTag (28)
+  Tag:
    [#tagArrayNum#] => [1,3,7,10,100,200,30,95]
 END 
 ```
@@ -158,16 +160,9 @@ END
 
 ````html
 BEGIN arrayRemove (26)
-  Tag tagArrayNum IS DEFINED
-  BEGIN convertExpressionToArray:: 3
-  END convertExpressionToArray:: 3 => ["3"]
   Mise à jour du tag tagArrayNum => {"0":1,"2":7,"3":10,"4":100,"5":200,"6":30,"7":95,"8":1}
 END 
 BEGIN arrayRemove (27)
-  Tag tagArrayNum IS DEFINED
-  BEGIN convertExpressionToArray:: [100;200]
-    Return valeur, expression is human json array
-  END convertExpressionToArray:: [100;200] => [100,200]
   Mise à jour du tag tagArrayNum => {"0":1,"2":7,"3":10,"6":30,"7":95,"8":1}
 END 
 ````
@@ -185,12 +180,12 @@ END
 |   | `Pour chaque` | À venir | 
 |   | `Tant que` | À venir | 
 | Variable |  |  |
-| :------- | :------- | :--- |
-|   | `Tag` | <span style="color:green">Pass</span> | 
-|   | `Ajout d'une valeur à un tableau` | <span style="color:green">Pass</span> | 
-|   | `Supprimer une variable d'un tableau` | À venir | 
-|   | `Variable` | À venir | 
-|   | `Supprimer une variable` | À venir | 
+| :-  | :------- | :--- |
+|     | `Tag`                                 | <span style="color:green">Pass</span> | 
+|     | `Ajout d'une valeur à un tableau`     | <span style="color:green">Pass</span> | 
+|     | `Supprimer une variable d'un tableau` | <span style="color:green">Pass</span> | 
+|     | `Variable`                            | <span style="color:green">Pass</span> | 
+|     | `Rediriger vers`                      | <span style="color:green">Pass</span> | 
 | Flux |  |  |
 | :------- | :------- | :--- |
 |   | `Stop` | À venir | 
@@ -202,6 +197,7 @@ END
 |   | `Retourner un texte/une donnée` | À venir | 
 |   | `Supprimer tous les bloc programmé` | À venir | 
 |   | `Supprimer un bloc programmé` | À venir | 
+|   | `Supprimer un bloc programmé` | À venir | 
 | Interface |  |  |
 | :------- | :------- | :--- |
 |   | `Aller au design` | À venir | 
@@ -210,6 +206,7 @@ END
 | Messagerie |  |  |
 | :------- | :------- | :--- |
 |   | `Ajouter un log` | <span style="color:green">Pass</span> | 
+|   | `Afficher les tags dans le log` | <span style="color:green">Pass</span> | 
 |   | `Afficher les variables dans le log` | <span style="color:green">Pass</span> | 
 |   | `Afficher les noeuds dans le log` | <span style="color:green">Pass</span> | 
 |   | `Créer un message` | À venir | 
@@ -243,5 +240,5 @@ END
 * Empécher la suppression du node "Départ" puisque celui-ci est le point d'entré général
 * Ajouter un bouton test, pour tester le flow du scénario et ainsi voir son issue
 * Aciver/Désactiver un noeud
-* Autoriser ou non la répétition d'une condition
+* Autoriser ou non la répétition des actions si l\'évaluation de la condition est la même que la précédente
 * Copier/Coller un noeud
