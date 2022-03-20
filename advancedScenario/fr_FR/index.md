@@ -175,91 +175,63 @@ END
 <table>
   <tbody>
     <tr><td><b>Déclencheur</b></td><td></td></tr>
-    <tr><td>$nbsp;$nbsp;Evénement</td><td>À venir</td></tr>
-    <tr><td>$nbsp;$nbsp;Programmation</td><td>À venir</td></tr>
+    <tr><td>  Evénement</td><td>À venir</td></tr>
+    <tr><td>  Programmation</td><td>À venir</td></tr>
     <tr><td><b>Général</b></td><td></td></tr>
-    <tr><td>$nbsp;$nbsp;Si/Alors/Sinon</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>$nbsp;$nbsp;Boucle</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>$nbsp;$nbsp;Pour chaque</td><td>À venir</td></tr>
-    <tr><td>$nbsp;$nbsp;Tant que</td><td>À venir</td></tr>
+    <tr><td>  Si/Alors/Sinon</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>  Boucle</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>  Pour chaque</td><td>À venir</td></tr>
+    <tr><td>  Tant que</td><td>À venir</td></tr>
     <tr><td><b>Variable</b></td><td></td></tr>
-    <tr><td>$nbsp;$nbsp;Tag</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>$nbsp;$nbsp;Ajout d'une valeur à un tableau</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>$nbsp;$nbsp;Supprimer une variable d'un tableau</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>$nbsp;$nbsp;Variable</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>$nbsp;$nbsp;Rediriger vers</td><td><b><span style="color:green">Pass</span></b></td></tr>
-
+    <tr><td>  Tag</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>  Ajout d'une valeur à un tableau</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>  Supprimer une variable d'un tableau</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>  Variable</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>  Rediriger vers</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td><b>Flux</b></td><td></td></tr>
-
+    <tr><td>  Stop</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>  Attendre</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>  Pause</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>  Dans</td><td>À venir</td></tr>
+    <tr><td>  A</td><td>À venir</td></tr>
+    <tr><td>  Scénario</td><td>À venir</td></tr>
+    <tr><td>  Retourner un texte/une donnée</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>  Supprimer tous les bloc programmé</td><td>À venir</td></tr>
+    <tr><td>  Supprimer un bloc programmé</td><td>À venir</td></tr>
+    <tr><td>  Rediriger vers</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td><b>Interface</b></td><td></td></tr>
-
+    <tr><td>  Aller au design</td><td>À venir</td></tr>
+    <tr><td>  Icône</td><td>À venir</td></tr>
+    <tr><td>  Coloration des icones</td><td>À venir</td></tr>
     <tr><td><b>Messagerie</b></td><td></td></tr>
-
+    <tr><td>  Ajouter un log</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>  Afficher les tags dans le log</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>  Afficher les variables dans le log</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>  Afficher les noeuds dans le log</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>  Créer un message</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>  Faire une demande</td><td>À venir</td></tr>
+    <tr><td>  Dire</td><td>À venir</td></tr>
+    <tr><td>  lerte</td><td>À venir</td></tr>
+    <tr><td>  Pop-up</td><td>À venir</td></tr>
+    <tr><td>  Commentaire</td><td>À venir</td></tr>
+    <tr><td>  Rapport</td><td>À venir</td></tr>
     <tr><td><b>Système</b></td><td></td></tr>
-
+    <tr><td>  Arrêter</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>  Redémarrer</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td><b>Équipement</b></td><td></td></tr>
-
+    <tr><td>  Activer un équipement</td><td>À venir</td></tr>
+    <tr><td>  Désactiver un équipement</td><td>À venir</td></tr>
+    <tr><td>  Masquer un équipement</td><td>À venir</td></tr>
+    <tr><td>  Afficher un équipement</td><td>À venir</td></tr>
+    <tr><td>  Générer un evènement</td><td>À venir</td></tr>
+    <tr><td>  Exécuter une commande</td><td>À venir</td></tr>
+    <tr><td>  Exécuter un type générique</td><td>À venir</td></tr>
     <tr><td><b>Programmation</b></td><td></td></tr>
-
+    <tr><td>  Code` | À venir |
     <tr><td><b>Autre</b></td><td></td></tr>
+    <tr><td>  Scenario | À venir |
   </tbody>
 </table>
-
-| Flux |  |  |
-| :------- | :------- | :--- |
-|   | `Stop` | <span style="color:green">Pass</span> | 
-|   | `Attendre` | À venir | 
-|   | `Pause` | <span style="color:green">Pass</span> | 
-|   | `Dans` | À venir | 
-|   | `A` | À venir | 
-|   | `Scénario` | À venir | 
-|   | `Retourner un texte/une donnée` | <span style="color:green">Pass</span> | 
-|   | `Supprimer tous les bloc programmé` | À venir | 
-|   | `Supprimer un bloc programmé` | À venir | 
-|   | `Rediriger vers` | <span style="color:green">Pass</span> | 
-
-| Interface |  |  |
-| :------- | :------- | :--- |
-|   | `Aller au design` | À venir | 
-|   | `Icône` | À venir | 
-|   | `Coloration des icones` | À venir | 
-
-| Messagerie |  |  |
-| :------- | :------- | :--- |
-|   | `Ajouter un log` | <span style="color:green">Pass</span> | 
-|   | `Afficher les tags dans le log` | <span style="color:green">Pass</span> | 
-|   | `Afficher les variables dans le log` | <span style="color:green">Pass</span> | 
-|   | `Afficher les noeuds dans le log` | <span style="color:green">Pass</span> | 
-|   | `Créer un message` | <span style="color:green">Pass</span> | 
-|   | `Faire une demande` | À venir | 
-|   | `Dire` | À venir | 
-|   | `Alerte` | À venir | 
-|   | `Pop-up` | À venir | 
-|   | `Commentaire` | À venir | 
-|   | `Rapport` | À venir | 
-| Système |  |  |
-
-| :------- | :------- | :--- |
-|   | `Arrêter` | <span style="color:green">Pass</span> | 
-|   | `Redémarrer` | <span style="color:green">Pass</span> | 
-| Équipement |  |  |
-
-| :------- | :------- | :--- |
-|   | `Activer un équipement` | À venir | 
-|   | `Désactiver un équipement` | À venir | 
-|   | `Masquer un équipement` | À venir | 
-|   | `Afficher un équipement` | À venir | 
-|   | `Générer un evènement` | À venir | 
-|   | `Exécuter une commande` | À venir | 
-|   | `Exécuter un type générique` | À venir | 
-| Programmation |  |  |
-
-| :------- | :------- | :--- |
-|   | `code` | À venir |
-| Autre |  |  |
-
-| :------- | :------- | :--- |
-|   | Scenario | À venir |
 
 # A faire
 * Empécher la suppression du node "Départ" puisque celui-ci est le point d'entré général
