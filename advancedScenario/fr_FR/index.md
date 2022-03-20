@@ -175,61 +175,61 @@ END
 <table>
   <tbody>
     <tr><td><b>Déclencheur</b></td><td></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Evénement</td><td>À venir</td></tr>
-    <tr><td>\&nbsp;\&nbsp;Programmation</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Evénement</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Programmation</td><td>À venir</td></tr>
     <tr><td><b>Général</b></td><td></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Si/Alors/Sinon</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Boucle</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Pour chaque</td><td>À venir</td></tr>
-    <tr><td>\&nbsp;\&nbsp;Tant que</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Si/Alors/Sinon</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Boucle</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Pour chaque</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Tant que</td><td>À venir</td></tr>
     <tr><td><b>Variable</b></td><td></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Tag</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Ajout d'une valeur à un tableau</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Supprimer une variable d'un tableau</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Variable</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Rediriger vers</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Tag</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Ajout d'une valeur à un tableau</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Supprimer une variable d'un tableau</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Variable</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Rediriger vers</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td><b>Flux</b></td><td></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Stop</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Attendre</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Pause</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Dans</td><td>À venir</td></tr>
-    <tr><td>\&nbsp;\&nbsp;A</td><td>À venir</td></tr>
-    <tr><td>\&nbsp;\&nbsp;Scénario</td><td>À venir</td></tr>
-    <tr><td>\&nbsp;\&nbsp;Retourner un texte/une donnée</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Supprimer tous les bloc programmé</td><td>À venir</td></tr>
-    <tr><td>\&nbsp;\&nbsp;Supprimer un bloc programmé</td><td>À venir</td></tr>
-    <tr><td>\&nbsp;\&nbsp;Rediriger vers</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Stop</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Attendre</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Pause</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Dans</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;A</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Scénario</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Retourner un texte/une donnée</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Supprimer tous les bloc programmé</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Supprimer un bloc programmé</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Rediriger vers</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td><b>Interface</b></td><td></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Aller au design</td><td>À venir</td></tr>
-    <tr><td>\&nbsp;\&nbsp;Icône</td><td>À venir</td></tr>
-    <tr><td>\&nbsp;\&nbsp;Coloration des icones</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Aller au design</td><td><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Icône</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Coloration des icones</td><td>À venir</td></tr>
     <tr><td><b>Messagerie</b></td><td></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Ajouter un log</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Afficher les tags dans le log</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Afficher les variables dans le log</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Afficher les noeuds dans le log</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Créer un message</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Faire une demande</td><td>À venir</td></tr>
-    <tr><td>\&nbsp;\&nbsp;Dire</td><td>À venir</td></tr>
-    <tr><td>\&nbsp;\&nbsp;lerte</td><td>À venir</td></tr>
-    <tr><td>\&nbsp;\&nbsp;Pop-up</td><td>À venir</td></tr>
-    <tr><td>\&nbsp;\&nbsp;Commentaire</td><td>À venir</td></tr>
-    <tr><td>\&nbsp;\&nbsp;Rapport</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Ajouter un log</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Afficher les tags dans le log</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Afficher les variables dans le log</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Afficher les noeuds dans le log</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Créer un message</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Faire une demande</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Dire</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;lerte</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Pop-up</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Commentaire</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Rapport</td><td>À venir</td></tr>
     <tr><td><b>Système</b></td><td></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Arrêter</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Redémarrer</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Arrêter</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Redémarrer</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td><b>Équipement</b></td><td></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Activer un équipement</td><td>À venir</td></tr>
-    <tr><td>\&nbsp;\&nbsp;Désactiver un équipement</td><td>À venir</td></tr>
-    <tr><td>\&nbsp;\&nbsp;Masquer un équipement</td><td>À venir</td></tr>
-    <tr><td>\&nbsp;\&nbsp;Afficher un équipement</td><td>À venir</td></tr>
-    <tr><td>\&nbsp;\&nbsp;Générer un evènement</td><td>À venir</td></tr>
-    <tr><td>\&nbsp;\&nbsp;Exécuter une commande</td><td>À venir</td></tr>
-    <tr><td>\&nbsp;\&nbsp;Exécuter un type générique</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Activer un équipement</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Désactiver un équipement</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Masquer un équipement</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Afficher un équipement</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Générer un evènement</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Exécuter une commande</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Exécuter un type générique</td><td>À venir</td></tr>
     <tr><td><b>Programmation</b></td><td></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Code</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Code</td><td>À venir</td></tr>
     <tr><td><b>Autre</b></td><td></td></tr>
-    <tr><td>\&nbsp;\&nbsp;Scenario</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Scenario</td><td>À venir</td></tr>
   </tbody>
 </table>
 
