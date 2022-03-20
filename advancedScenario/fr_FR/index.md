@@ -182,22 +182,28 @@ END
     <tr><td>Boucle</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td>Pour chaque</td><td>À venir</td></tr>
     <tr><td>Tant que</td><td>À venir</td></tr>
+    <tr><td><b>Variable</b></td><td></td></tr>
+    <tr><td>Tag</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>Ajout d'une valeur à un tableau</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>Supprimer une variable d'un tableau</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>Variable</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>Rediriger vers</td><td><b><span style="color:green">Pass</span></b></td></tr>
+
+    <tr><td><b>Flux</b></td><td></td></tr>
+
+    <tr><td><b>Interface</b></td><td></td></tr>
+
+    <tr><td><b>Messagerie</b></td><td></td></tr>
+
+    <tr><td><b>Système</b></td><td></td></tr>
+
+    <tr><td><b>Équipement</b></td><td></td></tr>
+
+    <tr><td><b>Programmation</b></td><td></td></tr>
+
+    <tr><td><b>Autre</b></td><td></td></tr>
   </tbody>
 </table>
-
-|  |  |  |
-| :-  | :------- | :--- |
-| ** |  |  |
-|   | `` | <span style="color:green">Pass</span> | 
-|   | `` | <span style="color:green">Pass</span> | 
-|   | ` | À venir | 
-|   | `` | À venir | 
-| *Variable* |  |  |
-|     | `Tag`                                 | <span style="color:green">Pass</span> | 
-|     | `Ajout d'une valeur à un tableau`     | <span style="color:green">Pass</span> | 
-|     | `Supprimer une variable d'un tableau` | <span style="color:green">Pass</span> | 
-|     | `Variable`                            | <span style="color:green">Pass</span> | 
-|     | `Rediriger vers`                      | <span style="color:green">Pass</span> | 
 
 | Flux |  |  |
 | :------- | :------- | :--- |
