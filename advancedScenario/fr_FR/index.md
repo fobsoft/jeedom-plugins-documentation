@@ -90,7 +90,7 @@ Dans cette oonglet vous disposer des meme information que dans un scenario norma
   - Option général d'un block
     - Et dans un block d'un scénario, nous disposons de certaines options avec ces icônes. ![NoeudOption1](../images/NoeudOption1.png)
 
-# Exemple
+# Exemple d'utilisaion de commande
 
 ## Boucle for avec compteur
 
