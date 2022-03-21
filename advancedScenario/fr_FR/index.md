@@ -196,13 +196,13 @@ END
     <tr><td>&nbsp;&nbsp;A</td><td>À venir</td></tr>
     <tr><td>&nbsp;&nbsp;Scénario</td><td>À venir</td></tr>
     <tr><td>&nbsp;&nbsp;Retourner un texte/une donnée</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Supprimer tous les bloc programmé</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Supprimer tous les bloc programmé</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td>&nbsp;&nbsp;Supprimer un bloc programmé</td><td>À venir</td></tr>
     <tr><td>&nbsp;&nbsp;Rediriger vers</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td><b>Interface</b></td><td></td></tr>
     <tr><td>&nbsp;&nbsp;Aller au design</td><td><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Icône</td><td>À venir</td></tr>
-    <tr><td>&nbsp;&nbsp;Coloration des icones</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Icône</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Coloration des icones</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td><b>Messagerie</b></td><td></td></tr>
     <tr><td>&nbsp;&nbsp;Ajouter un log</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td>&nbsp;&nbsp;Afficher les tags dans le log</td><td><b><span style="color:green">Pass</span></b></td></tr>
@@ -211,8 +211,8 @@ END
     <tr><td>&nbsp;&nbsp;Créer un message</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td>&nbsp;&nbsp;Faire une demande</td><td>À venir</td></tr>
     <tr><td>&nbsp;&nbsp;Dire</td><td>À venir</td></tr>
-    <tr><td>&nbsp;&nbsp;lerte</td><td>À venir</td></tr>
-    <tr><td>&nbsp;&nbsp;Pop-up</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Alerte</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Pop-up</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td>&nbsp;&nbsp;Commentaire</td><td>À venir</td></tr>
     <tr><td>&nbsp;&nbsp;Rapport</td><td>À venir</td></tr>
     <tr><td><b>Système</b></td><td></td></tr>
