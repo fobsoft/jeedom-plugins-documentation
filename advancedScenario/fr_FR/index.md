@@ -96,7 +96,7 @@ Dans cette oonglet vous disposer des meme information que dans un scenario norma
 
 Comme vous pouvez le constater, vous disposer d'un tag qui est incrémenté à chaque tour dont la syntaxe du nom est "#cntFor[NodeId]#".
 
-![Flow1](../images/exFor.png)
+![exFor](../images/exFor.png)
 
 ```html
 BEGIN for (15)
@@ -121,7 +121,7 @@ END
   - arrayAdd (24): Ajout de la valeur de la commande #[RC - Pièce commune][Room config][Max lux for light]#
   - arrayAdd (29): Ajout de la valeur de la variable #pctLight#
 
-![Flow1](../images/arrayAdd.png)
+![arrayAdd](../images/arrayAdd.png)
 
 ```html
 BEGIN log (22)
@@ -149,7 +149,7 @@ END
  - arrayRemove (26): Supression de la valeur 3
  - arrayRemove (27): Supression des valeurs 100,200 sous la forme d'un Json dont les virgules sont remplacées par des ;
 
-![Flow1](../images/arrayRemove.png)
+![arrayRemove](../images/arrayRemove.png)
 
 ````html
 BEGIN arrayRemove (26)
@@ -162,12 +162,18 @@ END
 
 ## Message 
 
-![Flow1](../images/message.png)
+![message](../images/message.png)
 ````html
 BEGIN message (2)
   Ajout du message suivant dans le centre de message : La consigne est de  21.5
 END 
 ````
+
+## Exécution en parallèle
+Pour une exécution en parallèle, il ne suffit que de lier toutes les actions au même noeud plus tôt qu'une disposition bout en bout.
+
+![execParallèle](../images/execParallèle.png)
+
 
 # A Tester
 
@@ -228,8 +234,6 @@ END
     <tr><td>&nbsp;&nbsp;Exécuter un type générique</td><td>À venir</td></tr>
     <tr><td><b>Programmation</b></td><td></td></tr>
     <tr><td>&nbsp;&nbsp;Code</td><td>À venir</td></tr>
-    <tr><td><b>Autre</b></td><td></td></tr>
-    <tr><td>&nbsp;&nbsp;Scenario</td><td>À venir</td></tr>
   </tbody>
 </table>
 
@@ -241,3 +245,5 @@ END
 * Copier/Coller un noeud
 * Commande
   * Boucle: Ajouter la possibilité de sélectionné un type générique
+* Ajouter bouton pour les commandes
+* Ajouter bouton pour les variables
