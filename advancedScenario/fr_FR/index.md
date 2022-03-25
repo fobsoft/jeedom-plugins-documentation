@@ -169,6 +169,32 @@ BEGIN message (2)
 END 
 ````
 
+## Manipulaion d'un équipement
+Voici un exemple de manipultion d'équipement lié à l'obect parent du scénario
+
+![message](../images/eq.png)
+````html
+BEGIN Scénario [Aucun][E - Chambre][Test Node] : Scenario lance manuellement
+  BEGIN start (1)
+    BEGIN logTag (24)
+      [#scenarioStartDate#] => 2022-03-25 07:25:13
+      [#scenarioId#] => 103
+      [#scenarioObject#] => [E - Chambre]
+      [#scenarioObjectId#] => 13
+      [#trigger#] => user
+      [#triggerObject#] => [E - Chambre]
+      [#triggerObjectId#] => 13
+    END 
+    BEGIN equipement_act (19)
+      Evaluation de la condition :: #tag(scenarioObject,0)[Room config]#
+      Evaluation de la condition :: #[E - Chambre][Room config]#
+      Evaluation de la condition :: 814
+      Equipement activé : [E - Chambre][Room config]
+    END 
+  END 
+END Fin correcte du scénario
+````
+
 ## Exécution en parallèle
 Pour une exécution en parallèle, il ne suffit que de lier toutes les actions au même noeud plus tôt qu'une disposition bout en bout.
 
@@ -186,8 +212,8 @@ Pour une exécution en parallèle, il ne suffit que de lier toutes les actions a
     <tr><td><b>Général</b></td><td></td></tr>
     <tr><td>&nbsp;&nbsp;Si/Alors/Sinon</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td>&nbsp;&nbsp;Boucle</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Pour chaque</td><td>À venir</td></tr>
-    <tr><td>&nbsp;&nbsp;Tant que</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Pour chaque</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Tant que</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td><b>Variable</b></td><td></td></tr>
     <tr><td>&nbsp;&nbsp;Tag</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td>&nbsp;&nbsp;Ajout d'une valeur à un tableau</td><td><b><span style="color:green">Pass</span></b></td></tr>
@@ -198,8 +224,8 @@ Pour une exécution en parallèle, il ne suffit que de lier toutes les actions a
     <tr><td>&nbsp;&nbsp;Stop</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td>&nbsp;&nbsp;Attendre</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td>&nbsp;&nbsp;Pause</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Dans</td><td>À venir</td></tr>
-    <tr><td>&nbsp;&nbsp;A</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Dans</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;A</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td>&nbsp;&nbsp;Scénario</td><td>À venir</td></tr>
     <tr><td>&nbsp;&nbsp;Retourner un texte/une donnée</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td>&nbsp;&nbsp;Supprimer tous les bloc programmé</td><td><b><span style="color:green">Pass</span></b></td></tr>
@@ -225,10 +251,10 @@ Pour une exécution en parallèle, il ne suffit que de lier toutes les actions a
     <tr><td>&nbsp;&nbsp;Arrêter</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td>&nbsp;&nbsp;Redémarrer</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td><b>Équipement</b></td><td></td></tr>
-    <tr><td>&nbsp;&nbsp;Activer un équipement</td><td>À venir</td></tr>
-    <tr><td>&nbsp;&nbsp;Désactiver un équipement</td><td>À venir</td></tr>
-    <tr><td>&nbsp;&nbsp;Masquer un équipement</td><td>À venir</td></tr>
-    <tr><td>&nbsp;&nbsp;Afficher un équipement</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Activer un équipement</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Désactiver un équipement</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Masquer un équipement</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Afficher un équipement</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td>&nbsp;&nbsp;Générer un evènement</td><td>À venir</td></tr>
     <tr><td>&nbsp;&nbsp;Exécuter une commande</td><td>À venir</td></tr>
     <tr><td>&nbsp;&nbsp;Exécuter un type générique</td><td>À venir</td></tr>
