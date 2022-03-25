@@ -15,7 +15,14 @@ pluginId: advancedScenario
 Plugins pour gérer, créer ou modifier vos scénarios. Utilise les fonctionnalitées du système issus de Jeedom en ajoutant quelque fonctionnalité.
 * Une maintenance par nœud
 * Ajout de tag
-  * #parentLog#: Objet parent du déclencheur du scénario, si le nom des objets son remplacer dans la spécification des équipements ex: [#parentLog#][Lumiere][On], le scénario peut etre utilise pour n'importe quel objet.
+  * En rapport au scénario:
+    * #scenarioObject#: Objet parent du scénario, si le nom des objets son remplacer dans la spécification des équipements ex: #tag(scenarioObject,0)[Lumiere][On]#, le scénario peut etre utilise pour n'importe quel objet.
+  * En rapport à la commande qui à déclanché le scénario
+    * #trigger#: Son nom (ex:)
+    * #triggerGenericType#: Son type générique (ex:)
+    * #triggerEq#: Le nom de l'équipement (ex:)
+  * En rapport à l'exjcution du scénario:
+    * #triggerObject#: Le nom de l'object parent de la commande, sinon le nom de l'object parent du scénario
 * Ajout de block
   * Pour chaque: Permet de réaliser une action pour chaque élément d'un tableau.
   * Tant que: Permet de réaliser une action tant que la condition est valide.
@@ -31,11 +38,7 @@ Plugins pour gérer, créer ou modifier vos scénarios. Utilise les fonctionnali
   * Rediriger vers: Permet de rediriger le flow vers un noeud
   * Supprimer un noeud programmé
 * Modification de commande:
-  * Sleep:              Ajout des boutons pour inclure dans l'instruction la valeur d'une commande ou d'une variable
-  * Log:                Ajout du bouton pour inclure dans l'instruction la valeur d'une variable
-  * Tag:                Ajout du bouton pour inclure dans l'instruction la valeur d'une variable
-  * Variable:           Ajout du bouton pour inclure dans l'instruction la valeur d'une variable
-  * Retourner un texte: Ajout du bouton pour inclure dans l'instruction la valeur d'une variable
+  * Ajout de boutons supplémentaire au commande connue pour facilité la gestion
   
 # Installation et Configuration du plugins
 Dans la section, "Configuration" se trouve quelques options pour configurer l'affichage des logs du plugin.
@@ -232,7 +235,7 @@ Pour une exécution en parallèle, il ne suffit que de lier toutes les actions a
     <tr><td>&nbsp;&nbsp;Supprimer un bloc programmé</td><td>À venir</td></tr>
     <tr><td>&nbsp;&nbsp;Rediriger vers</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td><b>Interface</b></td><td></td></tr>
-    <tr><td>&nbsp;&nbsp;Aller au design</td><td><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Aller au design</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td>&nbsp;&nbsp;Icône</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td>&nbsp;&nbsp;Coloration des icones</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td><b>Messagerie</b></td><td></td></tr>
@@ -264,12 +267,14 @@ Pour une exécution en parallèle, il ne suffit que de lier toutes les actions a
 </table>
 
 # A faire
-* Empécher la suppression du node "Départ" puisque celui-ci est le point d'entré général
-* Ajouter un bouton test, pour tester le flow du scénario et ainsi voir son issue
-* Aciver/Désactiver un noeud
-* Autoriser ou non la répétition des actions si l\'évaluation de la condition est la même que la précédente
-* Copier/Coller un noeud
+* Général
+  * Empécher la suppression du node "Départ" puisque celui-ci est le point d'entré général
+* Noeud
+  * Aciver/Désactiver un noeud
+  * Ajouter une mainenance pour avoir plus d'option pour la création de l'expression du noeud sans trop charger la page principal.
+  * Copier/Coller un noeud
 * Commande
   * Boucle: Ajouter la possibilité de sélectionné un type générique
-* Ajouter bouton pour les commandes
-* Ajouter bouton pour les variables
+  * Si/Alors/Sinon: Autoriser ou non la répétition des actions si l\'évaluation de la condition est la même que la précédente
+* Log
+  * Travailler le visuel du log lors d'exécution en parallèle
