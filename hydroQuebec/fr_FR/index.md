@@ -36,8 +36,8 @@ Sur cette page vous retrouvez la liste de vos équipements. Cliquez sur un équi
 * Paramètres spécifiques
   * Nom d'utilisateur : Renseignez votre nom d'utilisateur de votre compte client d'hydro-québec (celui que vous utilisez lorsque vousvous conntez sur le site d'Hydro-Québec)
   * Mot de passe : Renseignez votre mot de passe de votre compte client d'hydro-québec (celui que vous utilisez lorsque vousvous conntez sur le site d'Hydro-Québec)
-  * Numéro de client : Renseignez votre numéro de client de votre compte client d'hydro-québec (10 caractères numériques)
-  * Numéro du contrat : Renseignez votre numéro de contrat de votre compte client d'hydro-québec (9 caractères numériques)
+  * Numéro de client : Renseignez votre numéro de client de votre compte client d'hydro-québec (10 caractères numériques sans espace)
+  * Numéro du contrat : Renseignez votre numéro de contrat de votre compte client d'hydro-québec (9 caractères numériques sans espace)
 
 > Pour connaître vos informations de client et contrat, connectez-vous à votre compte d'Hydro-Québec, 
 >   Votre numéro de contrat, ce trouve sous l'onglet Sommaire.
