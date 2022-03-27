@@ -165,7 +165,6 @@ De plus vous disposer dans l'équipement d'une commande pour configurer la valeu
     # Ordonnancer les variables (glissé/déplacé ou un index)
   # Correction
     # La suppression d’un résumé ne supprime pas les commandes créés… elles s’accumulent et il est impossible de recréer un résumé avec le nom initial (msg : commande déjà existante)
-    # Accès non autorisé lors de l'affichage des logs
 
 # FAQ
 Pour toute question, suggestion ou problème, écrivez-moi au fobsoft@gmail.com 

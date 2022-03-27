@@ -9,12 +9,9 @@ pluginId: genericTypeManager
 <a href="../../../{{site.baseurl}}/{{page.pluginId}}/{{page.lang}}">Plugin {{page.title}}</a>
 </div>
 
-# Stable
-## 2021/12/25
-- Création du plugin
-- Première phase, permettre la configuration de base des types génériques
-
 # Beta
+## 2022/03/28
+- Accès non autorisé lors de l'affichage des logs
 ## 2022/03/01
 - Un listener déclenché est disabler 5 sec, pour éviter le re-declanchement pour une meme valeur
 - Sécurité ajouté lorsque l'on tente une ouverture d'un type générique et que le slider est à 0, cette action est annulé
