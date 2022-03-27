@@ -12,6 +12,8 @@ pluginId: hydroQuebec
 Changelog
 ===
 # Beta
+## 2022/03/27
+- Correction du path d'exécution de la cron pour la collect d'informations
 ## 2022/02/01
 - Recherche et affichage des informations
 - Création des crons en fonction des événements
