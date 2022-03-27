@@ -46,7 +46,8 @@ Sur cette page vous retrouvez la liste de vos équipements. Cliquez sur un équi
 >     ![client1](../images/client1.png)
 >     ![client2](../images/client2.png)
 
-Et voici un aperçu
+Et voici un aperçu du résultat
+
 ![equipement](../images/equipement.png)
   
 ## Mode
