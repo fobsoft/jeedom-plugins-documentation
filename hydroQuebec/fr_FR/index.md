@@ -34,10 +34,12 @@ Sur cette page vous retrouvez la liste de vos équipements. Cliquez sur un équi
   * Activer : permet de rendre l’équipement actif.
   * Visible : permet de rendre l’équipement visible sur le dashboard.
 * Paramètres spécifiques
-  * Nom d'utilisateur : Renseignez votre nom d'utilisateur de votre compte client d'hydro-québec
-  * Mot de passe : Renseignez votre mot de passe de votre compte client d'hydro-québec
-  * Numéro de client : Renseignez votre numéro de client de votre compte client d'hydro-québec
-  * Numéro du contrat : Renseignez votre numéro de contrat de votre compte client d'hydro-québec
+  * Nom d'utilisateur : Renseignez votre nom d'utilisateur de votre compte client d'hydro-québec (celui que vous utilisez lorsque vousvous conntez sur le site d'Hydro-Québec)
+  * Mot de passe : Renseignez votre mot de passe de votre compte client d'hydro-québec (celui que vous utilisez lorsque vousvous conntez sur le site d'Hydro-Québec)
+  * Numéro de client : Renseignez votre numéro de client de votre compte client d'hydro-québec (10 caractères numériques)
+  * Numéro du contrat : Renseignez votre numéro de contrat de votre compte client d'hydro-québec (9 caractères numériques)
+
+![equipement](../images/equipement.png)
   
 ## Mode
 Les modes sont des consignes prédéterminées qui seront exécutées lors d'un événement d'Hydro-Québec. Comme par exemple le sur-chauffage de pièce avant l'événement et l'arrêt de celui-ci au début de l'événement. Vous disposez d'un mode "Avant l'événement HP" et "Après l'événement HP" où vous pouvez configurer le nombre d'heures de déphasage pour l'exécution de ceux-ci lors de l'événement.
