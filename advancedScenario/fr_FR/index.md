@@ -258,8 +258,8 @@ Pour une exécution en parallèle, il ne suffit que de lier toutes les actions a
     <tr><td>&nbsp;&nbsp;Désactiver un équipement</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td>&nbsp;&nbsp;Masquer un équipement</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td>&nbsp;&nbsp;Afficher un équipement</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Générer un evènement</td><td>À venir</td></tr>
-    <tr><td>&nbsp;&nbsp;Exécuter une commande</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Générer un evènement</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Exécuter une commande</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td>&nbsp;&nbsp;Exécuter un type générique</td><td>À venir</td></tr>
     <tr><td><b>Programmation</b></td><td></td></tr>
     <tr><td>&nbsp;&nbsp;Code</td><td>À venir</td></tr>
@@ -273,8 +273,13 @@ Pour une exécution en parallèle, il ne suffit que de lier toutes les actions a
   * Aciver/Désactiver un noeud
   * Ajouter une mainenance pour avoir plus d'option pour la création de l'expression du noeud sans trop charger la page principal.
   * Copier/Coller un noeud
+  * Ajouter un bouton pour sélectionner les tags disponible
+  * Ajouter un bouton pour sélectionner une fonction mathématique
 * Commande
   * Boucle: Ajouter la possibilité de sélectionné un type générique
   * Si/Alors/Sinon: Autoriser ou non la répétition des actions si l\'évaluation de la condition est la même que la précédente
 * Log
   * Travailler le visuel du log lors d'exécution en parallèle
+* Déclencheurs
+  * Ajouter un bouton pour sélectionner un déclancheur
+  * Ajouter un bouton pour sélectionner une variable
