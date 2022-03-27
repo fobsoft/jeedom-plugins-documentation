@@ -39,12 +39,12 @@ Sur cette page vous retrouvez la liste de vos équipements. Cliquez sur un équi
   * Numéro de client : Renseignez votre numéro de client de votre compte client d'hydro-québec (10 caractères numériques)
   * Numéro du contrat : Renseignez votre numéro de contrat de votre compte client d'hydro-québec (9 caractères numériques)
 
-> Pour connaître votre numéro de contrat, connectez-vous à votre compte d'Hydro-Québec, sous l'onglet Sommaire.
-![contrat](../images/contrat.png)
-
-> Pour connaître votre numéro de client, connectez-vous à votre compte d'Hydro-Québec, cliquer ssur votre nom.
-![client1](../images/client1.png)
-![client2](../images/client2.png)
+> Pour connaître vos informations de client et contrat, connectez-vous à votre compte d'Hydro-Québec, 
+>   Votre numéro de contrat, ce trouve sous l'onglet Sommaire.
+>     ![contrat](../images/contrat.png)
+>   Pour votre numéro de client, cliquer sur votre nom.
+>     ![client1](../images/client1.png)
+>     ![client2](../images/client2.png)
 
 Et voici un aperçu
 ![equipement](../images/equipement.png)
