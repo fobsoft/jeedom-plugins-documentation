@@ -15,7 +15,10 @@ pluginId: hydroQuebec
 Plugin permettant de récupérer les informations de consommation électrique et des événements d'Hydro-Québec (wwww.hydroquebec.com), et de créer des crons en fonction des événements
 
 # Installation et Configuration du plugins
-Dans la section, "Configuration" se trouve quelques options pour configurer l'affichage des logs du plugin.
+
+Dans la section, "Dépendances", vous devrez lancer l'installation des dépendances, ceci ne dureraa que quelque minutes.
+
+Dans la section, "Configuration", se trouve quelques options pour configurer l'affichage des logs du plugin.
 
 Dans la section "Fonctionnalités", vous pouvez constater une cron, elle sert à récupérer vos informations de consommation et les événements à venir.
 

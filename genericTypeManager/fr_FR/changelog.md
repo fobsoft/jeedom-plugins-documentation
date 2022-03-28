@@ -12,6 +12,7 @@ pluginId: genericTypeManager
 # Beta
 ## 2022/03/28
 - Accès non autorisé lors de l'affichage des logs
+- Correction d'effacement de commande suite à la suppression d'un résumé
 ## 2022/03/01
 - Un listener déclenché est disabler 5 sec, pour éviter le re-declanchement pour une meme valeur
 - Sécurité ajouté lorsque l'on tente une ouverture d'un type générique et que le slider est à 0, cette action est annulé
@@ -20,9 +21,9 @@ pluginId: genericTypeManager
 - Modification de l'affichage des logs
 - Modification des règles de comparaison
 ## 2022/01/10
-- Ajouter des modes à l'équipement avec des actions à exécuter
-- Ajouter des actions aux changements d'une commande d'information.
-- Ajouter de variables.
+- Ajout de modes à l'équipement avec des actions à exécuter
+- Ajout d'es 'actions aux changements d'une commande d'information.
+- Ajout de variables.
 ## 2022/01/22
 - Ajout du bouton pour dupliquer l'équipement
 - Log
