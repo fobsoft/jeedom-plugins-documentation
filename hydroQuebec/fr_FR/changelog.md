@@ -9,8 +9,6 @@ pluginId: hydroQuebec
 <a href="../../../{{site.baseurl}}/{{page.pluginId}}/{{page.lang}}">Plugin {{page.pluginId}}</a>
 </div>
 
-Changelog
-===
 # Beta
 ## 2022/03/29
 - Affichage des informations dans le widget
@@ -21,6 +19,5 @@ Changelog
 - Recherche et affichage des informations
 - Création des crons en fonction des événements
 
-===
 # A faire
-- Cré un panel pour l'affichage des graphiques
+- Créer un panel pour l'affichage des graphiques
