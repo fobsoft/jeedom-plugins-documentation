@@ -203,6 +203,62 @@ Pour une exécution en parallèle, il ne suffit que de lier toutes les actions a
 
 ![execParallèle](../images/execParallèle.png)
 
+## Déclancheur
+Il est possible d'avoir multiple déclancheur et d'avoir un chemin différent pour chacun. Mais comme le scénario ne spécifi pas exactement qu'elle déclancheur à été solicité, le pluggin y va par déduction.
+
+![trigger](../images/trigger.png)
+````html
+ -- Start : Scenario execute automatiquement sur evenement venant de :  genericType(LIGHT_STATE,#[E - Bureau]#) from [E - Bureau][Lumiere][Etat].
+ - Exécution du sous-élément de type [action] : action
+ Exécution d'un bloc élément : 554
+ - Exécution du sous-élément de type [action] : code
+ Exécution d'un bloc code 
+   BEGIN Scénario [Aucun][E - Chambre][Test Node] |||#842#
+     BEGIN Node (1): {"nodeId":1,"type":"start","subtype":"trigger","options":{},"subelements":{"GO":{"type":"","subtype":"action","expression":"","linkTo":["30"]}},"title":"D\u00e9part"}
+       Compare  vs #[E - Bureau][Lumiere][Etat]#
+       Compare  vs genericType(LIGHT_STATE,#[E - Bureau]#)
+       Compare start == triggerSchedule && [E - Bureau][Lumiere][Etat] == programmation
+     END 
+     BEGIN Node (34): {"nodeId":34,"type":"triggerEvent","subtype":"trigger","options":{"enable":1},"expression":"#[E - Bureau][Lumiere][Etat]#","subelements":{"GO":{"linkTo":["33"]}},"title":"Ev\u00e9nement"}
+       Compare #[E - Bureau][Lumiere][Etat]# vs #[E - Bureau][Lumiere][Etat]#
+       Compare #[E - Bureau][Lumiere][Etat]# vs genericType(LIGHT_STATE,#[E - Bureau]#)
+       Compare triggerEvent == triggerSchedule && [E - Bureau][Lumiere][Etat] == programmation
+     END 
+     BEGIN triggerEvent (34)
+       BEGIN log (33)
+         Scenario exécuté par commande
+       END 
+       BEGIN logNode (30)
+         Node (1): {"nodeId":1,"type":"start","subtype":"trigger","options":{},"subelements":{"GO":{"type":"","subtype":"action","expression":"","linkTo":["30"]}},"title":"D\u00e9part"}
+         Node (30): {"nodeId":30,"type":"logNode","subtype":"action","options":{"enable":1},"subelements":{"OK":{"linkTo":["32"]}},"title":"Afficher noeuds dans le log"}
+         Node (31): {"nodeId":31,"type":"log","subtype":"action","options":{"enable":1,"value":"Fin du scenario"},"subelements":{"OK":{"linkTo":[]}},"title":"Ajouter un log"}
+         Node (32): {"nodeId":32,"type":"logTag","subtype":"action","options":{"enable":1},"subelements":{"OK":{"linkTo":["31"]}},"title":"Afficher tags dans le log"}
+         Node (33): {"nodeId":33,"type":"log","subtype":"action","options":{"enable":1,"value":"Scenario ex\u00e9cut\u00e9 par commande"},"subelements":{"OK":{"linkTo":["30"]}},"title":"Ajouter un log"}
+         Node (34): {"nodeId":34,"type":"triggerEvent","subtype":"trigger","options":{"enable":1},"expression":"#[E - Bureau][Lumiere][Etat]#","subelements":{"GO":{"linkTo":["33"]}},"title":"Ev\u00e9nement"}
+         Node (35): {"nodeId":35,"type":"triggerEvent","subtype":"trigger","options":{"enable":1},"expression":"genericType(LIGHT_STATE,#[E - Bureau]#)","subelements":{"GO":{"linkTo":["36"]}},"title":"Ev\u00e9nement"}
+         Node (36): {"nodeId":36,"type":"log","subtype":"action","options":{"enable":1,"value":"Scenario ex\u00e9cut\u00e9 par type g\u00e9n\u00e9rique"},"subelements":{"OK":{"linkTo":["30"]}},"title":"Ajouter un log"}
+         Node (38): {"nodeId":38,"type":"log","subtype":"action","options":{"enable":1,"value":"Scenario ex\u00e9cut\u00e9 par programmation"},"subelements":{"OK":{"linkTo":["30"]}},"title":"Ajouter un log"}
+         Node (40): {"nodeId":40,"type":"triggerSchedule","subtype":"trigger","options":{"enable":1},"expression":"00 08 31 03 4 2022","subelements":{"GO":{"linkTo":["38"]}},"title":"Programmation"}
+         Node (41): {"nodeId":41,"type":"triggerSchedule","subtype":"trigger","options":{"enable":1},"expression":"15 09 27 03 0 2024","subelements":{"GO":{"linkTo":["38"]}},"title":"Programmation"}
+       END 
+       BEGIN logTag (32)
+         [#execByScenarioSys#] => 1
+         [#scenarioStartDate#] => 2022-03-31 20:49:56
+         [#scenarioId#] => 103
+         [#scenarioObject#] => [E - Chambre]
+         [#trigger#] => [E - Bureau][Lumiere][Etat]
+         [#triggerValue#] => 0
+         [#triggerGenericType#] => LIGHT_STATE
+         [#triggerEq#] => [E - Bureau][Lumiere]
+         [#triggerObject#] => [E - Bureau]
+         [#triggerObjectId#] => 12
+       END 
+       BEGIN log (31)
+         Fin du scenario
+       END 
+     END 
+   END Fin correcte du scénario------------------------------------
+````
 
 # A Tester
 
@@ -210,8 +266,8 @@ Pour une exécution en parallèle, il ne suffit que de lier toutes les actions a
 <table>
   <tbody>
     <tr><td><b>Déclencheur</b></td><td></td></tr>
-    <tr><td>&nbsp;&nbsp;Evénement</td><td>À venir</td></tr>
-    <tr><td>&nbsp;&nbsp;Programmation</td><td>À venir</td></tr>
+    <tr><td>&nbsp;&nbsp;Evénement</td><td><b><span style="color:green">Pass</span></b></td></tr>
+    <tr><td>&nbsp;&nbsp;Programmation</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td><b>Général</b></td><td></td></tr>
     <tr><td>&nbsp;&nbsp;Si/Alors/Sinon</td><td><b><span style="color:green">Pass</span></b></td></tr>
     <tr><td>&nbsp;&nbsp;Boucle</td><td><b><span style="color:green">Pass</span></b></td></tr>
