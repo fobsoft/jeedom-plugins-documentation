@@ -9,6 +9,8 @@ pluginId: hydroQuebec
 <a href="../../../{{site.baseurl}}/{{page.pluginId}}/{{page.lang}}">{{page.title}}</a>
 </div>
 
+>> Suite à la nouvelle reçue d'Hydro-Québec que leur portail client de sera plus disponible et que se plugin s'appuie sur celui-ci, il n'est désormais plus disponible pour le moment. Aucune information d'Hydro-Québec ne nous indique qu'il y aura ou non un API de disponible pour récupérer nos informations.
+
 > Le plugin est encore jeune et peut encore comporter quelques bugs, mais il évolue régulièrement : n’hésitez pas à me contacter à mon courriel personnel, sois le fobsoft@gmail.com avec toutes vos remarques et suggestions.
 
 # Présentation

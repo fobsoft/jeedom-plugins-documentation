@@ -10,10 +10,10 @@ pluginId: hydroQuebec
 </div>
 
 # Beta
-
 ## 2022/03/29
 - Affichage des informations dans le widget
   
+# Master
 ## 2022/03/27
 - Correction du path d'exécution de la cron pour la collect d'informations
 - Correction de la configuration de l'installation des dépendnces
