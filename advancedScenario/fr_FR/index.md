@@ -85,7 +85,7 @@ Dans cette oonglet vous disposer des meme information que dans un scenario norma
   Vous disposez à droite de l'écran des actions habituel d'un scénario, il suffit d'un "drag and drop" vers la droite pour en ajouter. Je ne documenterais pas le fonctionnement de chacune de ces actions, puisqu'il y a déjà une documentation dédiée à ceux-ci.
   Les déclencheurs du scénario se trouvent dans la première boite nommée "Déclencheur".
 
-  ![Left](../images/Left.png)
+  ![Left](../images/left.png)
 
 - Partie Gauche
   - Un premier nœud est ajouté par défaut, celui marque le départ du flow. Ne pas supprimer, puisqu'il est utilisé lorsqu'il n'y a pas d'autre déclencheur ou lorsque vous tester le scénario.    
@@ -97,7 +97,7 @@ Dans cette oonglet vous disposer des meme information que dans un scenario norma
 
 ## Boucle for avec compteur
 
-Comme vous pouvez le constater, vous disposer d'un tag qui est incrémenté à chaque tour dont la syntaxe du nom est "#cntFor[NodeId]#".
+Comme vous pouvez le constater, vous disposer d'un tag qui est incrémenté à chaque tour dont la syntaxe du nom est "#cntFor[NodeId]#". Le log qui suit l'image n'est que la parti du noeud "Boucle" et de l'exécution des commande sous "DO".
 
 ![exFor](../images/exFor.png)
 
