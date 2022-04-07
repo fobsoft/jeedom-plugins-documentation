@@ -327,6 +327,9 @@ Il est possible d'avoir multiple déclancheur et d'avoir un chemin différent po
   </tbody>
 </table>
 
+# Plugin tier
+Il sera posssible pour d'autre plugin d'appler celui-ci avec une liste de noeud à exécuter. Il sera donc possible dans un plugin d'étaablir un flow d'action mais de permettre à l'utilisateur de modifier celui-ci.
+
 # A faire
 * Général
   * Empécher la suppression du node "Départ" puisque celui-ci est le point d'entré général
