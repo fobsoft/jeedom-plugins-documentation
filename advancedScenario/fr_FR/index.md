@@ -91,7 +91,8 @@ Dans cette oonglet vous disposer des meme information que dans un scenario norma
   - Un premier nœud est ajouté par défaut, celui marque le départ du flow. Ne pas supprimer, puisqu'il est utilisé lorsqu'il n'y a pas d'autre déclencheur ou lorsque vous tester le scénario.    
   ![NoeudDepart](../images/NoeudDepart.png)
   
-  - Nous disposons de certaines options de saisie dans le noeud avec ces icônes. ![NoeudOption1](../images/NoeudOption1.png)
+  - Nous disposons de certaines options de saisie dans le noeud avec ces icônes. 
+  ![NoeudOption1](../images/NoeudOption1.png)
 
 # Exemple d'utilisaion de commande
 
@@ -338,6 +339,7 @@ Il est possible d'avoir multiple déclancheur et d'avoir un chemin différent po
 * Commande
   * Boucle: Ajouter la possibilité de sélectionné un type générique
   * Si/Alors/Sinon: Autoriser ou non la répétition des actions si l\'évaluation de la condition est la même que la précédente
+  * Switch: Ajouter cette commande pour éviter d'avoir des Si / Sinon bout en bout 
 * Log
   * Travailler le visuel du log lors d'exécution en parallèle
 * Déclencheurs
