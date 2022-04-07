@@ -21,7 +21,7 @@ Plugins pour gérer, créer ou modifier vos scénarios. Utilise les fonctionnali
     * #trigger#: Son nom (ex:)
     * #triggerGenericType#: Son type générique (ex:)
     * #triggerEq#: Le nom de l'équipement (ex:)
-  * En rapport à l'exjcution du scénario:
+  * En rapport à l'exécution du scénario:
     * #triggerObject#: Le nom de l'object parent de la commande, sinon le nom de l'object parent du scénario
 * Ajout de block
   * Pour chaque: Permet de réaliser une action pour chaque élément d'un tableau.
@@ -37,15 +37,15 @@ Plugins pour gérer, créer ou modifier vos scénarios. Utilise les fonctionnali
   * Exécuter un type générique: Permet d'exécuter les commandes des équipements d'un type générique
   * Rediriger vers: Permet de rediriger le flow vers un noeud
   * Supprimer un noeud programmé
-* Modification de commande:
-  * Ajout de boutons supplémentaire au commande connue pour facilité la gestion
+* Modification général:
+  * Ajout de boutons supplémentaire pour facilité la gestion des expressions
   
 # Installation et Configuration du plugins
 Dans la section, "Configuration" se trouve quelques options pour configurer l'affichage des logs du plugin.
 Une fois le plugin activé, on peut donc passer directement à la création et modification de ceux-ci.
 
 # Configuration d'un scénario
-> Attention, il sera possible de convertir vos scénarios issus de Jeedom vers ce plugin, mais l'inverse ne sera pas possible.
+> Attention, il sera possible de convertir vos scénarios issus de Jeedom vers ce plugin dans une version futur, mais l'inverse ne sera pas possible.
 
 Vous pouvez accéder à la fenêtre de maintenance à partir du menu Plugins → Programmation → Advance Scenario.
 
@@ -74,24 +74,24 @@ Dans cette oonglet vous disposer des meme information que dans un scenario norma
   - `Aciver/Désactiver un noeud`: dans notre cas, cette options se trouve en haut à gauche du titre du noeud sous forme d'un crochet
   - `Bouton de rechercher`: dans notre cas, les options de recherche se trouve en haut à droite du titre
   - `Copier`, aucune option de disponible pour le moment
-  - `Coller`, aucune option de disponible pour le moment      
+  - `Coller`, aucune option de disponible pour le moment  
+- Caractéristiques générales
+  - Chaque nœud peut avoir de multiples connections, si tel est le cas, ceux-ci sont exécutés en parallèle.
 
-  Voici un exemple comparatif
-    
-  ![NoeudSiAvant](../images/NoeudSiAvant.png)![NoeudSiApres](../images/NoeudSiApres.png)
+
 
 - Partie Droite
+  
   Vous disposez à droite de l'écran des actions habituel d'un scénario, il suffit d'un "drag and drop" vers la droite pour en ajouter. Je ne documenterais pas le fonctionnement de chacune de ces actions, puisqu'il y a déjà une documentation dédiée à ceux-ci.
   Les déclencheurs du scénario se trouvent dans la première boite nommée "Déclencheur".
 
+  ![Left](../images/Left.png)
+
 - Partie Gauche
-  - Caractéristiques générales
-    - Chaque nœud peut avoir de multiples connections, si tel est le cas, ceux-ci sont exécutés en parallèle.
-    - Un premier nœud est ajouté par défaut, celui marque le départ du flow. Ne pas supprimer, puisqu'il est utilisé lorsqu'il n'y a pas d'autre déclencheur ou lorsque vous tester le scénario.
-    
-      ![NoeudDepart](../images/NoeudDepart.png)
-  - Option général d'un block
-    - Et dans un block d'un scénario, nous disposons de certaines options avec ces icônes. ![NoeudOption1](../images/NoeudOption1.png)
+  - Un premier nœud est ajouté par défaut, celui marque le départ du flow. Ne pas supprimer, puisqu'il est utilisé lorsqu'il n'y a pas d'autre déclencheur ou lorsque vous tester le scénario.    
+  ![NoeudDepart](../images/NoeudDepart.png)
+  
+  - Nous disposons de certaines options de saisie dans le noeud avec ces icônes. ![NoeudOption1](../images/NoeudOption1.png)
 
 # Exemple d'utilisaion de commande
 
