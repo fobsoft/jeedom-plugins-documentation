@@ -328,7 +328,7 @@ Il est possible d'avoir multiple déclancheur et d'avoir un chemin différent po
 </table>
 
 # Plugin tier
-Il sera posssible pour d'autre plugin d'appler celui-ci avec une liste de noeud à exécuter. Il sera donc possible dans un plugin d'étaablir un flow d'action mais de permettre à l'utilisateur de modifier celui-ci.
+Il sera possible pour d'autre plugin d'appeler celui-ci avec une liste de nœud à exécuter. Il sera donc possible dans un plugin d'établir un flow d'action prédéterminé mais de permettre à l'utilisateur de modifier celui-ci.
 
 # A faire
 * Général
