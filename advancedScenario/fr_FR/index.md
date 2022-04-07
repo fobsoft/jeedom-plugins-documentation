@@ -259,6 +259,10 @@ Il est possible d'avoir multiple déclancheur et d'avoir un chemin différent po
      END 
    END Fin correcte du scénario------------------------------------
 ````
+# Exemple de scénario
+
+## Gestion de période
+![sc_periode](../images/sc_periode.png)
 
 # A Tester
 
