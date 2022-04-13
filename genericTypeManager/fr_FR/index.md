@@ -159,10 +159,16 @@ De plus vous disposer dans l'équipement d'une commande pour configurer la valeu
 
 ![DashbordAction1](../images/DashbordAction1.png)
 
-# À faire
+# À venir
   # Amélioration
-    # Ordonnancer les onglets des résumés (glissé/déplacé ou un index)
-    # Ordonnancer les variables (glissé/déplacé ou un index)
+    # Résumé
+      # Ordonnancer les onglets des résumés (glissé/déplacé ou un index)
+      # Ajouter un champ commentaire
+    # Variable
+      # Ordonnancer les variables (glissé/déplacé ou un index)
+    # General
+      # Ajouter un champ commentaire
+
   # Correction
 
 # FAQ

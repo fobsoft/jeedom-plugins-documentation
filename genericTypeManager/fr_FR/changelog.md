@@ -10,6 +10,11 @@ pluginId: genericTypeManager
 </div>
 
 # Beta
+## 2022/04/13
+- Ajout d'un champ descripton sous l'onglet "Equipement"
+- Permettre d'afficher ou non le temps sous le widget d'un résumé
+- Modificaion de l'affichage des log
+- Correction d'un bug lors de la sélection d'un onglet d'un résumé si il y a des caractères spéciaux dans le nom de celui-ci
 ## 2022/03/28
 - Accès non autorisé lors de l'affichage des logs
 - Correction d'effacement de commande suite à la suppression d'un résumé
@@ -31,5 +36,8 @@ pluginId: genericTypeManager
 -- Ajout de configurations pour l'affichage des logs dans la configuration du plugin
 - Ajout du temps dans les widgets
 - Ajout d'une fonctionnalité de tâche (l'exécution de commandes, lorsqu'une commande prédéfinie change de valeur)
+  
 ## À venir
 - Ajouter l'action d'un mode s'il doit être exécuté que si le mode est déclenché par : (un utilisateur, le système ou les deux)
+- Après sauvegarde, retourner au dernier onglet sélecionné
+- Pouvoir ré-ordonner les onglets des résumés et les variables 
