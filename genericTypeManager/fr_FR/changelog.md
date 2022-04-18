@@ -14,6 +14,9 @@ pluginId: genericTypeManager
 - Correction d'effacement de variable
 - Ajouter la possibilité d'appliquer une formule pour le calcul des sommaires
 - Ajouter la possibilité de ré-ordonner les modes
+- Ajouter la possibilité de ré-ordonner les variables
+- Ajouter la possibilité de ré-ordonner les taches
+- Ajouter la possibilité de ré-ordonner les onglets des résumés
 ## 2022/04/13
 - Ajout d'un champ descripton sous l'onglet "Equipement"
 - Permettre d'afficher ou non le temps sous le widget d'un résumé
@@ -45,4 +48,3 @@ pluginId: genericTypeManager
 - Ajouter la possibilité de modifier le comportement des calcules via le plugin advanceScenario
 - Ajouter l'action d'un mode s'il doit être exécuté que si le mode est déclenché par : (un utilisateur, le système ou les deux)
 - Après sauvegarde, retourner au dernier onglet sélecionné
-- Pouvoir ré-ordonner les onglets des résumés et les variables 
