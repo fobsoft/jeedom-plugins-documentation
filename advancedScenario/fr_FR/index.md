@@ -49,19 +49,34 @@ Une fois le plugin activé, on peut donc passer directement à la création et m
 
 Vous pouvez accéder à la fenêtre de maintenance à partir du menu Plugins → Programmation → Advance Scenario.
 
-Sur cette page, vous retrouvez la liste de vos scénarios comme à l'habituelle. Ceux avec un icône vert son des scénarios qui ne sont pas convertis, et ceux de couleur gris sont des scénarios converti.
-Une fois converti l'édition d'un scénario via la maintenance de Jeedom n'aura pas d'effet sur celui-ci.
+Sur cette page, vous retrouvez la liste des groupes issus des scénarios de Jeedom et les scénarios créé à partir du plugin sont affichés avec une icône de couleur grise. Lorsqu'il sera possible de convertir vos scénarios issus de Jeedom, ceux-ci apparaîtront avec une icône verte.
+
 Cliquez sur un scénario pour accéder à sa configuration ou sur "Ajouter" pour en créer un nouveau:
 
 ![Config1](../images/Config1.png)
 
 ## Général
 
-Dans cette oonglet vous disposer des meme information que dans un scenario normal mise à par le fait qu'il n'y a pas de section pour les declancheur puisue ceux-ci sont gere directement dans le flow.
+Dans cette onglet vous disposez des meme information que dans un scénario normal mise à part le fait qu'il n'y a pas de section pour les déclencheurs puisque ceux-ci sont géré directement dans le flow.
+
+Dans l’onglet Général, on retrouve les paramètres principaux de notre scénario :
+•	Nom du scénario : Le nom de votre scénario.
+•	Nom à afficher : Le nom utilisé pour son affichage.
+•	Groupe : Permet d’organiser les scénarios, en les classant dans des groupes.
+•	Actif : Permet d’activer le scénario.
+•	Visible : Permet de rendre visible le scénario.
+•	Objet parent : Affectation à un objet parent.
+•	Timeout secondes (0 = illimité) : La durée d’exécution maximale autorisée
+•	Multi lancement : Cochez cette case si vous souhaitez que le scénario puisse être lancé plusieurs fois en même temps.
+•	Mode synchrone : Lance le scénario dans le thread courant au lieu d’un thread dédié. Ca permet d’augmenter la vitesse de lancement du scénario mais cela peut rendre le système instable.
+•	Log : Le type de log souhaité pour le scénario. (bypass la config du pluggin - A faire)
+•	Suivre dans la timeline : Permet de garder un suivi du scénario dans la timeline.
+•	Description : Permet d’écrire un petit texte pour décrire votre scénario.
 
 ![Config2](../images/Config2.png)
 
 ## Flow
+C'est ici que vous allez construire votre scénario. 
 
 - Fonctionnalité
   - `Supprimer un noeud`: Touches "Effacer" du clavier une fois le noeud ou la connection sélectionné.
@@ -78,21 +93,142 @@ Dans cette oonglet vous disposer des meme information que dans un scenario norma
 - Caractéristiques générales
   - Chaque nœud peut avoir de multiples connections, si tel est le cas, ceux-ci sont exécutés en parallèle.
 
-
-
 - Partie Droite
   
-  Vous disposez à droite de l'écran des actions habituel d'un scénario, il suffit d'un "drag and drop" vers la droite pour en ajouter. Je ne documenterais pas le fonctionnement de chacune de ces actions, puisqu'il y a déjà une documentation dédiée à ceux-ci.
-  Les déclencheurs du scénario se trouvent dans la première boite nommée "Déclencheur".
+  Vous disposez à droite de l'écran, des déclencheurs dans la première boite nommée "Déclencheur" suivi des actions disponibles, il suffit d'un "drag and drop" vers la droite pour en ajouter. Nous verrons plus loin la documentation de chacun.
 
   ![Left](../images/left.png)
 
 - Partie Gauche
-  - Un premier nœud est ajouté par défaut, celui marque le départ du flow. Ne pas supprimer, puisqu'il est utilisé lorsqu'il n'y a pas d'autre déclencheur ou lorsque vous tester le scénario.    
-  ![NoeudDepart](../images/NoeudDepart.png)
+  - Un premier nœud est ajouté par défaut, celui-ci marque le départ du flow. Ne pas supprimer, puisqu'il est utilisé lorsqu'il n'y a pas d'autre déclencheur ou lorsque vous tester le scénario.    
   
-  - Nous disposons de certaines options de saisie dans le noeud avec ces icônes. 
-  ![NoeudOption1](../images/NoeudOption1.png)
+    ![NoeudDepart](../images/NoeudDepart.png)
+  
+  - Chacun des nœuds dispose de certaines fonctionnalités
+    - La case à cocher, à gauche, permet de désactiver complètement le bloc sans pour autant le supprimer.
+    - Les flèches circulaires permettent d’activer ou non la répétition des actions si l’évaluation de la condition donne le même résultat que la précedente évaluation.
+    - Les icônes. (encerclé en rouge).
+      - Sélection d'une commande : Permet de chercher une commande dans toutes celles disponibles dans Jeedom
+      - Sélection d'une variable : Permet de chercher des variables issues du scénario ou d’un autre scénario
+      - Sélection d'un mot-clé : Permet de chercher des tags du scénario ou spécifiques à Jeedom
+      - Sélection d'une function: Permet de spécifier une valeur à l'aide d'une fonction (a faire)
+      - Une maintenance pour construire une expression conditionnelle complexe
+  
+    ![NoeudOption1](../images/NoeudOption1.png)
+
+  - Si un nœud est lié à plusieurs nœuds, ceux-ci seront exécutés en parallèle
+
+# Action
+  ## Déclencheur (ce qui déclennche le scénario)
+    •	Evénement (dans l'ordre de l'affichage des bouttons)
+      - Commande de type info
+      - Type générique de type info
+      - Tag de déclanchement
+      - Function de déclanchement
+    •	Programmation : pour déterminer le moment d'exécuter le scénario et sa récurrence
+  ## Général
+    •	Si/Alors/Sinon : Permet de réaliser des actions selon une expression conditionnelle.
+    •	Switch : Permet de réaliser des actions en comparent la même variable (ou expression conditionnelle) avec un grand nombre de valeurs différentes, et d'exécuter      différentes actions suivant la valeur à laquelle elle est égale. (À venir)
+    •	Boucle : Permet de réaliser des actions de manière répétitive de 1 jusqu’à un nombre défini (ou même la valeur d’un capteur, ou un nombre aléatoire…).
+    •	Pour chaque : 
+    •	Tant que :
+  ## Variable
+    •	Tag
+    •	Ajout d'une valeur à un tableau
+    •	Supprimer une variable d'un tableau
+    •	Variable
+    •	Supprimer une variable
+  ## Flux
+    •	Stop
+    •	Pause
+    •	Dans : Permet de lancer une action dans X minute(s) (0 est une valeur possible). La particularité est que les actions sont lancées en arrière-plan, elles ne bloquent donc pas la suite du scénario. C’est donc un bloc non bloquant.
+    •	A : Permet de dire à Jeedom de lancer les actions du bloc à une heure donnée (sous la forme hhmm). Ce bloc est non bloquant. Ex : 0030 pour 00h30, ou 0146 pour 1h46 et 1050 pour 10h50.
+    •	Retourner un texte/une donnée
+    •	Supprimer tous les noeuds programmé
+    •	Supprimer un noeud programmé (a venir)
+    •	Rediriger vers
+  ## Interface
+    •	Aller au design
+    •	Icône
+    •	Coloration des icones
+  ## Messagerie
+    •	Ajouter un log
+    •	Afficher les tags dans le log
+    •	Afficher les variables dans le log
+    •	Afficher les noeuds dans le log
+    •	Créer un message
+    •	Faire une demande
+    •	Dire
+    •	Alerte
+    •	Pop-up
+    •	Commentaire : Permet d’ajouter des commentaires à son scénario (À venir)
+    •	Rapport (À venir)
+  ## Système
+    •	Arrêter
+    •	Redémarrer
+  ## Équipement
+    •	Activer un équipement
+    •	Désactiver un équipement
+    •	Masquer un équipement
+    •	Afficher un équipement
+    •	Générer un evènement
+    •	Exécuter une commande
+    •	Exécuter un type générique (À venir)
+  ## Programmation
+    •	Code : Permet d’écrire directement en code PHP (demande certaines connaissances et peut être risqué mais permet de n’avoir aucune contrainte). (À venir)
+
+# Expression conditionnelle
+  ## Opérateurs de comparaison
+    •	== : égal à,
+    •	> : strictement supérieur à,
+    •	>= : supérieur ou égal à,
+    •	< : strictement inférieur à,
+    •	<= : inférieur ou égal à,
+    •	!= : différent de, n’est pas égal à,
+    •	& : comparaison binaire
+  ## Liens entre les conditions
+    •	&& / ET / et / AND / and : et,
+    •	| / OU / ou / OR / or : ou,
+    •	|^ / XOR / xor : ou exclusif.
+
+# Tag
+  Un tag est remplacé lors de l’exécution du scénario par sa valeur
+  ## De déclanchement
+    •	#start# : déclenché au (re)démarrage de Jeedom
+    •	#begin_backup# : événement envoyé au début d’une sauvegarde.
+    •	#end_backup# : événement envoyé à la fin d’une sauvegarde.
+    •	#begin_update# : événement envoyé au début d’une mise à jour.
+    •	#end_update# : événement envoyé à la fin d’une mise à jour.
+    •	#begin_restore# : événement envoyé au début d’une restauration.
+    •	#end_restore# : événement envoyé à la fin d’une restauration.
+    •	#user_connect# : connexion d’un utilisateur
+  ## D'information
+    •	#seconde# : Seconde courante (sans les zéros initiaux, ex : 6 pour 08:07:06),
+    •	#heure# : Heure courante au format 24h (sans les zéros initiaux, ex : 8 pour 08:07:06 ou 17 pour 17:15),
+    •	#heure12# : Heure courante au format 12h (sans les zéros initiaux, ex : 8 pour 08:07:06),
+    •	#minute# : Minute courante (sans les zéros initiaux, ex : 7 pour 08:07:06),
+    •	#jour# : Jour courant (sans les zéros initiaux, ex : 6 pour 06/07/2017),
+    •	#mois# : Mois courant (sans les zéros initiaux, ex : 7 pour 06/07/2017),
+    •	#annee# : Année courante,
+    •	#time# : Heure et minute courante (ex : 1715 pour 17h15),
+    •	#timestamp# : Nombre de secondes depuis le 1er janvier 1970,
+    •	#date# : Jour et mois. Attention, le premier nombre est le mois. (ex : 1215 pour le 15 décembre),
+    •	#semaine# : Numéro de la semaine (ex : 51),
+    •	#sjour# : Nom du jour de la semaine (ex : Samedi),
+    •	#njour# : Numéro du jour de 0 (dimanche) à 6 (samedi),
+    •	#smois# : Nom du mois (ex : Janvier),
+    •	#IP# : IP interne de Jeedom,
+    •	#hostname# : Nom de la machine Jeedom,
+    •	#trigger# : Peut être le nom de la commande qui a déclenché le scénario, ‘api’ si le lancement a été déclenché par l’API, ‘schedule’ si il a été lancé par une programmation, ‘user’ si il a été lancé manuellement
+    •	#query# : interaction ayant déclenché le scénario,
+    •	#profil# : profil de l’utilisateur ayant déclenché le scénario (peut être vide).
+    
+# Function 
+  ## De déclanchement
+    - #variable(nom_variable)# : déclencher un scénario quand une variable est mise à jour (a faire)
+  ## D'information
+    - matches : contient (ex : [Salle de bain][Hydrometrie][etat] matches “/humide/” ) (a faire)
+    - not ( … matches …) : ne contient pas (ex : not([Salle de bain][Hydrometrie][etat] matches “/humide/”)) (a faire)
 
 # Exemple d'utilisaion de commande
 
@@ -121,7 +257,7 @@ END
 
 ## Ajout de valeur à un tableau
   - arrayAdd (21): Ajout de la valeur 1
-  - arrayAdd (23): Ajout des valeurs 3,7,10,100,200 sous la forme d'un Json dont les virgules sont remplacées par des ;
+  - arrayAdd (23): Ajout des valeurs 3,7,10,100,200 sous la forme d'un Json dont les virgules sont remplacées par des ";"
   - arrayAdd (24): Ajout de la valeur de la commande #[RC - Pièce commune][Room config][Max lux for light]#
   - arrayAdd (29): Ajout de la valeur de la variable #pctLight#
 
@@ -264,68 +400,6 @@ Il est possible d'avoir multiple déclancheur et d'avoir un chemin différent po
 
 ## Gestion de période
 ![sc_periode](../images/sc_periode.png)
-
-# A Tester
-
-*******************
-<table>
-  <tbody>
-    <tr><td><b>Déclencheur</b></td><td></td></tr>
-    <tr><td>&nbsp;&nbsp;Evénement</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Programmation</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td><b>Général</b></td><td></td></tr>
-    <tr><td>&nbsp;&nbsp;Si/Alors/Sinon</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Boucle</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Pour chaque</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Tant que</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td><b>Variable</b></td><td></td></tr>
-    <tr><td>&nbsp;&nbsp;Tag</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Ajout d'une valeur à un tableau</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Supprimer une variable d'un tableau</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Variable</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Rediriger vers</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td><b>Flux</b></td><td></td></tr>
-    <tr><td>&nbsp;&nbsp;Stop</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Attendre</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Pause</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Dans</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;A</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Scénario</td><td>À venir</td></tr>
-    <tr><td>&nbsp;&nbsp;Retourner un texte/une donnée</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Supprimer tous les bloc programmé</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Supprimer un bloc programmé</td><td>À venir</td></tr>
-    <tr><td>&nbsp;&nbsp;Rediriger vers</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td><b>Interface</b></td><td></td></tr>
-    <tr><td>&nbsp;&nbsp;Aller au design</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Icône</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Coloration des icones</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td><b>Messagerie</b></td><td></td></tr>
-    <tr><td>&nbsp;&nbsp;Ajouter un log</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Afficher les tags dans le log</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Afficher les variables dans le log</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Afficher les noeuds dans le log</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Créer un message</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Faire une demande</td><td>À venir</td></tr>
-    <tr><td>&nbsp;&nbsp;Dire</td><td>À venir</td></tr>
-    <tr><td>&nbsp;&nbsp;Alerte</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Pop-up</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Commentaire</td><td>À venir</td></tr>
-    <tr><td>&nbsp;&nbsp;Rapport</td><td>À venir</td></tr>
-    <tr><td><b>Système</b></td><td></td></tr>
-    <tr><td>&nbsp;&nbsp;Arrêter</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Redémarrer</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td><b>Équipement</b></td><td></td></tr>
-    <tr><td>&nbsp;&nbsp;Activer un équipement</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Désactiver un équipement</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Masquer un équipement</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Afficher un équipement</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Générer un evènement</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Exécuter une commande</td><td><b><span style="color:green">Pass</span></b></td></tr>
-    <tr><td>&nbsp;&nbsp;Exécuter un type générique</td><td>À venir</td></tr>
-    <tr><td><b>Programmation</b></td><td></td></tr>
-    <tr><td>&nbsp;&nbsp;Code</td><td>À venir</td></tr>
-  </tbody>
-</table>
 
 # Plugin tier
 Il sera possible pour d'autre plugin d'appeler celui-ci avec une liste de nœud à exécuter. Il sera donc possible dans un plugin d'établir un flow d'action prédéterminé mais de permettre à l'utilisateur de modifier celui-ci.
