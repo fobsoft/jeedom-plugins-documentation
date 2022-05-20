@@ -40,6 +40,12 @@ Plugins pour gérer, créer ou modifier vos scénarios. Utilise les fonctionnali
 * Modification général:
   * Ajout de boutons supplémentaire pour facilité la gestion des expressions
   
+# Lexique
+* Opérande: Un opérande est une commande ou variable, ou tag, ou fonction de type info qui nous retourne une valeur de type info.
+* Opérateur de comparaison: Comme leur nom l'indique, ils vous permettent de comparer deux opérandes.
+* Expression de comparaison: C'est une expression qui est constituée de deux opérandes sépare par un opérateur de comparaison ou une seul opérande de type booléen.
+* Expression conditionnelle: Une expression conditionnel est constitué d'une expression de comparaison ou de plusieurs expression de comparaison séparé par  un liens d'expression de comparaison.
+
 # Installation et Configuration du plugins
 Dans la section, "Configuration" se trouve quelques options pour configurer l'affichage des logs du plugin.
 Une fois le plugin activé, on peut donc passer directement à la création et modification de ceux-ci.
@@ -88,8 +94,8 @@ C'est ici que vous allez construire votre scénario.
   - `Autoriser ou non la répétition`: Dans notre cas, cette option se trouve en haut à gauche du titre du noeud
   - `Aciver/Désactiver un noeud`: dans notre cas, cette options se trouve en haut à gauche du titre du noeud sous forme d'un crochet
   - `Bouton de rechercher`: dans notre cas, les options de recherche se trouve en haut à droite du titre
-  - `Copier`, aucune option de disponible pour le moment
-  - `Coller`, aucune option de disponible pour le moment  
+  - `Copier`, Ctrl + c
+  - `Coller`, Ctrl + v 
 - Caractéristiques générales
   - Chaque nœud peut avoir de multiples connections, si tel est le cas, ceux-ci sont exécutés en parallèle.
 
@@ -178,7 +184,7 @@ C'est ici que vous allez construire votre scénario.
     •	Code : Permet d’écrire directement en code PHP (demande certaines connaissances et peut être risqué mais permet de n’avoir aucune contrainte). (À venir)
 
 # Expression conditionnelle
-  ## Opérateurs de comparaison
+  ## Opérateurs de comparaison, comme leur nom l'indique, ils vous permettent de comparer deux valeurs.
     •	== : égal à,
     •	> : strictement supérieur à,
     •	>= : supérieur ou égal à,
@@ -186,49 +192,191 @@ C'est ici que vous allez construire votre scénario.
     •	<= : inférieur ou égal à,
     •	!= : différent de, n’est pas égal à,
     •	& : comparaison binaire
-  ## Liens entre les conditions
+  ## Liens d'expression de comparaison
     •	&& / ET / et / AND / and : et,
     •	| / OU / ou / OR / or : ou,
     •	|^ / XOR / xor : ou exclusif.
 
 # Tag
-  Un tag est remplacé lors de l’exécution du scénario par sa valeur
-  ## De déclanchement
-    •	#start# : déclenché au (re)démarrage de Jeedom
-    •	#begin_backup# : événement envoyé au début d’une sauvegarde.
-    •	#end_backup# : événement envoyé à la fin d’une sauvegarde.
-    •	#begin_update# : événement envoyé au début d’une mise à jour.
-    •	#end_update# : événement envoyé à la fin d’une mise à jour.
-    •	#begin_restore# : événement envoyé au début d’une restauration.
-    •	#end_restore# : événement envoyé à la fin d’une restauration.
-    •	#user_connect# : connexion d’un utilisateur
-  ## D'information
-    •	#seconde# : Seconde courante (sans les zéros initiaux, ex : 6 pour 08:07:06),
-    •	#heure# : Heure courante au format 24h (sans les zéros initiaux, ex : 8 pour 08:07:06 ou 17 pour 17:15),
-    •	#heure12# : Heure courante au format 12h (sans les zéros initiaux, ex : 8 pour 08:07:06),
-    •	#minute# : Minute courante (sans les zéros initiaux, ex : 7 pour 08:07:06),
-    •	#jour# : Jour courant (sans les zéros initiaux, ex : 6 pour 06/07/2017),
-    •	#mois# : Mois courant (sans les zéros initiaux, ex : 7 pour 06/07/2017),
-    •	#annee# : Année courante,
-    •	#time# : Heure et minute courante (ex : 1715 pour 17h15),
-    •	#timestamp# : Nombre de secondes depuis le 1er janvier 1970,
-    •	#date# : Jour et mois. Attention, le premier nombre est le mois. (ex : 1215 pour le 15 décembre),
-    •	#semaine# : Numéro de la semaine (ex : 51),
-    •	#sjour# : Nom du jour de la semaine (ex : Samedi),
-    •	#njour# : Numéro du jour de 0 (dimanche) à 6 (samedi),
-    •	#smois# : Nom du mois (ex : Janvier),
-    •	#IP# : IP interne de Jeedom,
-    •	#hostname# : Nom de la machine Jeedom,
-    •	#trigger# : Peut être le nom de la commande qui a déclenché le scénario, ‘api’ si le lancement a été déclenché par l’API, ‘schedule’ si il a été lancé par une programmation, ‘user’ si il a été lancé manuellement
-    •	#query# : interaction ayant déclenché le scénario,
-    •	#profil# : profil de l’utilisateur ayant déclenché le scénario (peut être vide).
-    
-# Function 
-  ## De déclanchement
-    - #variable(nom_variable)# : déclencher un scénario quand une variable est mise à jour (a faire)
-  ## D'information
-    - matches : contient (ex : [Salle de bain][Hydrometrie][etat] matches “/humide/” ) (a faire)
-    - not ( … matches …) : ne contient pas (ex : not([Salle de bain][Hydrometrie][etat] matches “/humide/”)) (a faire)
+Un tag est remplacé lors de l’exécution du scénario par sa valeur
+
+<ul>
+  <li>
+    <h2>De déclanchement</h2>
+    <ul>
+      <li><b>#start#</b> : déclenché au (re)démarrage de Jeedom</li>
+      <li><b>#begin_backup#</b> : événement envoyé au début d’une sauvegarde</li>
+      <li><b>#end_backup#</b> : événement envoyé à la fin d’une sauvegarde</li>
+      <li><b>#begin_update#</b> : événement envoyé au début d’une mise à jour</li>
+      <li><b>#end_update#</b> : événement envoyé à la fin d’une mise à jour</li>
+      <li><b>#begin_restore#</b> : événement envoyé au début d’une restauration</li>
+      <li><b>#end_restore#</b> : événement envoyé à la fin d’une restauration</li>
+      <li><b>#user_connect#</b> : connexion d’un utilisateur</li>
+    </ul>
+  </li>
+  <li>
+    <h2>D'information</h2>
+    <ul>
+      <li>
+        <h3>Temps</h3>
+        <ul>
+          <li><b>#seconde#</b> : Seconde courante (sans les zéros initiaux, ex : 6 pour 08:07:06)</li>
+          <li><b>#heure#</b> : Heure courante au format 24h (sans les zéros initiaux, ex : 8 pour 08:07:06 ou 17 pour 17:15)</li>
+          <li><b>#heure12#</b> : Heure courante au format 12h (sans les zéros initiaux, ex : 8 pour 08:07:06)</li>
+          <li><b>#minute#</b> : Minute courante (sans les zéros initiaux, ex : 7 pour 08:07:06)</li>
+          <li><b>#jour#</b> : Jour courant (sans les zéros initiaux, ex : 6 pour 06/07/2017)</li>
+          <li><b>#mois#</b> : Mois courant (sans les zéros initiaux, ex : 7 pour 06/07/2017)</li>
+          <li><b>#annee#</b> : Année courante</li>
+          <li><b>#time#</b> : Heure et minute courante (ex : 1715 pour 17h15)</li>
+          <li><b>#timestamp#</b> : Nombre de secondes depuis le 1er janvier 1970</li>
+          <li><b>#date#</b> : Jour et mois. Attention, le premier nombre est le mois. (ex : 1215 pour le 15 décembre)</li>
+          <li><b>#semaine#</b> : Numéro de la semaine (ex : 51)</li>
+          <li><b>#sjour#</b> : Nom du jour de la semaine (ex : Samedi)</li>
+          <li><b>#njour#</b> : Numéro du jour de 0 (dimanche) à 6 (samedi)</li>
+          <li><b>#smois#</b> : Nom du mois (ex : Janvier)</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Élément liés à l'exécution du scénario</h3>
+        <ul>
+          <li><b>#trigger#</b> : Peut être le nom de la commande qui a déclenché le scénario, ‘api’ si le lancement a été déclenché par l’API, ‘schedule’ si il a été lancé par une programmation, ‘user’ si il a été lancé manuellement</li>
+          <li><b>#triggerValue#</b> : Valeur de la commande qui à déclanché le scénario</li>
+          <li><b>#triggerGenericType#</b> : Type générique de la commande qui à déclanché le scénario</li>
+          <li><b>#triggerEq#</b> : Le nom de l’équipement de la commande qui à déclanché le scénario</li>
+          <li><b>#triggerObject#</b> : Le nom de l’object parent de la commande qui à déclanché le scénario, sinon le nom de l’object parent du scénario</li>
+          <li><b>#profil#</b> : Renvoie le profil de l’utilisateur ayant déclenché le scénario (peut être vide)</li>
+          <li><b>#query#</b> : Interaction ayant déclenché le scénario</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Réseau</h3>
+        <ul>
+          <li><b>#IP#</b> : IP interne de Jeedom</li>
+          <li><b>#hostname#</b> : Nom de la machine Jeedom</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+# Function
+<ul>
+  <li>
+    <h2>De déclanchement</h2>
+    <ul>
+      <li><b>#variable(nom_variable)#</b> : déclencher un scénario quand une variable est mise à jour (a faire)</li>
+    </ul>
+  </li>
+  <li>
+    <h2>D'information</h2>
+    <ul>
+      <li>
+        <h3>Retour aléatoire</h3>
+        <ul>
+          <li><b>randText(texte1;texte2;...)</b> : Renvoie un des textes aléatoirement (séparer les texte par un ; ). Il n’y a pas de limite dans le nombre de texte</li>
+          <li><b>color_gradient(couleur_debut,couleur_fin,valuer_min,valeur_max,valeur)</b> : Renvoie une couleur calculé par rapport à valeur dans l’intervalle couleur_debut/couleur_fin. La valeur doit etre comprise entre valeur_min et valeur_max</li>
+        </ul>
+      </li>  
+      <li>
+        <h3>Mathématique</h3>
+        <ul>
+          <li><b>rand(min,max)</b> : Retourner un nombre aléatoire entre les 2 bornes demandées</li>
+          <li><b>randomColor(min,max)</b> : Donne une couleur aléatoire compris entre 2 bornes ( 0 => rouge, 50 => vert, 100 => bleu)</li>
+          <li><b>round(valeur,[decimal])</b> : Donne un arrondi au-dessus, [decimal] nombre de décimales après la virgule</li>
+          <li><b>odd(valeur)</b> : Permet de savoir si un nombre est impair ou non. Renvoie 1 si impair 0 sinon</li>
+          <li><b>average(tableau)</b> : Renvoie la valeur moyenne des éléments contenue dans le tableau}} ** A faire</li>
+          <li><b>min(tableau)</b> : Renvoie la valeur minimum des éléments contenue dans le tableau}} ** A faire</li>
+          <li><b>max(tableau)</b> : Renvoie la valeur maximum des éléments contenue dans le tableau}} ** A faire</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Comparaison</h3>
+        <ul>
+          <li><b>arrayIn((valeur, tableau)</b> : Renvoie 1, si la veleur spécifié se retrouve dans le tableau spécifié}}</li>
+          <li><b>arrayNotIn((valeur, tableau)</b> : Renvoie 1, si la veleur spécifié ne se retrouve pas dans le tableau spécifié}}</li>
+          <li><b>not(expression)</b> : Renvoie 1, si le résultat de l'expression est faux (ex: not(1 == 2))}} ** A faire</li>
+          <li><b>matches</b> : contient (ex : [Salle de bain][Hydrometrie][etat] matches “/humide/” )</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Temps</h3>
+        <ul>
+          <li><b>time(value)</b> : Spécifier une heure (ex : time(1530))</li>
+          <li><b>time_op(time,value)</b> : Permet de faire des opérations sur le temps, avec time=temps (ex : 1530) et value = valeur à ajouter ou à soustraire en minutes, doit êttre de type numérique</li>
+          <li><b>time_between(time,start,end)</b> : Permet de tester si un temps est entre deux valeurs avec time=temps (ex : 1530), start=temps, end=temps. Les valeurs start et end peuvent être à cheval sur minuit</li>
+          <li><b>time_diff(date1,date1[,format])</b> : Renvoie la différence entre 2 dates (les dates doivent être au format AAAA/MM/JJ HH:MM:SS). Par défaut (si vous ne mettez rien pour format), la méthode retourne le nombre total de jours. Vous pouvez lui demander en secondes (s), minutes (m), heures (h). Exemple en secondes time_diff(2018-02-02 14:55:00,2018-02-25 14:55:00,s)</li>
+          <li><b>formatTime(time)</b> : Renvoie le retour d’une chaine #time# formaté</li>
+          <li><b>floor(time, baseUnit, destUnit)</b> : Renvoie la conversion des secondes en minutes, ou des minutes en heures)}} ** A faire</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Liés à l'exécution du scénario</h3>
+        <ul>
+          <li><b>tag(tag,valeur par défaut)</b> : Renvoie la valeur d’un tag ou la valeur par défaut si il n’existe pas :</li>
+          <li><b>variable(variable,valeur par défaut)</b> : Renvoie la valeur d’une variable ou de la valeur souhaitée par défaut</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Commande</h3>
+        <ul>
+          <li><b>average(commande,période)</b> : Renvoie la valeur moyenne de la commande sur la période (period=[month,day,hour,min] ou expression PHP)</li>
+          <li><b>averageBetween(commande,start,end)</b> : Renvoie la moyenne de la commande entre les 2 bornes demandées (sous la forme Y-m-d H:i:s ou expression PHP)</li>
+          <li><b>min(commande,période)</b> : Renvoie la valeur minimum de la commande sur la période (period=[month,day,hour,min] ou expression PHP)</li>
+          <li><b>minBetween(commande,start,end)</b> : Renvoie la valeur minimum de la commande entre les 2 bornes demandées (sous la forme Y-m-d H:i:s ou expression PHP)</li>
+          <li><b>max(commande,période)</b> : Renvoie la valeur maximum de la commande sur la période (period=[month,day,hour,min]</li>
+          <li><b>maxBetween(commande,start,end)</b> : Renvoie la valeur maximum de la commande entre les 2 bornes demandées (sous la forme Y-m-d H:i:s ou expression PHP)</li>
+          <li><b>duration(commande, valeur, période)</b> : Renvoie la durée en minutes pendant laquelle l’équipement avait la valeur choisie sur la période (period=[month,day,hour,min] ou expression PHP)</li>
+          <li><b>durationbetween(commande,valeur,start,end)</b> : Renvoie la durée en minutes pendant laquelle l’équipement avait la valeur choisie entre les 2 bornes demandées (sous la forme Y-m-d H:i:s ou expression PHP)</li>
+          <li><b>statistics(commande,calcul,période)</b> : Renvoie le résultat de différents calculs statistiques (sum, count, std, variance, avg, min, max) sur la période (period=[month,day,hour,min] ou expression PHP)</li>
+          <li><b>statisticsBetween(commande,calcul,start,end)</b> : Renvoie le résultat de différents calculs statistiques (sum, count, std, variance, avg, min, max) entre les 2 bornes demandées (sous la forme Y-m-d H:i:s ou expression PHP)</li>
+          <li><b>tendance(commande,période,seuil)</b> : Renvoie la tendance de la commande sur la période (period=[month,day,hour,min] ou expression PHP)</li>
+          <li><b>stateDuration(commande)</b> : Renvoie la durée en secondes depuis le dernier changement de valeur. Retourne -1 si aucun historique n’existe ou si la valeur n’existe pas dans l’historique. Retourne -2 si la commande n’est pas historisée</li>
+          <li><b>lastChangeStateDuration(commande,valeur)</b> : Renvoie la durée en secondes depuis le dernier changement d’état à la valeur passée en paramètre. Retourne -1 si aucun historique n’existe ou si la valeur n’existe pas dans l’historique. Retourne -2 si la commande n’est pas historisée</li>
+          <li><b>lastStateDuration(commande,valeur)</b> : Renvoie la durée en secondes pendant laquelle l’équipement a dernièrement eu la valeur choisie. Retourne -1 si aucun historique n’existe ou si la valeur n’existe pas dans l’historique. Retourne -2 si la commande n’est pas historisée</li>
+          <li><b>stateChanges(commande,[valeur], période)</b> : Renvoie le nombre de changements d’état (vers une certaine valeur si indiquée, ou au total sinon) sur la période (period=[month,day,hour,min]</li>
+          <li><b>stateChangesBetween(commande, [valeur], start, end)</b> : Renvoie le nombre de changements d’état (vers une certaine valeur si indiquée, ou au total sinon) entre les 2 bornes demandées (sous la forme Y-m-d H:i:s ou expression PHP)</li>
+          <li><b>collectDate(commande,[format])</b> : Renvoie la date de la dernière donnée pour la commande donnée en paramètre, le 2ème paramètre optionnel permet de spécifier le format de retour (détails ici). Un retour de -1 signifie que la commande est introuvable et -2 que la commande n’est pas de type info</li>
+          <li><b>valueDate(commande,[format])</b> : Renvoie la date de la dernière donnée pour la commande donnée en paramètre, le 2ème paramètre optionnel permet de spécifier le format de retour (détails ici). Un retour de -1 signifie que la commande est introuvable et -2 que la commande n’est pas de type info</li>
+          <li><b>value(commande)</b> : Renvoie la valeur d’une commande si elle n’est pas donnée automatiquement par Jeedom (cas lors du stockage du nom de la commande dans une variable)</li>
+          <li><b>median(commande1,commande2…​.commandeN)</b> : Renvoie la médiane des valeurs</li>
+          <li><b>lastBetween(commande,start,end)</b> : Donne la dernière valeur enregistrée pour l’équipement entre les 2 bornes demandées (sous la forme Y-m-d H:i:s ou expression PHP)</li>
+         <li><b>commandeName(commande)</b> : Renvoie le nom de la commande, ex: commandeName(tag(cmd234))</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Équipement</h3>
+        <ul>
+          <li><b>eqEnable(equipement)</b> : Renvoie l’état de l’équipement. -2 si l’équipement est introuvable, 1 si l’équipement est actif et 0 s’il est inactif</li>
+          <li><b>lastCommunication(equipment,[format])</b> : Renvoie la date de la dernière communication pour l’équipement donnée en paramètre, le 2ème paramètre optionnel permet de spécifier le format de retour (détails ici). Un retour de -1 signifie que l’équipment est introuvable</li>
+          <li><b>equipementName(commande)</b> : Renvoie le nom de l’équipementt</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Object</h3>
+        <ul>
+          <li><b>objectName(nom de la commande)</b> : Renvoie le nom de l’objet}} ** A faire</li>
+          <li><b>objectId(nom de l'object)</b> : Renvoie l'id de l'objet}} ** A faire</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Scénario</h3>
+        <ul>
+          <li><b>scenario(scenario)</b> : Renvoie le statut du scénario. 1 en cours, 0 si arrêté et -1 si désactivé, -2 si le scénario n’existe pas et -3 si l’état n’est pas cohérent.</li>
+          <li><b>lastScenarioExecution(scenario)</b> : Renvoie la durée en secondes depuis le dernier lancement du scénario.</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Type générique</h3>
+        <ul>
+          <li><b>genericType(generic,object)</b> : Renvoie la liste des commandes possèdant le type générique spécifié contenue sous l'objet et ses enfants si spécifiés</li>
+          <li><b>minGenericType(generic,object)</b> : Renvoie la valeur minimum courante des commandes possédant le type générique spécifié contenue sous l'objet et ses enfants si spécifié</li>
+          <li><b>maxGenericType(generic,object)</b> : Renvoie la valeur maximum courante des commandes possédant le type générique spécifié contenue sous l'objet et ses enfants si spécifiés</li>
+          <li><b>averageGenericType(generic,object)</b> : Renvoie la valeur moyenne courante des commandes possédant le type générique spécifié contenue sous l'objet et ses enfants si spécifiés</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
 
 # Exemple d'utilisaion de commande
 
@@ -403,22 +551,3 @@ Il est possible d'avoir multiple déclancheur et d'avoir un chemin différent po
 
 # Plugin tier
 Il sera possible pour d'autre plugin d'appeler celui-ci avec une liste de nœud à exécuter. Il sera donc possible dans un plugin d'établir un flow d'action prédéterminé mais de permettre à l'utilisateur de modifier celui-ci.
-
-# A faire
-* Général
-  * Empécher la suppression du node "Départ" puisque celui-ci est le point d'entré général
-* Noeud
-  * Aciver/Désactiver un noeud
-  * Ajouter une mainenance pour avoir plus d'option pour la création de l'expression du noeud sans trop charger la page principal.
-  * Copier/Coller un noeud
-  * Ajouter un bouton pour sélectionner les tags disponible
-  * Ajouter un bouton pour sélectionner une fonction mathématique
-* Commande
-  * Boucle: Ajouter la possibilité de sélectionné un type générique
-  * Si/Alors/Sinon: Autoriser ou non la répétition des actions si l\'évaluation de la condition est la même que la précédente
-  * Switch: Ajouter cette commande pour éviter d'avoir des Si / Sinon bout en bout 
-* Log
-  * Travailler le visuel du log lors d'exécution en parallèle
-* Déclencheurs
-  * Ajouter un bouton pour sélectionner un déclancheur
-  * Ajouter un bouton pour sélectionner une variable
