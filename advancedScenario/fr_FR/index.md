@@ -125,77 +125,114 @@ C'est ici que vous allez construire votre scénario.
   - Si un nœud est lié à plusieurs nœuds, ceux-ci seront exécutés en parallèle
 
 # Action
-  ## Déclencheur (ce qui déclennche le scénario)
-    •	Evénement (dans l'ordre de l'affichage des bouttons)
-      - Commande de type info
-      - Type générique de type info
-      - Tag de déclanchement
-      - Function de déclanchement
-    •	Programmation : pour déterminer le moment d'exécuter le scénario et sa récurrence
-  ## Général
-    •	Si/Alors/Sinon : Permet de réaliser des actions selon une expression conditionnelle.
-    •	Switch : Permet de réaliser des actions en comparent la même variable (ou expression conditionnelle) avec un grand nombre de valeurs différentes, et d'exécuter      différentes actions suivant la valeur à laquelle elle est égale. (À venir)
-    •	Boucle : Permet de réaliser des actions de manière répétitive de 1 jusqu’à un nombre défini (ou même la valeur d’un capteur, ou un nombre aléatoire…).
-    •	Pour chaque : 
-    •	Tant que :
-  ## Variable
-    •	Tag
-    •	Ajout d'une valeur à un tableau
-    •	Supprimer une variable d'un tableau
-    •	Variable
-    •	Supprimer une variable
-  ## Flux
-    •	Stop
-    •	Pause
-    •	Dans : Permet de lancer une action dans X minute(s) (0 est une valeur possible). La particularité est que les actions sont lancées en arrière-plan, elles ne bloquent donc pas la suite du scénario. C’est donc un bloc non bloquant.
-    •	A : Permet de dire à Jeedom de lancer les actions du bloc à une heure donnée (sous la forme hhmm). Ce bloc est non bloquant. Ex : 0030 pour 00h30, ou 0146 pour 1h46 et 1050 pour 10h50.
-    •	Retourner un texte/une donnée
-    •	Supprimer tous les noeuds programmé
-    •	Supprimer un noeud programmé (a venir)
-    •	Rediriger vers
-  ## Interface
-    •	Aller au design
-    •	Icône
-    •	Coloration des icones
-  ## Messagerie
-    •	Ajouter un log
-    •	Afficher les tags dans le log
-    •	Afficher les variables dans le log
-    •	Afficher les noeuds dans le log
-    •	Créer un message
-    •	Faire une demande
-    •	Dire
-    •	Alerte
-    •	Pop-up
-    •	Commentaire : Permet d’ajouter des commentaires à son scénario (À venir)
-    •	Rapport (À venir)
-  ## Système
-    •	Arrêter
-    •	Redémarrer
-  ## Équipement
-    •	Activer un équipement
-    •	Désactiver un équipement
-    •	Masquer un équipement
-    •	Afficher un équipement
-    •	Générer un evènement
-    •	Exécuter une commande
-    •	Exécuter un type générique (À venir)
-  ## Programmation
-    •	Code : Permet d’écrire directement en code PHP (demande certaines connaissances et peut être risqué mais permet de n’avoir aucune contrainte). (À venir)
+<ul>
+  <li>
+    <h2>Déclencheur (ce qui déclennche le scénario)</h2>
+    <ul>
+      <li><b>Evénement</b> 
+        (dans l'ordre de l'affichage des bouttons)
+        <ol>
+          <li>Commande de type info</li>
+          <li>Type générique de type info</li>
+          <li>Tag de déclanchement</li>
+          <li>Function de déclanchement</li>
+        </ol>
+      </li>
+      <li><b>Programmation</b> : pour déterminer le moment d'exécuter le scénario et sa récurrence</li>
+    </ul>
+    <h2>Général</h2>
+    <ul>
+      <li><b>Si/Alors/Sinon</b> : Permet de réaliser des actions selon une expression conditionnelle.</li>
+      <li><b>Switch</b> : Permet de réaliser des actions en comparent la même variable (ou expression conditionnelle) avec un grand nombre de valeurs différentes, et d'exécuter      différentes actions suivant la valeur à laquelle elle est égale. (À venir)</li>
+      <li><b>Boucle</b> : Permet de réaliser des actions de manière répétitive de 1 jusqu’à un nombre défini (ou même la valeur d’un capteur, ou un nombre aléatoire…).</li>
+      <li><b>Pour chaque</b> : </li>
+      <li><b>Tant que</b> : </li>
+    </ul>
+    <h2>Variable</h2>
+    <ul>
+      <li><b>Tag</b> : </li>
+      <li><b>Ajout d'une valeur à un tableau</b> : </li>
+      <li><b>Supprimer une variable d'un tableau</b> : </li>
+      <li><b>Variable</b> : </li>
+      <li><b>Supprimer une variable</b> : </li>
+    </ul>
+    <h2>Flux</h2>
+    <ul>
+      <li><b>Stop</b> : </li>
+      <li><b>Pause</b> : </li>
+      <li><b>Dans</b> : Permet de lancer une action dans X minute(s) (0 est une valeur possible). La particularité est que les actions sont lancées en arrière-plan, elles ne bloquent donc pas la suite du scénario. C’est donc un bloc non bloquant.</li>
+      <li><b>A</b> : Permet de dire à Jeedom de lancer les actions du bloc à une heure donnée (sous la forme hhmm). Ce bloc est non bloquant. Ex : 0030 pour 00h30, ou 0146 pour 1h46 et 1050 pour 10h50.</li>
+      <li><b>Retourner un texte/une donnée</b> : </li>
+      <li><b>Supprimer tous les noeuds programmé</b> : </li>
+      <li><b>Supprimer un noeud programmé</b> : (a venir)</li>
+      <li><b>Rediriger vers</b> : </li>
+    </ul>
+    <h2>Interface</h2>
+    <ul>
+      <li><b>Aller au design</b> : </li>
+      <li><b>Icône</b> : </li>
+      <li><b>Coloration des icones</b> : </li>
+    </ul>
+    <h2>Messagerie</h2>
+    <ul>
+      <li><b>Ajouter un log</b> : </li>
+      <li><b>Afficher les tags dans le log</b> : </li>
+      <li><b>Afficher les variables dans le log</b> : </li>
+      <li><b>Afficher les noeuds dans le log</b> : </li>
+      <li><b>Créer un message</b> : </li>
+      <li><b>Faire une demande</b> : </li>
+      <li><b>Dire</b> : </li>
+      <li><b>Alerte</b> : </li>
+      <li><b>Pop-up</b> : </li>
+      <li><b>Commentaire</b> : Permet d’ajouter des commentaires à son scénario (À venir)</li>
+      <li><b>Rapport</b> : (À venir)</li>
+    </ul>
+    <h2>Système</h2>
+    <ul>
+      <li><b>Arrêter</b> : </li>
+      <li><b>Redémarrer</b> : </li>
+    </ul>
+    <h2>Équipement</h2>
+    <ul>
+      <li><b>Activer un équipement</b> : </li>
+      <li><b>Désactiver un équipement</b> : </li>
+      <li><b>Masquer un équipement</b> : </li>
+      <li><b>Afficher un équipement</b> : </li>
+      <li><b>Générer un evènement</b> : </li>
+      <li><b>Exécuter une commande</b> : </li>
+      <li><b>Exécuter un type générique</b> : (À venir)</li>
+    </ul>
+    <h2>Programmation</h2>
+    <ul>
+      <li><b>Code</b> : Permet d’écrire directement en code PHP (demande certaines connaissances et peut être risqué mais permet de n’avoir aucune contrainte). (À venir)</li>
+    </ul>
+  </li>
+</ul>
 
 # Expression conditionnelle
-  ## Opérateurs de comparaison, comme leur nom l'indique, ils vous permettent de comparer deux valeurs.
-    •	== : égal à,
-    •	> : strictement supérieur à,
-    •	>= : supérieur ou égal à,
-    •	< : strictement inférieur à,
-    •	<= : inférieur ou égal à,
-    •	!= : différent de, n’est pas égal à,
-    •	& : comparaison binaire
-  ## Liens d'expression de comparaison
-    •	&& / ET / et / AND / and : et,
-    •	| / OU / ou / OR / or : ou,
-    •	|^ / XOR / xor : ou exclusif.
+
+<ul>
+  <li>
+    <h2>Opérateurs de comparaison, comme leur nom l'indique, ils vous permettent de comparer deux valeurs.</h2>
+    <ul>
+      <li><b>==</b> : égal à</li>
+      <li><b>></b> : strictement supérieur à</li>
+      <li><b>>=</b> : supérieur ou égal à</li>
+      <li><b><</b> : strictement inférieur à</li>
+      <li><b><=</b> : inférieur ou égal à</li>
+      <li><b>!=</b> : différent de, n’est pas égal à</li>
+      <li><b>&</b> : comparaison binaire</li>
+    </ul>
+  </li>
+  <li>
+    <h2>Liens d'expression de comparaison</h2>
+    <ul>
+      <li><b>&& / ET / et / AND / and</b> : et</li>
+      <li><b>| / OU / ou / OR / or</b> : ou</li>
+      <li><b>|^ / XOR / xor</b> : ou exclusif</li>
+    </ul>
+  </li>
+</ul>
 
 # Tag
 Un tag est remplacé lors de l’exécution du scénario par sa valeur
@@ -292,8 +329,8 @@ Un tag est remplacé lors de l’exécution du scénario par sa valeur
       <li>
         <h3>Comparaison</h3>
         <ul>
-          <li><b>arrayIn((valeur, tableau)</b> : Renvoie 1, si la veleur spécifié se retrouve dans le tableau spécifié}}</li>
-          <li><b>arrayNotIn((valeur, tableau)</b> : Renvoie 1, si la veleur spécifié ne se retrouve pas dans le tableau spécifié}}</li>
+          <li><b>arrayIn(valeur, tableau)</b> : Renvoie 1, si la veleur spécifié se retrouve dans le tableau spécifié}}</li>
+          <li><b>arrayNotIn(valeur, tableau)</b> : Renvoie 1, si la veleur spécifié ne se retrouve pas dans le tableau spécifié}}</li>
           <li><b>not(expression)</b> : Renvoie 1, si le résultat de l'expression est faux (ex: not(1 == 2))}} ** A faire</li>
           <li><b>matches</b> : contient (ex : [Salle de bain][Hydrometrie][etat] matches “/humide/” )</li>
         </ul>
