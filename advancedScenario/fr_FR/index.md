@@ -210,29 +210,23 @@ C'est ici que vous allez construire votre scénario.
 </ul>
 
 # Expression conditionnelle
+  ## Opérateurs de comparaison, comme leur nom l'indique, ils vous permettent de comparer deux valeurs.</h2>
+  <ul>
+    <li><b>==</b> : égal à</li>
+    <li><b>></b> : strictement supérieur à</li>
+    <li><b>>=</b> : supérieur ou égal à</li>
+    <li><b><</b> : strictement inférieur à</li>
+    <li><b><=</b> : inférieur ou égal à</li>
+    <li><b>!=</b> : différent de, n’est pas égal à</li>
+    <li><b>&</b> : comparaison binaire</li>
+  </ul>
 
-<ul>
-  <li>
-    <h2>Opérateurs de comparaison, comme leur nom l'indique, ils vous permettent de comparer deux valeurs.</h2>
-    <ul>
-      <li><b>==</b> : égal à</li>
-      <li><b>></b> : strictement supérieur à</li>
-      <li><b>>=</b> : supérieur ou égal à</li>
-      <li><b><</b> : strictement inférieur à</li>
-      <li><b><=</b> : inférieur ou égal à</li>
-      <li><b>!=</b> : différent de, n’est pas égal à</li>
-      <li><b>&</b> : comparaison binaire</li>
-    </ul>
-  </li>
-  <li>
-    <h2>Liens d'expression de comparaison</h2>
-    <ul>
-      <li><b>&& / ET / et / AND / and</b> : et</li>
-      <li><b>| / OU / ou / OR / or</b> : ou</li>
-      <li><b>|^ / XOR / xor</b> : ou exclusif</li>
-    </ul>
-  </li>
-</ul>
+  ## Liens d'expression de comparaison</h2>
+  <ul>
+    <li><b>&& / ET / et / AND / and</b> : et</li>
+    <li><b>| / OU / ou / OR / or</b> : ou</li>
+    <li><b>|^ / XOR / xor</b> : ou exclusif</li>
+  </ul>
 
 # Tag
 Un tag est remplacé lors de l’exécution du scénario par sa valeur
