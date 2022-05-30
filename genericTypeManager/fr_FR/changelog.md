@@ -11,9 +11,10 @@ pluginId: genericTypeManager
 
 # Beta
 
+## 2022/05/30
+- Correction de fermeture de lumière via  la tuile
 ## 2022/04/23
 - Correction d'effacement de variable
-
 ## 2022/04/18
 - Ajouter la possibilité d'appliquer une formule pour le calcul des sommaires
 - Ajouter la possibilité de ré-ordonner les modes
