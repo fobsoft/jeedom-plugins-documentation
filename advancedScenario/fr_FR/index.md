@@ -210,7 +210,8 @@ C'est ici que vous allez construire votre scénario.
 </ul>
 
 # Expression conditionnelle
-  ## Opérateurs de comparaison, comme leur nom l'indique, ils vous permettent de comparer deux valeurs.</h2>
+  ## Opérateurs de comparaison, comme leur nom l'indique, ils vous permettent de comparer deux valeurs
+
   <ul>
     <li><b>==</b> : égal à</li>
     <li><b>></b> : strictement supérieur à</li>
@@ -221,7 +222,8 @@ C'est ici que vous allez construire votre scénario.
     <li><b>&</b> : comparaison binaire</li>
   </ul>
 
-  ## Liens d'expression de comparaison</h2>
+  ## Liens d'expression de comparaison
+  
   <ul>
     <li><b>&& / ET / et / AND / and</b> : et</li>
     <li><b>| / OU / ou / OR / or</b> : ou</li>
