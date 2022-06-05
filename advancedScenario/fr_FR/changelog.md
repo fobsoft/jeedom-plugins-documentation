@@ -10,8 +10,21 @@ pluginId: advancedScenario
 </div>
 
 # Beta
+
+## 2022/06/06
+- Action
+  - Équipement
+    - Exécuter un type générique
+- Function
+  - D'information
+    - Équipement
+      - getListEquipement(object,includeChild): Renvoie la liste des équipements contenue sous l'objet et ses enfants si spécifiés
+    - Type générique
+      - getListCmdByGenericType(generic,object,includeChild) : Renvoie la liste des commandes possèdant le type générique spécifié contenue sous l'objet et ses enfants si spécifiés
+
 ## 2022/05/05
 - Permettre le copier coller d'un noeud
+ 
 ## 2021/12/25
 - Création du plugin
 
@@ -20,6 +33,7 @@ pluginId: advancedScenario
   * Empécher la suppression du node "Départ" puisque celui-ci est le point d'entré général
 * Noeud
   * Aciver/Désactiver un noeud
+  * Permettent d’activer ou non la répétition des actions si l’évaluation de la condition donne le même résultat que la précedente évaluation.
   * Ajouter une mainenance pour avoir plus d'option pour la création de l'expression du noeud sans trop charger la page principal.
   * Ajouter un bouton pour sélectionner les tags disponible
   * Ajouter un bouton pour sélectionner une fonction mathématique

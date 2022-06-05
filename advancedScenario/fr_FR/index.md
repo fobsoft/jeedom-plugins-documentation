@@ -11,32 +11,21 @@ pluginId: advancedScenario
 
 > Le plugin est encore jeune et peut encore comporter quelques bugs, mais il évolue régulièrement : n’hésitez pas à me contacter à mon courriel personnel, sois le fobsoft@gmail.com avec toutes vos remarques et suggestions.
 
+> Attention, il sera possible de convertir vos scénarios issus de Jeedom vers ce plugin dans une version futur, mais l'inverse ne sera pas possible puisque le plugin offre beaucoup plus de possibilité qui n'existe pas dans les scénario courants et ne pourrons donc pas être converti.
+
+> Ce plugin n'interfère pas avec les scénarios courants, il dispose de sa propre maintenance. Vous pouvez donc continuer à utiliser le système de scénario courant en parallèle de ce plugin.
+
 # Présentation
 Plugins pour gérer, créer ou modifier vos scénarios. Utilise les fonctionnalitées du système issus de Jeedom en ajoutant quelque fonctionnalité.
-* Une maintenance par nœud
+* Une fonctionnalité par nœud, permettant au flow de naviguer parmi eux et de rappeler ceux-ci indéfiniment.
 * Ajout de tag
   * En rapport au scénario:
-    * #scenarioObject#: Objet parent du scénario, si le nom des objets son remplacer dans la spécification des équipements ex: #tag(scenarioObject,0)[Lumiere][On]#, le scénario peut etre utilise pour n'importe quel objet.
   * En rapport à la commande qui à déclanché le scénario
-    * #trigger#: Son nom (ex:)
-    * #triggerGenericType#: Son type générique (ex:)
-    * #triggerEq#: Le nom de l'équipement (ex:)
   * En rapport à l'exécution du scénario:
-    * #triggerObject#: Le nom de l'object parent de la commande, sinon le nom de l'object parent du scénario
 * Ajout de block
-  * Pour chaque: Permet de réaliser une action pour chaque élément d'un tableau.
-  * Tant que: Permet de réaliser une action tant que la condition est valide.
 * Ajout d'opérateur
-  * arrayIn(valeur, tableau): Permet de déterminer si une valeur est contenue dans l'array
-  * arrayNotin(valeur, tableau): Permet de déterminer si une valeur n'est pas contenue dans l'array
 * Ajout de commande
-  * Ajout d'une valeur à un tableau: Création/ajout d’une valeur à un tableau (n'existe que pendant l'exécution du scénario.)
-  * Supprimer une valeur d'un tableau: Suppression d’une valeur d’un tableau
-  * Afficher les tags dans le log: Permet d'afficher dans le log toutes les valeurs associées à l'exécution du scénario (tag, tableau)
-  * Afficher les variables dans le log: Permet d'afficher dans le log toutes les variavles
-  * Exécuter un type générique: Permet d'exécuter les commandes des équipements d'un type générique
-  * Rediriger vers: Permet de rediriger le flow vers un noeud
-  * Supprimer un noeud programmé
+* Ajout d'une fonctionnalité d'inclusion d'autre scénario, ainsi vous pouvez lier plusieurs scénarios pour n'en fait qu'un seul vous permettant ainsi la réutilisation de ceux-ci dans plusieurs contextes
 * Modification général:
   * Ajout de boutons supplémentaire pour facilité la gestion des expressions
   
@@ -51,8 +40,6 @@ Dans la section, "Configuration" se trouve quelques options pour configurer l'af
 Une fois le plugin activé, on peut donc passer directement à la création et modification de ceux-ci.
 
 # Configuration d'un scénario
-> Attention, il sera possible de convertir vos scénarios issus de Jeedom vers ce plugin dans une version futur, mais l'inverse ne sera pas possible.
-
 Vous pouvez accéder à la fenêtre de maintenance à partir du menu Plugins → Programmation → Advance Scenario.
 
 Sur cette page, vous retrouvez la liste des groupes issus des scénarios de Jeedom et les scénarios créé à partir du plugin sont affichés avec une icône de couleur grise. Lorsqu'il sera possible de convertir vos scénarios issus de Jeedom, ceux-ci apparaîtront avec une icône verte.
@@ -143,7 +130,7 @@ C'est ici que vous allez construire votre scénario.
 ## Général
   <ul>
     <li><b>Si/Alors/Sinon</b> : Permet de réaliser des actions selon une expression conditionnelle.</li>
-    <li><b>Switch</b> : Permet de réaliser des actions en comparent la même variable (ou expression conditionnelle) avec un grand nombre de valeurs différentes, et d'exécuter      différentes actions suivant la valeur à laquelle elle est égale. (À venir)</li>
+    <li><b>Switch</b> : Permet de réaliser des actions en comparent la même variable (ou expression conditionnelle) avec un grand nombre de valeurs différentes, et d'exécuter différentes actions suivant la valeur à laquelle elle est égale. (À venir)</li>
     <li><b>Boucle</b> : Permet de réaliser des actions de manière répétitive de 1 jusqu’à un nombre défini (ou même la valeur d’un capteur, ou un nombre aléatoire…).</li>
     <li><b>Pour chaque</b> : </li>
     <li><b>Tant que</b> : </li>
@@ -184,8 +171,8 @@ C'est ici que vous allez construire votre scénario.
     <li><b>Afficher les variables dans le log</b> : </li>
     <li><b>Afficher les noeuds dans le log</b> : </li>
     <li><b>Créer un message</b> : </li>
-    <li><b>Faire une demande</b> : </li>
-    <li><b>Dire</b> : </li>
+    <li><b>Faire une demande</b> : (a venir)</li>
+    <li><b>Dire</b> : (a venir)</li>
     <li><b>Alerte</b> : </li>
     <li><b>Pop-up</b> : </li>
     <li><b>Commentaire</b> : Permet d’ajouter des commentaires à son scénario (À venir)</li>
@@ -204,9 +191,9 @@ C'est ici que vous allez construire votre scénario.
     <li><b>Désactiver un équipement</b> : </li>
     <li><b>Masquer un équipement</b> : </li>
     <li><b>Afficher un équipement</b> : </li>
-    <li><b>Générer un evènement</b> : </li>
     <li><b>Exécuter une commande</b> : </li>
-    <li><b>Exécuter un type générique</b> : (À venir)</li>
+    <li><b>Générer un evènement</b> : </li>
+    <li><b>Exécuter un type générique</b> : </li>
   </ul>
 
 ## Programmation
@@ -215,7 +202,8 @@ C'est ici que vous allez construire votre scénario.
   </ul>
 
 # Expression conditionnelle
-## Opérateurs de comparaison, comme leur nom l'indique, ils vous permettent de comparer deux valeurs
+## Opérateurs de comparaison
+Comme leur nom l'indique, ils vous permettent de comparer deux valeurs
 
   <ul>
     <li><b>==</b> : égal à</li>
@@ -230,15 +218,15 @@ C'est ici que vous allez construire votre scénario.
 ## Liens d'expression de comparaison
 
   <ul>
-    <li><b>&& / ET / et / AND / and</b> : et</li>
-    <li><b>| / OU / ou / OR / or</b> : ou</li>
-    <li><b>|^ / XOR / xor</b> : ou exclusif</li>
+    <li><b>&&</b> : et</li>
+    <li><b>||</b> : ou</li>
+    <li><b>|^</b> : ou exclusif</li>
   </ul>
 
 # Tag
-Un tag est remplacé lors de l’exécution du scénario par sa valeur
 
 ## De déclanchement
+Un tag de déclanchement disigne un événement exécuté dans Jeedom
   <ul>
     <li><b>#start#</b> : déclenché au (re)démarrage de Jeedom</li>
     <li><b>#begin_backup#</b> : événement envoyé au début d’une sauvegarde</li>
@@ -251,6 +239,7 @@ Un tag est remplacé lors de l’exécution du scénario par sa valeur
   </ul>
 
 ## D'information
+Un tag d'information est remplacé lors de l’exécution du scénario par sa valeur
   <ul>
     <li>
       <h3>Temps</h3>
@@ -377,6 +366,7 @@ Un tag est remplacé lors de l’exécution du scénario par sa valeur
     <li>
       <h3>Équipement</h3>
       <ul>
+        <li><b>getListEquipement(object,includeChild)</b>: Renvoie la liste des équipements contenue sous l'objet et ses enfants si spécifiés</li>
         <li><b>eqEnable(equipement)</b> : Renvoie l’état de l’équipement. -2 si l’équipement est introuvable, 1 si l’équipement est actif et 0 s’il est inactif</li>
         <li><b>lastCommunication(equipment,[format])</b> : Renvoie la date de la dernière communication pour l’équipement donnée en paramètre, le 2ème paramètre optionnel permet de spécifier le format de retour (détails ici). Un retour de -1 signifie que l’équipment est introuvable</li>
         <li><b>equipementName(commande)</b> : Renvoie le nom de l’équipementt</li>
@@ -399,7 +389,7 @@ Un tag est remplacé lors de l’exécution du scénario par sa valeur
     <li>
       <h3>Type générique</h3>
       <ul>
-        <li><b>genericType(generic,object)</b> : Renvoie la liste des commandes possèdant le type générique spécifié contenue sous l'objet et ses enfants si spécifiés</li>
+        <li><b>getListCmdByGenericType(generic,object,includeChild)</b> : Renvoie la liste des commandes possèdant le type générique spécifié contenue sous l'objet et ses enfants si spécifiés</li>
         <li><b>minGenericType(generic,object)</b> : Renvoie la valeur minimum courante des commandes possédant le type générique spécifié contenue sous l'objet et ses enfants si spécifié</li>
         <li><b>maxGenericType(generic,object)</b> : Renvoie la valeur maximum courante des commandes possédant le type générique spécifié contenue sous l'objet et ses enfants si spécifiés</li>
         <li><b>averageGenericType(generic,object)</b> : Renvoie la valeur moyenne courante des commandes possédant le type générique spécifié contenue sous l'objet et ses enfants si spécifiés</li>
