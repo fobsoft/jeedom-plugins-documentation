@@ -11,6 +11,10 @@ pluginId: genericTypeManager
 
 # Beta
 
+## 2022/06/05
+- Correction de l'affichage de la tuile lorsqu'un meme type generic est utilisé plusieurs fois
+- Envoi de la valeur trigger lors de l'execution d'un scenario pur utiliser dans celui-ci les tags référent à la commande exécutante
+
 ## 2022/05/30
 - Correction de fermeture de lumière via  la tuile
 ## 2022/04/23
