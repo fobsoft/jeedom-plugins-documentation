@@ -11,6 +11,9 @@ pluginId: genericTypeManager
 
 # Beta
 
+## 2022/06/07
+- Ajout d'une configuration de valeur minimum et maximum dans le sommaire. Ainsi lors d'échange avec une commande, une règle de 3 est appliqué pour calculer la valeur de la commande. 
+
 ## 2022/06/05
 - Correction de l'affichage de la tuile lorsqu'un meme type generic est utilisé plusieurs fois
 - Envoi de la valeur trigger lors de l'execution d'un scenario pur utiliser dans celui-ci les tags référent à la commande exécutante
