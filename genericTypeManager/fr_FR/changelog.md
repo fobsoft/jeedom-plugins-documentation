@@ -11,6 +11,9 @@ pluginId: genericTypeManager
 
 # Beta
 
+## 2022/06/09
+- Fixe erreur suite à la verson du 2022/06/07
+
 ## 2022/06/07
 - Ajout d'une configuration de valeur minimum et maximum dans le sommaire. Ainsi lors d'échange avec une commande, une règle de 3 est appliqué pour calculer la valeur de la commande. 
 
