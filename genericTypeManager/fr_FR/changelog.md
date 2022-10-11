@@ -11,6 +11,13 @@ pluginId: genericTypeManager
 
 # Beta
 
+## 2022/10/11
+- Ajout de la possibiliter de configurer une valeur au variable directement dans la maintenance
+
+## 2022/06/10
+- Fixe erreur suite à la verson du 2022/06/07
+- Fixe erreur pour le resort du résumé
+
 ## 2022/06/09
 - Fixe erreur suite à la verson du 2022/06/07
 
