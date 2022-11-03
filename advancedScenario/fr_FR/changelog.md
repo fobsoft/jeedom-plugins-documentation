@@ -11,6 +11,10 @@ pluginId: advancedScenario
 
 # Beta
 
+## 2022/11/03
+- Création d'une maintenance dans le panel pour créer de nouveau type générique
+- Correction mineur
+
 ## 2022/06/06
 - Action
   - Équipement
