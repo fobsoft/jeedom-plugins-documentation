@@ -59,13 +59,13 @@ Et voici un aperçu du résultat
 
 ![equipement](../images/equipement.png)
   
-## Mode
-Les modes sont des consignes prédéterminées qui seront exécutées lors d'un événement d'Hydro-Québec. Comme par exemple le sur-chauffage de pièce avant l'événement et l'arrêt de celui-ci au début de l'événement. Vous disposez d'un mode "Avant l'événement HP" et "Après l'événement HP" où vous pouvez configurer le nombre d'heures de déphasage pour l'exécution de ceux-ci lors de l'événement.
+## Cédules
+Les cédules permettent d'exécuter des consignes à une heure prédéterminé, pour chaque consigne, vous pouvez indiquer si celle-ci doit toujours être exécute ou si elle doit l'être que s'il y a un événement en am et ou en pm.
 
 ![Mode1](../images/Mode1.png)
 
 ## Commandes
-Affiche la liste des commandes créés.
+Affiche la liste des commandes d'informations créés selon les informations reçus par Hydro-Québec..
 
 # FAQ
 Pour toute question, suggestion ou problème, écrivez-moi au fobsoft@gmail.com 
